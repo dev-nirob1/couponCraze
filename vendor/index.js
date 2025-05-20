@@ -19,4 +19,5 @@ const navbarAnimation = () => {
     lastScroll = currentScroll;
   });
 };
+navbarAnimation()
 
