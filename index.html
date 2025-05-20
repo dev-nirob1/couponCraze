@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coupon Craze</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/styles/grid.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <!-- navbar section starts here  -->
+    <header class="navbar">
+      <nav class="flex justify-between align-center container">
+        <!-- Logo -->
+        <a href="/" class="logo">
+          <img
+            class="height-full width-full"
+            src="/vendor/assets/logo.png"
+            alt="logo"
+          />
+          <span class="brand">CouponCraze</span>
+        </a>
+        <!-- Mobile Menu Button -->
+        <button class="btn hamburger">
+          <i class="fas fa-bars fa-2xl"></i></button
+        ><!-- Navigation Links -->
+        <ul class="nav-links">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/coupon_list">Latest Coupons</a>
+          </li>
+          <li>
+            <a href="/coupon_list/exclusive">Exclusive Coupons</a>
+          </li>
+          <li>
+            <a href="/coupon_list/ending_soon">Ending Soon</a>
+          </li>
+          <li>
+            <a href="/categories">Categories</a>
+          </li>
+          <li>
+            <a href="/dashboard">Dashboard</a>
+          </li>
+          <li>
+            <a href="/login">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar section ends here  -->
+
+    <!-- -------------------- banner section starts here ----------------------  -->
+    <section class="hero bg-light">
+      <div class="content container medium-2 align-center justify-between">
+        <div class="text-content">
+          <div class="text-white">
+            <h1 class="hero-title">Exclusive Coupons</h1>
+            <h1 class="hero-title highlight">Huge Savings</h1>
+            <h1 class="hero-title font-big">GRAB NOW!</h1>
+          </div>
+          <p class="text-white">
+            Unlock thousands of deals and save up to 80% at top retailers -
+            verified coupons updated daily for maximum savings
+          </p>
+          <button class="btn">Explore Now</button>
+        </div>
+        <div class="img">
+          <img
+            class="height-full width-full"
+            src="https://cdn.pixabay.com/photo/2023/02/23/10/11/valentine-7808440_960_720.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- banner section ends here ----------------------  -->
+
+    <!-- -------------------- categories section starts here ----------------------  -->
+    <!-- section title  -->
+    <section class="categories">
+      <div class="container">
+        <div class="coupon-container justify-center">
+          <div class="bar-code"><i class="fas fa-barcode"></i></div>
+          <div class="coupon-title"><h3 class="title">Browse Category</h3></div>
+        </div>
+        <!-- loading skeleton  -->
+        <div class="medium-2 large-5 gap-1 medium-gap-2">
+          <div class="category-card">
+            <div class="p-2">
+              <div class="category-image">
+                <img
+                  class="height-full width-full"
+                  src="/vendor/assets/health.png"
+                  alt="banner image"
+                />
+              </div>
+              <h5 class="title">Ramadan</h5>
+              <small>7 deals</small>
+            </div>
+            <div class="category-overlay">
+              <a href="/category_list/ramadan" class="btn">Go to Category </a>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="p-2">
+              <div class="category-image">
+                <img
+                  class="height-full width-full"
+                  src="/vendor/assets/health.png"
+                  alt="banner image"
+                />
+              </div>
+              <h5 class="title">Ester Sunday</h5>
+              <small>12 deals</small>
+            </div>
+            <div class="category-overlay">
+              <a href="/category_list/easter-sunday" class="btn"
+                >Go to Category
+              </a>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="p-2">
+              <div class="category-image">
+                <img
+                  class="height-full width-full"
+                  src="/vendor/assets/health.png"
+                  alt="banner image"
+                />
+              </div>
+              <h5 class="title">Black Friday</h5>
+              <small>12 deals</small>
+            </div>
+            <div class="category-overlay">
+              <a href="/category_list/black-friday" class="btn"
+                >Go to Category
+              </a>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="p-2">
+              <div class="category-image">
+                <img
+                  class="height-full width-full"
+                  src="/vendor/assets/health.png"
+                  alt="banner image"
+                />
+              </div>
+              <h5 class="title">Iftar</h5>
+              <small>5 deals</small>
+            </div>
+            <div class="category-overlay">
+              <a href="/category_list/iftar" class="btn">Go to Category </a>
+            </div>
+          </div>
+          <!--v-if--><!-- link button  -->
+          <a href="/categories" class="link-card">
+            <div class="flex flex-col justify-center align-center text-center">
+              <div class="image">
+                <img
+                  class="height-full width-full"
+                  src="/vendor/assets/categories.png"
+                  alt="banner image"
+                />
+              </div>
+              <div>
+                <h5 class="sub-title">Explore All</h5>
+                <p>
+                  View our complete collection of products across all categories
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- categories section ends here ----------------------  -->
+
+    <!-- -------------------- about section starts here ----------------------  -->
+    <section class="about-us">
+      <div class="container large-2 align-center gap-2">
+        <!-- image div  -->
+        <div class="image">
+          <img
+            class="height-full"
+            src="https://cdn.pixabay.com/photo/2024/10/06/22/36/shipping-9101364_960_720.png"
+            alt="image"
+          />
+        </div>
+        <div>
+          <div>
+            <h3 class="title">
+              Your Trusted Coupon & Savings Marketplace.
+            </h3>
+          </div>
+          <p>
+            We help over 500,000 shoppers save money daily, offering exclusive
+            deals in more than 70 countries. Our global reach ensures you get
+            the best discounts, anytime, anywhere.
+          </p>
+          <!-- icon + title container  -->
+          <ul class="all-2 align-center gap-1">
+            <li>
+              <i class="fa-solid fa-tag"></i><span>Exclusive Discounts</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-globe"></i><span>Worldwide Offers</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-bolt"></i><span>Instant Savings</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-shield"></i><span>Verified Deals</span>
+            </li>
+          </ul>
+          <!-- icon + title container ends  -->
+          <p class="quote">
+            "Why pay full price? Join millions of smart shoppers who unlock
+            exclusive savings every day. Your next deal is just a click away!"
+          </p>
+          <button class="btn">OUR SERVICES</button>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- about section ends here ----------------------  -->
+
+    <!-- -------------------- featured coupon section starts here ----------------------  -->
+    <section class="featured-coupon">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="coupon-container text-secondary">
+          <div class="bar-code"><i class="fas fa-barcode"></i></div>
+          <div class="coupon-title"><h3 class="title">Featured Coupon</h3></div>
+        </div>
+        <!-- Coupon Grid -->
+        <div class="medium-3 gap-2">
+          <div class="coupon-card">
+            <div class="card-body">
+              <div>
+                <h5 class="sub-title">Ramadan Offer 2</h5>
+                <p>Celebrate the spirit of Ramadan with exclusive sav...</p>
+              </div>
+              <div>
+                <span>Flat</span>
+                <h3 class="title price">20 <span>%</span></h3>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="flex justify-between align-center">
+                <p>Validity: 2025-05-22</p>
+                <button class="btn bg-white text-secondary">Get Code</button>
+              </div>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+            </div>
+          </div>
+          <div class="coupon-card">
+            <div class="card-body">
+              <div>
+                <h5 class="sub-title">Ramadan Offer 3</h5>
+                <p>Iftar ready in minutes! 35% Off meal kits &amp; Ramada...</p>
+              </div>
+              <div>
+                <span>Flat</span>
+                <h3 class="title price">20 <span>%</span></h3>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="flex justify-between align-center">
+                <p>Validity: 2025-05-28</p>
+                <button class="btn bg-white text-secondary">Get Code</button>
+              </div>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+            </div>
+          </div>
+          <div class="coupon-card">
+            <div class="card-body">
+              <div>
+                <h5 class="sub-title">New Coupon 2025</h5>
+                <p>New Year, New Savings! FLASH SALE: 50% OFF for 24 ...</p>
+              </div>
+              <div>
+                <span>Flat</span>
+                <h3 class="title price">0.2 <span>%</span></h3>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="flex justify-between align-center">
+                <p>Validity: 2025-05-25</p>
+                <button class="btn bg-white text-secondary">Get Code</button>
+              </div>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+            </div>
+          </div>
+          <div class="coupon-card">
+            <div class="card-body">
+              <div>
+                <h5 class="sub-title">Exclusive Coupon</h5>
+                <p>alfjeivfbhweifohw mjvbaiufv...</p>
+              </div>
+              <div>
+                <span>Flat</span>
+                <h3 class="title price">200 <span>%</span></h3>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="flex justify-between align-center">
+                <p>Validity: 2025-04-25</p>
+                <button class="btn bg-white text-secondary">Get Code</button>
+              </div>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+            </div>
+          </div>
+          <div class="coupon-card">
+            <div class="card-body">
+              <div>
+                <h5 class="sub-title">New Year, New Gifts</h5>
+                <p>New Year New Savings, Flash Sale, enjoy massive di...</p>
+              </div>
+              <div>
+                <span>Flat</span>
+                <h3 class="title price">20 <span>%</span></h3>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="flex justify-between align-center">
+                <p>Validity: 2025-05-23</p>
+                <button class="btn bg-white text-secondary">Get Code</button>
+              </div>
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+            </div>
+          </div>
+          <!-- link button-->
+           <a href="/coupon_list/exclusive" class="link-card"
+            ><div class="flex flex-col justify-center align-center text-center">
+              <div>
+                <img
+                  class="height-full width-full"
+                  src="/vendor/assets/store.png"
+                  alt="banner image"
+                />
+              </div>
+              <div>
+                <h5 class="sub-title">All Exclusive Coupons</h5>
+                <p>
+                  Limited-time offers! Click to view exclusive deals and special
+                  discounts.
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- featured coupon section ends here ----------------------  -->
+
+    <!-- -------------------- ending soon section starts here ----------------------  -->
+    <section class="ending-soon">
+      <div class="container">
+        <div class="medium-2 large-3 gap-2">
+          <div class="flex flex-col justify-center align-center text-center">
+            <div>
+              <h3 class="title">Ending In</h3>
+              <h5 class="sub-title mb-2">
+                Grab these deals before they expire!
+              </h5>
+              <div class="clock">
+                <div class="hour-hand"></div>
+                <div class="minute-hand"></div>
+              </div>
+              <div class="countdown-timer">
+                <div>
+                  <h4 class="title">11</h4>
+                  <span>Hours</span>
+                </div>
+                <div>
+                  <h4 class="title">59</h4>
+                  <span>Minutes</span>
+                </div>
+                <div>
+                  <h4 class="title">59</h4>
+                  <span>Seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Coupon Cards Grid -->
+          <div class="large-span-2">
+            <div class="masonry-grid">
+              <div class="masonry-item">
+                <div class="coupon-card">
+                  <div class="card-body">
+                    <div>
+                      <h5 class="sub-title">Ramadan Offer 2</h5>
+                      <p>
+                        Celebrate the spirit of Ramadan with exclusive sav...
+                      </p>
+                    </div>
+                    <div>
+                      <span>Flat</span>
+                      <h3 class="title price">20 <span>%</span></h3>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="flex justify-between align-center">
+                      <p>Validity: 2025-05-22</p>
+                      <button class="btn bg-white text-secondary">
+                        Get Code
+                      </button>
+                    </div>
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="masonry-item">
+                <div class="coupon-card">
+                  <div class="card-body">
+                    <div>
+                      <h5 class="sub-title">New Year, New Gifts</h5>
+                      <p>
+                        New Year New Savings, Flash Sale, enjoy massive di...
+                      </p>
+                    </div>
+                    <div>
+                      <span>Flat</span>
+                      <h3 class="title price">20 <span>%</span></h3>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="flex justify-between align-center">
+                      <p>Validity: 2025-05-23</p>
+                      <button class="btn bg-white text-secondary">
+                        Get Code
+                      </button>
+                    </div>
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="masonry-item">
+                <div class="coupon-card">
+                  <div class="card-body">
+                    <div>
+                      <h5 class="sub-title">fdfdkfdfdf</h5>
+                      <p>bfghfg fgfgfdf dfsdfds...</p>
+                    </div>
+                    <div>
+                      <span>Flat</span>
+                      <h3 class="title price">34 <span>%</span></h3>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="flex justify-between align-center">
+                      <p>Validity: 2025-05-10</p>
+                      <button class="btn bg-white text-secondary">
+                        Get Code
+                      </button>
+                    </div>
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="masonry-item">
+                <div class="coupon-card">
+                  <div class="card-body">
+                    <div>
+                      <h5 class="sub-title">fdfdsfsdf dfd</h5>
+                      <p>dfsdfdsf dfsdf fsdf djyttythtgh...</p>
+                    </div>
+                    <div>
+                      <span>Flat</span>
+                      <h3 class="title price">34 <span>%</span></h3>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="flex justify-between align-center">
+                      <p>Validity: 2025-05-17</p>
+                      <button class="btn bg-white text-secondary">
+                        Get Code
+                      </button>
+                    </div>
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- ending soon section ends here ----------------------  -->
+
+    <!-- -------------------- componies section starts here ----------------------  -->
+    <section class="company-section">
+      <div class="container">
+        <div class="coupon-container">
+          <div class="bar-code"><i class="fas fa-barcode"></i></div>
+          <div class="coupon-title"><h3 class="title">Company Offer</h3></div>
+        </div>
+        <div class="medium-4 gap-1 medium-gap-2">
+          <a href="/companies" class="company-card"
+            ><img
+              class="height-full width-full"
+              src="/vendor/assets/nike.png"
+              alt="banner image"
+            />
+            <h3 class="title">Nike</h3></a>
+            <a href="/companies" class="company-card">
+            <img
+              class="height-full width-full"
+              src="/vendor/assets/adidas.png"
+              alt="banner image"
+            />
+            <h3 class="title">Adidas</h3></a>
+            <a href="/companies" class="company-card"
+            ><img
+              class="height-full width-full"
+              src="/vendor/assets/apple.png"
+              alt="banner image"
+            />
+            <h3 class="title">Apple</h3></a
+          ><a href="/companies" class="company-card"
+            ><img
+              class="height-full width-full"
+              src="/vendor/assets/samsung.png"
+              alt="banner image"
+            />
+            <h3 class="title">Samsung</h3></a
+          ><a href="/companies" class="company-card"
+            ><img
+              class="height-full width-full"
+              src="/vendor/assets/zara.png"
+              alt="banner image"
+            />
+            <h3 class="title">Zara</h3></a
+          ><a href="/companies" class="company-card"
+            ><img
+              class="height-full width-full"
+              src="/vendor/assets/amazon.png"
+              alt="banner image"
+            />
+            <h3 class="title">Amazon</h3></a
+          >
+          <div class="medium-span-2">
+            <!-- link card/btn --><a href="/companies" class="link-card"
+              ><div class="all-4 gap-1 align-center">
+                <div>
+                  <img
+                    class="height-full width-full"
+                    src="/vendor/assets//store.png"
+                    alt="banner image"
+                  />
+                </div>
+                <div class="span-3">
+                  <h5 class="sub-title">Explore All Partner Companies</h5>
+                  <p>
+                    Discover our full network of trusted partners and browse
+                    their exclusive offers. Click to view all available
+                    companies.
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- componies section ends here ----------------------  -->
+
+    <!-- -------------------- pricing section starts here ----------------------  -->
+    <section class="pricing">
+      <div class="container">
+        <div class="coupon-container">
+          <div class="bar-code"><i class="fas fa-barcode"></i></div>
+          <div class="coupon-title"><h3 class="title">Simple Pricing</h3></div>
+        </div>
+        <div class="medium-3 gap-1 align-center medium-gap-2">
+          <div>
+            <div class="pricing-card">
+              <!--v-if--><span class="icon"
+                ><i class="fa-solid fa-circle-dollar-to-slot"></i
+              ></span>
+              <h5 class="sub-title">Ramazan Offer</h5>
+              <h1 class="hero-title">$100 <span>/month</span></h1>
+              <p>
+                List your Ramadan special discounts and reach fasting customers
+              </p>
+              <button class="btn">Buy Now</button>
+            </div>
+          </div>
+          <div>
+            <div class="pricing-card">
+              <p class="bg-alternative p-1 text-white">Exclusive</p>
+              <span class="icon"
+                ><i class="fa-solid fa-circle-dollar-to-slot"></i
+              ></span>
+              <h5 class="sub-title">Ekushe Offer</h5>
+              <h1 class="hero-title">$120 <span>/month</span></h1>
+              <p>Promote your Ekushey February special deals to book lovers</p>
+              <button class="btn">Buy Now</button>
+            </div>
+          </div>
+          <div>
+            <div class="pricing-card">
+              <!--v-if--><span class="icon"
+                ><i class="fa-solid fa-circle-dollar-to-slot"></i
+              ></span>
+              <h5 class="sub-title">New Year Offer</h5>
+              <h1 class="hero-title">$200 <span>/month</span></h1>
+              <p>Feature your New Year discounts for holiday shoppers.</p>
+              <button class="btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- pricing section ends here ----------------------  -->
+    <!-- footer section starts here  -->
+    <footer class="footer">
+      <div class="container medium-2 large-4 gap-2 p-2">
+        <div>
+          <div class="logo">
+            <img
+              class="height-full width-full"
+              src="/vendor/assets/logo.png"
+              alt="banner image"
+            /><span>CouponSavings</span>
+          </div>
+          <p>Your gateway to exclusive discounts and savings</p>
+          <div class="social-links">
+            <a href="/#"><i class="fab fa-facebook-f"></i></a>
+            <a href="/#"><i class="fab fa-twitter"></i></a>
+            <a href="/#"><i class="fab fa-instagram"></i></a>
+            <a href="/#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="title">Quick Links</h5>
+          <ul class="footer-links">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">All Coupons</a>
+            </li>
+            <li>
+              <a href="/">Stores</a>
+            </li>
+            <li>
+              <a href="/">Categories</a>
+            </li>
+            <li>
+              <a href="/">Savings Tips</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="title">Coupon Policies</h5>
+          <ul class="footer-links">
+            <li>
+              <a href="/">How it Works</a>
+            </li>
+            <li>
+              <a href="/">FAQ</a>
+            </li>
+            <li>
+              <a href="/">Terms of Services</a>
+            </li>
+            <li>
+              <a href="/">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="title">Get Exclusive Deals</h5>
+          <p>Subscribe to receive special offers before anyone else</p>
+          <form class="subscribe-form">
+            <input
+              type="email"
+              placeholder="Your email address"
+              required=""
+            /><button class="btn" type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Copyright & Bottom Bar -->
+      <div class="footer-bottom">
+        © 2025 CouponSavings. All rights reserved.
+      </div>
+    </footer>
+    <!-- footer section ends here  -->
+
+    <script src="/vendor/index.js"></script>
+  </body>
+</html>
