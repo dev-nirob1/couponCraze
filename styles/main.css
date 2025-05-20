@@ -131,6 +131,10 @@ a {
   /* background-color: rgb(from var(--primary-color) r g b/ 5%); */
   background-color: #D4EBFF;
 }
+.bg-lighten {
+  /* background-color: rgb(from var(--primary-color) r g b/ 5%); */
+  background-color: var(--primary-lighten-color);
+}
 
 .bg-primary {
   background-color: var(--primary-color);
