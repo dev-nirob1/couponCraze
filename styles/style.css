@@ -1,5 +1,7 @@
 /* ----------------------common styles ---------------------- */
-
+.hero,.categories,.ending-soon,.featured-coupon,.about-us,.timeline-section,.pricing,.company-section,.statistics{
+  position: relative;
+}
 /* section title starts */
 .section-container {
   display: flex;
@@ -138,6 +140,50 @@
   background-color: var(--secondary-color);
 }
 /* coupon card ends  */
+
+/* background icons styles  */
+.bg-icons {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  pointer-events: none;
+  opacity: .5;
+  z-index: 0;
+}
+
+.left-icons {
+  left: 0;
+}
+
+.right-icons {
+  right: 0;
+}
+
+.icon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+.left-icons .icon:nth-child(1),
+.left-icons .icon:nth-child(2) {
+  left: -40px;
+}
+
+.right-icons .icon:nth-child(1),
+.right-icons .icon:nth-child(2) {
+  right: -40px;
+}
+
+.left-icons .icon:nth-child(1), .right-icons .icon:nth-child(1) {
+  top: 10%;
+}
+
+.left-icons .icon:nth-child(2), .right-icons .icon:nth-child(2) {
+  bottom: 15%;
+}
+
+/* background icons styles  */
 /* ----------------------common styles ---------------------- */
 
 /*---------- navbar styles here ------------- */
@@ -345,6 +391,7 @@
   padding: 1rem;
   border-radius: 1rem;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 /* categories card  */
 .category-card {
@@ -618,6 +665,7 @@
   padding: 2rem;
   border-radius: 1rem;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .featured-coupon .link-card p {
@@ -698,6 +746,7 @@
   padding: 2rem;
   border-radius: 1rem;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .company-section .link-card:hover {
@@ -724,6 +773,7 @@
   text-align: center;
   transition: all 0.3s ease-in-out;
   box-shadow: var(--box-shadow);
+  z-index:1;
 }
 
 .company-card:hover {
@@ -1291,5 +1341,17 @@ ul a:hover::before {
 @media (min-width: 1200px) {
   .timeline {
     top: -1.5rem;
+  }
+}
+@media (min-width: 1600px) {
+
+  .left-icons .icon:nth-child(1),
+  .left-icons .icon:nth-child(2) {
+    left: 170px;
+  }
+
+  .right-icons .icon:nth-child(1),
+  .right-icons .icon:nth-child(2) {
+    right: 170px;
   }
 }
