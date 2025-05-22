@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Coupons Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./../vendor/styles/grid.css" />
+    <link rel="stylesheet" href="./../vendor/styles/main.css" />
+    <link rel="stylesheet" href="./exclusive.css" />
+  </head>
+  <body>
+    <!-- navbar section starts here  -->
+    <header class="navbar">
+      <nav class="flex justify-between align-center container">
+        <!-- Logo -->
+        <a href="#" class="logo"
+          ><img
+            class="height-full width-full"
+            src="./../vendor/assets/logo.png"
+            alt="logo"
+          />
+          <span class="brand">CouponCraze</span>
+        </a>
+        <!-- Mobile Menu Button -->
+        <button class="btn hamburger">
+          <i class="fas fa-bars fa-2xl"></i>
+        </button>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li><a href="/coupon_list" class="">Latest Coupons</a></li>
+          <li>
+            <a href="/coupon_list/exclusive" class="">Exclusive Coupons</a>
+          </li>
+          <li><a href="/coupon_list/ending_soon" class="">Ending Soon</a></li>
+          <li><a href="/categories" class="">Categories</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar section ends here  -->
+
+    <!-- breadcrumb section  -->
+    <section class="breadcrumb bg-primary text-white">
+      <ul class="container flex align-center gap-1">
+        <li><a href="/">Home</a></li>
+        <li>coupon_list</li>
+        <li>exclusive</li>
+      </ul>
+    </section>
+
+    <div class="container py-3">
+      <!-- sorting dropdown  -->
+      <div class="flex justify-end mb-2 pr-1">
+        <div class="select">
+          <select>
+            <option value="sort" disabled>Sort By</option>
+            <option value="sort">Newest</option>
+            <option value="sort">Older</option>
+            <option value="sort">Populer</option>
+          </select>
+        </div>
+      </div>
+      <!-- sorting dropdown  -->
+
+      <!---------------------- coupons section starts ---------------- -->
+      <div class="medium-2 large-3 gap-2 px-1">
+        <div class="coupon-card">
+          <div class="card-body">
+            <div>
+              <h5 class="sub-title">Summer Special</h5>
+              <p>Enjoy amazing discounts on all your favorite summer essentials...</p>
+            </div>
+            <div>
+              <span>Flat</span>
+              <h3 class="title price">42 <span>%</span></h3>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="flex justify-between align-center">
+              <p>Validity: 2025-05-31</p>
+              <button class="btn bg-secondary text-white">Get Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="coupon-card">
+          <div class="card-body">
+            <div>
+              <h5 class="sub-title">Tech Bonanza</h5>
+              <p>Upgrade your gadgets with our exclusive technology offers...</p>
+            </div>
+            <div>
+              <span>Flat</span>
+              <h3 class="title price">34 <span>%</span></h3>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="flex justify-between align-center">
+              <p>Validity: 2025-05-31</p>
+              <button class="btn bg-secondary text-white">Get Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="coupon-card">
+          <div class="card-body">
+            <div>
+              <h5 class="sub-title">Fashion Fiesta</h5>
+              <p>Revamp your wardrobe with our trendy collection at great prices...</p>
+            </div>
+            <div>
+              <span>Flat</span>
+              <h3 class="title price">34 <span>%</span></h3>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="flex justify-between align-center">
+              <p>Validity: 2025-05-31</p>
+              <button class="btn bg-secondary text-white">Get Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="coupon-card">
+          <div class="card-body">
+            <div>
+              <h5 class="sub-title">Home Refresh</h5>
+              <p>Transform your living space with our home decor specials...</p>
+            </div>
+            <div>
+              <span>Flat</span>
+              <h3 class="title price">34 <span>%</span></h3>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="flex justify-between align-center">
+              <p>Validity: 2025-05-31</p>
+              <button class="btn bg-secondary text-white">Get Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="coupon-card">
+          <div class="card-body">
+            <div>
+              <h5 class="sub-title">Wellness Wave</h5>
+              <p>Pamper yourself with our health and beauty product discounts...</p>
+            </div>
+            <div>
+              <span>Flat</span>
+              <h3 class="title price">34 <span>%</span></h3>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="flex justify-between align-center">
+              <p>Validity: 2025-05-31</p>
+              <button class="btn bg-secondary text-white">Get Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="coupon-card">
+          <div class="card-body">
+            <div>
+              <h5 class="sub-title">Seasonal Savings</h5>
+              <p>Don't miss out on these limited-time offers for the season...</p>
+            </div>
+            <div>
+              <span>Flat</span>
+              <h3 class="title price">15 <span>%</span></h3>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="flex justify-between align-center">
+              <p>Validity: 2025-05-31</p>
+              <button class="btn bg-secondary text-white">Get Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------------- coupons section ends ---------------- -->
+
+      <!-- pagination buttons  -->
+      <ul class="pagination">
+        <li><a href="/coupon_list">« Prev </a></li>
+        <li>
+          <a href="#" class="active">1</a>
+        </li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#"> Next »</a></li>
+      </ul>
+      <!-- pagination buttons  -->
+    </div>
+
+    <!-- footer section starts here  -->
+    <footer class="footer">
+      <div class="container medium-2 large-4 gap-2 p-1 medium-p-2">
+        <div>
+          <div class="logo">
+            <img
+              class="height-full width-full"
+              src="./../vendor/assets/logo.png"
+              alt="banner image"
+            /><span>CouponCraze</span>
+          </div>
+          <p>Your gateway to exclusive discounts and savings</p>
+          <div class="social-links">
+            <a href="/#"><i class="fab fa-facebook-f"></i></a>
+            <a href="/#"><i class="fab fa-twitter"></i></a>
+            <a href="/#"><i class="fab fa-instagram"></i></a>
+            <a href="/#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="title">Quick Links</h5>
+          <ul class="footer-links">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">All Coupons</a>
+            </li>
+            <li>
+              <a href="/">Stores</a>
+            </li>
+            <li>
+              <a href="/">Categories</a>
+            </li>
+            <li>
+              <a href="/">Savings Tips</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="title">Coupon Policies</h5>
+          <ul class="footer-links">
+            <li>
+              <a href="/">How it Works</a>
+            </li>
+            <li>
+              <a href="/">FAQ</a>
+            </li>
+            <li>
+              <a href="/">Terms of Services</a>
+            </li>
+            <li>
+              <a href="/">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="title">Get Exclusive Deals</h5>
+          <p>Subscribe to receive special offers before anyone else</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Your email address" required />
+            <button class="btn" type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Copyright & Bottom Bar -->
+      <div class="footer-bottom">
+        © 2025 CouponSavings. All rights reserved.
+      </div>
+    </footer>
+    <!-- footer section ends here  -->
+  </body>
+</html>
