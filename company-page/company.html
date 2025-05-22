@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./../vendor/styles/grid.css" />
+    <link rel="stylesheet" href="./../vendor/styles/main.css" />
+    <link rel="stylesheet" href="./company.css" />
+  </head>
+  <body>
+    <!-- navbar section starts here  -->
+    <header class="navbar">
+      <nav class="flex justify-between align-center container">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <img
+            class="height-full width-full"
+            src="./../vendor/assets/logo.png"
+            alt="logo"
+          />
+          <span class="brand">CouponCraze</span>
+        </a>
+        <!-- Mobile Menu Button -->
+        <button class="btn hamburger">
+          <i class="fas fa-bars fa-2xl"></i>
+        </button>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li><a href="/coupon_list" class="">Latest Coupons</a></li>
+          <li>
+            <a href="/coupon_list/exclusive" class="">Exclusive Coupons</a>
+          </li>
+          <li><a href="/coupon_list/ending_soon" class="">Ending Soon</a></li>
+          <li><a href="/categories" class="">Categories</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar section ends here  -->
+
+    <!-- breadcrumb section  -->
+    <section class="breadcrumb bg-primary text-white">
+      <ul class="container flex align-center gap-1">
+        <li><a href="/">Home</a></li>
+        <li>categories</li>
+      </ul>
+    </section>
+    <!-- breadcrumb section ends here  -->
+
+    <!-- company cards section -->
+    <div class="container py-3">
+      <div class="medium-2 large-4 gap-1 large-gap-2">
+        <a href="#" class="company-card">
+          <img
+            class="height-full width-full"
+            src="./../vendor/assets/company/nike.png"
+            alt="banner image"
+          />
+          <h3 class="title">Nike</h3>
+        </a>
+
+        <a href="#" class="company-card">
+          <img
+            class="height-full width-full"
+            src="./../vendor/assets/company/adidas.png"
+            alt="banner image"
+          />
+          <h3 class="title">Adidas</h3>
+        </a>
+
+        <a href="#" class="company-card">
+          <img
+            class="height-full width-full"
+            src="./../vendor/assets/company/apple.png"
+            alt="banner image"
+          />
+          <h3 class="title">Apple</h3>
+        </a>
+
+        <a href="#" class="company-card">
+          <img
+            class="height-full width-full"
+            src="./../vendor/assets/company/samsung.png"
+            alt="banner image"
+          />
+          <h3 class="title">Samsung</h3>
+        </a>
+
+        <a href="#" class="company-card">
+          <img
+            class="height-full width-full"
+            src="./../vendor/assets/company/zara.png"
+            alt="banner image"
+          />
+          <h3 class="title">Zara</h3>
+        </a>
+
+        <a href="#" class="company-card">
+          <img
+            class="height-full width-full"
+            src="./../vendor/assets/company/amazon.png"
+            alt="banner image"
+          />
+          <h3 class="title">Amazon</h3>
+        </a>
+
+      </div>
+    </div>
+<!-- company cards section ends -->
+
+    <!-- footer section starts here  -->
+    <footer class="footer">
+      <div class="container medium-2 large-4 gap-2 p-1 medium-p-2">
+        <div>
+          <div class="logo">
+            <img
+              class="height-full width-full"
+              src="./../vendor/assets/logo.png"
+              alt="banner image"
+            /><span>CouponCraze</span>
+          </div>
+          <p>Your gateway to exclusive discounts and savings</p>
+          <div class="social-links">
+            <a href="/#"><i class="fab fa-facebook-f"></i></a>
+            <a href="/#"><i class="fab fa-twitter"></i></a>
+            <a href="/#"><i class="fab fa-instagram"></i></a>
+            <a href="/#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="title">Quick Links</h5>
+          <ul class="footer-links">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">All Coupons</a>
+            </li>
+            <li>
+              <a href="/">Stores</a>
+            </li>
+            <li>
+              <a href="/">Categories</a>
+            </li>
+            <li>
+              <a href="/">Savings Tips</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="title">Coupon Policies</h5>
+          <ul class="footer-links">
+            <li>
+              <a href="/">How it Works</a>
+            </li>
+            <li>
+              <a href="/">FAQ</a>
+            </li>
+            <li>
+              <a href="/">Terms of Services</a>
+            </li>
+            <li>
+              <a href="/">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="title">Get Exclusive Deals</h5>
+          <p>Subscribe to receive special offers before anyone else</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Your email address" required />
+            <button class="btn" type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Copyright & Bottom Bar -->
+      <div class="footer-bottom">
+        © 2025 CouponSavings. All rights reserved.
+      </div>
+    </footer>
+    <!-- footer section ends here  -->
+  </body>
+</html>
