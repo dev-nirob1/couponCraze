@@ -66,7 +66,7 @@
 }
 /* section title ends  */
 
-/* coupon card starts  */
+/* coupon card style  */
 .coupon-card {
   position: relative;
   background: linear-gradient(
@@ -1267,6 +1267,7 @@
   .hamburger {
     display: none;
   }
+  /*-------- navbar ends here -------- */
   /* -------ending soon starts ----------- */
   .ending-image {
     bottom: -6rem;
