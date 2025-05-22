@@ -1,7 +1,4 @@
 /* ----------------------common styles ---------------------- */
-.hero,.categories,.ending-soon,.featured-coupon,.about-us,.timeline-section,.pricing,.company-section,.statistics{
-  position: relative;
-}
 /* section title starts */
 .section-container {
   display: flex;
@@ -141,49 +138,6 @@
 }
 /* coupon card ends  */
 
-/* background icons styles  */
-.bg-icons {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  pointer-events: none;
-  opacity: .5;
-  z-index: 0;
-}
-
-.left-icons {
-  left: 0;
-}
-
-.right-icons {
-  right: 0;
-}
-
-.icon {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-}
-
-.left-icons .icon:nth-child(1),
-.left-icons .icon:nth-child(2) {
-  left: -40px;
-}
-
-.right-icons .icon:nth-child(1),
-.right-icons .icon:nth-child(2) {
-  right: -40px;
-}
-
-.left-icons .icon:nth-child(1), .right-icons .icon:nth-child(1) {
-  top: 10%;
-}
-
-.left-icons .icon:nth-child(2), .right-icons .icon:nth-child(2) {
-  bottom: 15%;
-}
-
-/* background icons styles  */
 /* ----------------------common styles ---------------------- */
 
 /*---------- navbar styles here ------------- */
@@ -806,7 +760,7 @@
   cursor: pointer;
 }
 
-.pricing-card .icon {
+.pricing-card .price-icon {
   font-size: 5rem;
   color: var(--primary-color);
 }
