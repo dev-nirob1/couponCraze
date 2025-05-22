@@ -88,24 +88,7 @@
 }
 
 /* --------------company banner section ends here-------------------*/
-.company-banner {
-  margin-top: 5.6rem;
-  min-height: 40vh;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(to right, var(--primary-light-color), var(--primary-lighten-color));
-}
-.banner-content{
-  height: 100%;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-}
 
-.company-banner .image {
-  flex: 1;
-}
 /* --------------company banner section ends here-------------------*/
 
 /* --------select dropdown--------- */
