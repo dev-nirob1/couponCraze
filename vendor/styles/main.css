@@ -412,7 +412,7 @@ h6 {
   left: 0;
   height: 6rem;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1.35rem;
   border-top: 5px dashed var(--primary-color);
   text-align: center;
   background-color: rgb(from var(--primary-color) r g b/ 30%);
