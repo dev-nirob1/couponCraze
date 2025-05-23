@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Category Details Page</title>
+   <!-- font-awesome cdn  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <!-- link to external css file  -->
     <link rel="stylesheet" href="./../vendor/styles/grid.css" />
     <link rel="stylesheet" href="./../vendor/styles/main.css" />
-    <!-- <link rel="stylesheet" href="./category-details.css" /> -->
   </head>
   <body>
-    <!-- navbar section starts here  -->
+    <!-- ========================================
+    1. NAVBAR SECTION
+========================================= -->
     <header class="navbar">
       <nav class="flex justify-between align-center container">
         <!-- Logo -->
@@ -25,7 +28,7 @@
           />
           <span class="brand">CouponCraze</span>
         </a>
-        <!-- Mobile Menu Button -->
+        <!-- Mobile Menu Toggle Button -->
         <button class="btn hamburger">
           <i class="fas fa-bars fa-2xl"></i>
         </button>
@@ -44,9 +47,10 @@
         </ul>
       </nav>
     </header>
-    <!-- navbar section ends here  -->
 
-    <!-- breadcrumb section  -->
+    <!-- ========================================
+    2. BREADCRUMB SECTION
+========================================= -->
     <section class="breadcrumb bg-primary text-white">
       <ul class="container flex align-center gap-1">
         <li><a href="/">Home</a></li>
@@ -55,6 +59,9 @@
       </ul>
     </section>
 
+    <!-- ========================================
+    3. SHORTING FILTER SECTION
+========================================= -->
     <div class="container py-3">
       <!-- sorting dropdown  -->
       <div class="flex justify-end mb-2 pr-1">
@@ -69,16 +76,23 @@
           </select>
         </div>
       </div>
-      <!-- sorting dropdown  -->
 
-      <!---------------------- coupons section starts ---------------- -->
+      <!-- ===============================
+    4. COUPONS SECTION 
+================================ -->
       <div class="medium-2 large-3 gap-2 px-1">
+        <!-- Individual Coupon Card -->
         <div class="coupon-card">
+          <!-- Coupon Title and Description -->
           <div class="card-body">
             <div>
               <h5 class="sub-title">Summer Special</h5>
-              <p>Enjoy amazing discounts on all your favorite summer essentials...</p>
+              <p>
+                Enjoy amazing discounts on all your favorite summer
+                essentials...
+              </p>
             </div>
+            <!-- Discount Percentage  -->
             <div>
               <span>Flat</span>
               <h3 class="title price">42 <span>%</span></h3>
@@ -91,17 +105,23 @@
             </div>
           </div>
         </div>
+        <!-- Individual Coupon Card -->
         <div class="coupon-card">
+          <!-- Coupon Title and Description -->
           <div class="card-body">
             <div>
               <h5 class="sub-title">Tech Bonanza</h5>
-              <p>Upgrade your gadgets with our exclusive technology offers...</p>
+              <p>
+                Upgrade your gadgets with our exclusive technology offers...
+              </p>
             </div>
+            <!-- Discount Percentage  -->
             <div>
               <span>Flat</span>
               <h3 class="title price">34 <span>%</span></h3>
             </div>
           </div>
+          <!-- Coupon Footer with Validity and CTA -->
           <div class="card-footer">
             <div class="flex justify-between align-center">
               <p>Validity: 2025-05-31</p>
@@ -109,17 +129,24 @@
             </div>
           </div>
         </div>
+        <!-- Individual Coupon Card -->
         <div class="coupon-card">
+          <!-- Coupon Title and Description -->
           <div class="card-body">
             <div>
               <h5 class="sub-title">Fashion Fiesta</h5>
-              <p>Revamp your wardrobe with our trendy collection at great prices...</p>
+              <p>
+                Revamp your wardrobe with our trendy collection at great
+                prices...
+              </p>
             </div>
+            <!-- Discount Percentage  -->
             <div>
               <span>Flat</span>
               <h3 class="title price">34 <span>%</span></h3>
             </div>
           </div>
+          <!-- Coupon Footer with Validity and CTA -->
           <div class="card-footer">
             <div class="flex justify-between align-center">
               <p>Validity: 2025-05-31</p>
@@ -127,17 +154,21 @@
             </div>
           </div>
         </div>
+        <!-- Individual Coupon Card -->
         <div class="coupon-card">
+          <!-- Coupon Title and Description -->
           <div class="card-body">
             <div>
               <h5 class="sub-title">Home Refresh</h5>
               <p>Transform your living space with our home decor specials...</p>
             </div>
+            <!-- Discount Percentage  -->
             <div>
               <span>Flat</span>
               <h3 class="title price">34 <span>%</span></h3>
             </div>
           </div>
+          <!-- Coupon Footer with Validity and CTA -->
           <div class="card-footer">
             <div class="flex justify-between align-center">
               <p>Validity: 2025-05-31</p>
@@ -145,17 +176,23 @@
             </div>
           </div>
         </div>
+        <!-- Individual Coupon Card -->
         <div class="coupon-card">
           <div class="card-body">
+            <!-- Coupon Title and Description -->
             <div>
               <h5 class="sub-title">Wellness Wave</h5>
-              <p>Pamper yourself with our health and beauty product discounts...</p>
+              <p>
+                Pamper yourself with our health and beauty product discounts...
+              </p>
             </div>
+            <!-- Discount Percentage -->
             <div>
               <span>Flat</span>
               <h3 class="title price">34 <span>%</span></h3>
             </div>
           </div>
+          <!-- Coupon Footer with Validity and CTA -->
           <div class="card-footer">
             <div class="flex justify-between align-center">
               <p>Validity: 2025-05-31</p>
@@ -163,17 +200,23 @@
             </div>
           </div>
         </div>
+        <!-- Individual Coupon Card -->
         <div class="coupon-card">
           <div class="card-body">
+            <!-- Coupon Title and Description -->
             <div>
               <h5 class="sub-title">Seasonal Savings</h5>
-              <p>Don't miss out on these limited-time offers for the season...</p>
+              <p>
+                Don't miss out on these limited-time offers for the season...
+              </p>
             </div>
+            <!-- Discount Percentage -->
             <div>
               <span>Flat</span>
               <h3 class="title price">15 <span>%</span></h3>
             </div>
           </div>
+          <!-- Coupon Footer with Validity and CTA -->
           <div class="card-footer">
             <div class="flex justify-between align-center">
               <p>Validity: 2025-05-31</p>
@@ -182,9 +225,10 @@
           </div>
         </div>
       </div>
-      <!---------------------- coupons section ends ---------------- -->
-
-      <!-- pagination buttons  -->
+      <!-- ========================================
+    5. PAGINATION
+========================================= -->
+      <!-- pagination components with button and next-prev  -->
       <ul class="pagination">
         <li><a href="/coupon_list">« Prev </a></li>
         <li>
@@ -194,9 +238,10 @@
         <li><a href="#">3</a></li>
         <li><a href="#"> Next »</a></li>
       </ul>
-      <!-- pagination buttons  -->
     </div>
-
+    <!-- ========================================
+    6. FOOTER SECTION
+========================================= -->
     <!-- footer section starts here  -->
     <footer class="footer">
       <div class="container medium-2 large-4 gap-2 p-1 medium-p-2">
@@ -272,6 +317,5 @@
         © 2025 CouponSavings. All rights reserved.
       </div>
     </footer>
-    <!-- footer section ends here  -->
   </body>
 </html>
