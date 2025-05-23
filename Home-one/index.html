@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coupon Craze</title>
+
+    <!-- font-awesome cdn  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
+    <!-- link to external css file  -->
     <link rel="stylesheet" href="./../../vendor/styles/grid.css" />
     <link rel="stylesheet" href="./../../vendor/styles/main.css" />
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
   </head>
   <body>
-    <!-- navbar section starts here  -->
+    <!-- ========================================
+    1. NAVBAR SECTION
+========================================= -->
     <header class="navbar">
       <nav class="flex justify-between align-center container">
         <!-- Logo -->
@@ -26,7 +29,7 @@
           />
           <span class="brand">CouponCraze</span>
         </a>
-        <!-- Mobile Menu Button -->
+        <!-- Mobile Menu Toggle Button -->
         <button class="btn hamburger">
           <i class="fas fa-bars fa-2xl"></i>
         </button>
@@ -45,12 +48,14 @@
         </ul>
       </nav>
     </header>
-    <!-- navbar section ends here  -->
 
-    <!-- -------------------- banner section starts here ----------------------  -->
+    <!-- ========================================
+    2. BANNER / HERO SECTION
+========================================= -->
     <section class="hero bg-light">
       <div class="container">
         <div class="content medium-2 align-center justify-between">
+          <!-- Decorative Stars -->
           <div class="star-1">
             <img src="./../vendor/assets/stars/star-1.png" alt="" />
           </div>
@@ -60,6 +65,7 @@
           <div class="star-3">
             <img src="./../vendor/assets/stars/angle-1.png" alt="" />
           </div>
+          <!-- Text Content -->
           <div class="text-content text-white">
             <div>
               <h1 class="hero-title">Exclusive Coupons</h1>
@@ -72,6 +78,7 @@
             </p>
             <button class="btn">Explore Now</button>
           </div>
+          <!-- Hero Image -->
           <div class="img">
             <img
               class="height-full width-full"
@@ -82,18 +89,20 @@
         </div>
       </div>
     </section>
-    <!-- -------------------- banner section ends here ----------------------  -->
 
-    <!-- -------------------- categories section starts here ----------------------  -->
-    <!-- section title  -->
+    <!-- ========================================
+     CATEGORIES SECTION
+========================================= -->
+    <!-- Section Heading -->
     <section class="categories">
       <div class="container">
         <div class="section-container">
           <div class="bar-code"><i class="fas fa-barcode"></i></div>
           <div class="section-name"><h3 class="title">Browse Category</h3></div>
         </div>
-        <!-- loading skeleton  -->
+        <!-- Category Cards Grid for mobile- 1column, tablets- 2column and from large - 3column -->
         <div class="medium-2 large-5 gap-1 medium-gap-2">
+          <!-- Category Cards with image, title, deals count and a cta button -->
           <div class="category-card">
             <div class="p-2">
               <div class="category-image">
@@ -110,6 +119,7 @@
               <a href="#" class="btn">Go to Category </a>
             </div>
           </div>
+          <!-- Category Cards with image, title, deals count and a cta button -->
           <div class="category-card">
             <div class="p-2">
               <div class="category-image">
@@ -126,6 +136,7 @@
               <a href="#" class="btn">Go to Category </a>
             </div>
           </div>
+          <!-- Category Cards with image, title, deals count and a cta button -->
           <div class="category-card">
             <div class="p-2">
               <div class="category-image">
@@ -142,6 +153,7 @@
               <a href="#" class="btn">Go to Category </a>
             </div>
           </div>
+          <!-- Category Cards with image, title, deals count and a cta button -->
           <div class="category-card">
             <div class="p-2">
               <div class="category-image">
@@ -158,7 +170,7 @@
               <a href="#" class="btn">Go to Category </a>
             </div>
           </div>
-          <!--v-if--><!-- link button  -->
+          <!-- Link to All Categories -->
           <a href="#" class="link-card"
             ><div class="flex flex-col justify-center align-center">
               <div>
@@ -177,25 +189,33 @@
         </div>
       </div>
     </section>
-    <!-- -------------------- categories section ends here ----------------------  -->
 
-    <!-- -------------------- ending soon section starts here ----------------------  -->
+    <!-- ========================================
+     ENDING SOON SECTION
+========================================= -->
     <section class="ending-soon bg-secondary">
       <div class="container relative">
+        <!-- Section Graphic -->
         <div class="ending-image">
           <img src="./../vendor/assets/ending-soon.svg" alt="" />
         </div>
+        <!-- Grid: Countdown + Coupon Cards -->
         <div class="large-3 gap-1 medium-gap-2 align-center">
+          <!-- Countdown Timer -->
           <div class="text-center large-span-1">
             <div>
               <h3 class="title">Ending Soon</h3>
               <h5 class="sub-title mb-2">
                 Grab these deals before they expire!
               </h5>
+
+              <!-- Analog clock animation  -->
               <div class="clock">
                 <div class="hour-hand"></div>
                 <div class="minute-hand"></div>
               </div>
+
+              <!-- Digital Countdown -->
               <div class="countdown-timer">
                 <div>
                   <h4 class="title">11</h4>
@@ -212,9 +232,10 @@
               </div>
             </div>
           </div>
-          <!-- Coupon Cards Grid -->
+          <!-- Coupon Cards container with 2 column from medium device -->
           <div class="large-span-2">
             <div class="masonry-grid">
+              <!-- individual coupon-card  -->
               <div class="masonry-item">
                 <div class="coupon-card">
                   <div class="card-body">
@@ -240,6 +261,7 @@
                   </div>
                 </div>
               </div>
+              <!-- individual coupon-card  -->
               <div class="masonry-item">
                 <div class="coupon-card">
                   <div class="card-body">
@@ -265,6 +287,7 @@
                   </div>
                 </div>
               </div>
+              <!-- individual coupon-card  -->
               <div class="masonry-item">
                 <div class="coupon-card">
                   <div class="card-body">
@@ -290,6 +313,7 @@
                   </div>
                 </div>
               </div>
+              <!-- individual coupon-card  -->
               <div class="masonry-item">
                 <div class="coupon-card">
                   <div class="card-body">
@@ -320,30 +344,31 @@
         </div>
       </div>
     </section>
-    <!-- -------------------- ending soon section ends here ----------------------  -->
 
-    <!-- -------------------- about section starts here ----------------------  -->
+    <!-- ========================================
+     ABOUT SECTION START
+========================================= -->
     <section class="about-us bg-white">
       <div class="container large-2 align-center gap-2">
-        <!-- image div  -->
+        <!-- About Image -->
         <div class="image">
           <img
             src="https://cdn.pixabay.com/photo/2024/10/06/22/36/shipping-9101364_960_720.png"
             alt="image"
           />
         </div>
+
+        <!-- trust-building content -->
         <div>
-          <div>
-            <h3 class="title">
-              Your Trusted Coupon &amp; Savings Marketplace.
-            </h3>
-          </div>
+          <!-- Section Title -->
+          <h3 class="title">Your Trusted Coupon &amp; Savings Marketplace.</h3>
+          <!-- Section Description -->
           <p>
             We help over 500,000 shoppers save money daily, offering exclusive
             deals in more than 70 countries. Our global reach ensures you get
             the best discounts, anytime, anywhere.
           </p>
-          <!-- icon + title container  -->
+          <!-- Feature Icons List -->
           <ul class="all-2 align-center gap-1">
             <li>
               <i class="fa-solid fa-tag"></i><span>Exclusive Discounts</span>
@@ -358,28 +383,32 @@
               <i class="fa-solid fa-shield"></i><span>Verified Deals</span>
             </li>
           </ul>
-          <!-- icon + title container ends  -->
+          <!-- Motivational Quote -->
           <p class="quote">
             "Why pay full price? Join millions of smart shoppers who unlock
             exclusive savings every day. Your next deal is just a click away!"
           </p>
+          <!-- CTA Button -->
           <button class="btn">OUR SERVICES</button>
         </div>
       </div>
     </section>
-    <!-- -------------------- about section ends here ----------------------  -->
 
-    <!-- -------------------- featured coupon section starts here ----------------------  -->
+    <!-- ========================================
+     FEATURED COUPON SECTION
+========================================= -->
     <section class="featured-coupon">
       <div class="container">
-        <!-- Section Header -->
+        <!-- Section Header with Icon and Title -->
         <div class="section-container">
           <div class="bar-code"><i class="fas fa-barcode"></i></div>
           <div class="section-name"><h3 class="title">Featured Coupon</h3></div>
         </div>
-        <!-- Coupon Grid -->
+        <!-- Coupons Grid Layout small-medium-large = 1/2/3 -->
         <div class="medium-2 large-3 gap-1 large-gap-2">
+          <!-- Individual Coupon Card -->
           <div class="coupon-card">
+            <!-- Coupon Title and Description -->
             <div class="card-body">
               <div>
                 <h5 class="sub-title">Summer Special</h5>
@@ -388,6 +417,7 @@
                   essentials...
                 </p>
               </div>
+              <!-- Discount Percentage  -->
               <div>
                 <span>Flat</span>
                 <h3 class="title price">42 <span>%</span></h3>
@@ -400,7 +430,9 @@
               </div>
             </div>
           </div>
+          <!-- Individual Coupon Card -->
           <div class="coupon-card">
+            <!-- Coupon Title and Description -->
             <div class="card-body">
               <div>
                 <h5 class="sub-title">Tech Bonanza</h5>
@@ -408,11 +440,13 @@
                   Upgrade your gadgets with our exclusive technology offers...
                 </p>
               </div>
+              <!-- Discount Percentage  -->
               <div>
                 <span>Flat</span>
                 <h3 class="title price">34 <span>%</span></h3>
               </div>
             </div>
+            <!-- Coupon Footer with Validity and CTA -->
             <div class="card-footer">
               <div class="flex justify-between align-center">
                 <p>Validity: 2025-05-31</p>
@@ -420,7 +454,9 @@
               </div>
             </div>
           </div>
+          <!-- Individual Coupon Card -->
           <div class="coupon-card">
+            <!-- Coupon Title and Description -->
             <div class="card-body">
               <div>
                 <h5 class="sub-title">Fashion Fiesta</h5>
@@ -429,11 +465,13 @@
                   prices...
                 </p>
               </div>
+              <!-- Discount Percentage  -->
               <div>
                 <span>Flat</span>
                 <h3 class="title price">34 <span>%</span></h3>
               </div>
             </div>
+            <!-- Coupon Footer with Validity and CTA -->
             <div class="card-footer">
               <div class="flex justify-between align-center">
                 <p>Validity: 2025-05-31</p>
@@ -441,7 +479,9 @@
               </div>
             </div>
           </div>
+          <!-- Individual Coupon Card -->
           <div class="coupon-card">
+            <!-- Coupon Title and Description -->
             <div class="card-body">
               <div>
                 <h5 class="sub-title">Home Refresh</h5>
@@ -449,11 +489,13 @@
                   Transform your living space with our home decor specials...
                 </p>
               </div>
+              <!-- Discount Percentage  -->
               <div>
                 <span>Flat</span>
                 <h3 class="title price">34 <span>%</span></h3>
               </div>
             </div>
+            <!-- Coupon Footer with Validity and CTA -->
             <div class="card-footer">
               <div class="flex justify-between align-center">
                 <p>Validity: 2025-05-31</p>
@@ -461,8 +503,10 @@
               </div>
             </div>
           </div>
+          <!-- Individual Coupon Card -->
           <div class="coupon-card">
             <div class="card-body">
+              <!-- Coupon Title and Description -->
               <div>
                 <h5 class="sub-title">Wellness Wave</h5>
                 <p>
@@ -470,11 +514,13 @@
                   discounts...
                 </p>
               </div>
+              <!-- Discount Percentage -->
               <div>
                 <span>Flat</span>
                 <h3 class="title price">34 <span>%</span></h3>
               </div>
             </div>
+            <!-- Coupon Footer with Validity and CTA -->
             <div class="card-footer">
               <div class="flex justify-between align-center">
                 <p>Validity: 2025-05-31</p>
@@ -482,8 +528,8 @@
               </div>
             </div>
           </div>
-          <!-- link button-->
-          <a href="/coupon_list/exclusive" class="link-card"
+          <!-- Link Card to All Exclusive Coupons -->
+          <a href="#" class="link-card"
             ><div class="flex flex-col justify-center align-center">
               <div>
                 <img
@@ -504,15 +550,19 @@
         </div>
       </div>
     </section>
-    <!-- -------------------- featured coupon section ends here ----------------------  -->
 
-    <!-- -------------------- how it works section starts here ----------------------  -->
+    <!-- ========================================
+     HOW IT WORKS SECTION 
+========================================= -->
     <section class="timeline-section bg-lighten">
       <div class="container">
         <div class="large-3 how-it-works">
+          <!-- Timeline Image -->
           <div class="timeline">
             <img src="./../vendor/assets/timeline/timeline.png" alt="" />
           </div>
+
+          <!-- Text Intro and Step 1 -->
           <div>
             <div class="pb-5">
               <h4 class="title">
@@ -537,6 +587,7 @@
               </div>
             </div>
           </div>
+          <!-- Step 2 -->
           <div class="middle align-center">
             <div class="two">
               <div class="timeline-card">
@@ -549,6 +600,7 @@
               </div>
             </div>
           </div>
+          <!-- Step 3 -->
           <div>
             <div class="three">
               <div class="timeline-card">
@@ -564,64 +616,74 @@
         </div>
       </div>
     </section>
-    <!-- -------------------- how it works section ends here ----------------------  -->
 
-    <!-- -------------------- companies section starts here ----------------------  -->
+    <!-- ===============================
+     COMPANIES SECTION
+================================ -->
     <section class="company-section">
       <div class="container">
+        <!-- section header  -->
         <div class="section-container">
           <div class="bar-code"><i class="fas fa-barcode"></i></div>
           <div class="section-name"><h3 class="title">Company Offer</h3></div>
         </div>
+        <!-- grid container : mobile-tablets-desktop = 1/2/4  -->
         <div class="medium-2 large-4 gap-1 medium-gap-2">
-          <a href="#" class="company-card"
-            ><img
+          <!-- clickable card with logo and name  -->
+          <a href="#" class="company-card">
+            <img
               class="height-full width-full"
               src="./../vendor/assets/company/nike.png"
               alt="banner image"
             />
-            <h3 class="title">Nike</h3></a
-          >
+            <h3 class="title">Nike</h3>
+          </a>
+          <!-- clickable card with logo and name  -->
           <a href="#" class="company-card">
             <img
               class="height-full width-full"
               src="./../vendor/assets/company/adidas.png"
               alt="banner image"
             />
-            <h3 class="title">Adidas</h3></a
-          >
+            <h3 class="title">Adidas</h3>
+          </a>
+          <!-- clickable card with logo and name  -->
           <a href="#" class="company-card">
             <img
               class="height-full width-full"
               src="./../vendor/assets/company/apple.png"
               alt="banner image"
             />
-            <h3 class="title">Apple</h3></a
-          >
+            <h3 class="title">Apple</h3>
+          </a>
+          <!-- clickable card with logo and name  -->
           <a href="#" class="company-card">
             <img
               class="height-full width-full"
               src="./../vendor/assets/company/samsung.png"
               alt="banner image"
             />
-            <h3 class="title">Samsung</h3></a
-          >
+            <h3 class="title">Samsung</h3>
+          </a>
+          <!-- clickable card with logo and name  -->
           <a href="#" class="company-card">
             <img
               class="height-full width-full"
               src="./../vendor/assets/company/zara.png"
               alt="banner image"
             />
-            <h3 class="title">Zara</h3></a
-          >
+            <h3 class="title">Zara</h3>
+          </a>
+          <!-- clickable card with logo and name  -->
           <a href="#" class="company-card">
             <img
               class="height-full width-full"
               src="./../vendor/assets/company/amazon.png"
               alt="banner image"
             />
-            <h3 class="title">Amazon</h3></a
-          >
+            <h3 class="title">Amazon</h3>
+          </a>
+          <!-- Link to All Categories -->
           <div class="medium-span-2">
             <!-- link card/btn -->
             <a href="#" class="link-card"
@@ -637,25 +699,29 @@
                     companies.
                   </p>
                 </div>
-              </div></a
-            >
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- -------------------- companies section ends here ----------------------  -->
 
-    <!-- -------------------- pricing section starts here ----------------------  -->
+    <!-- ===============================
+     PRICING SECTION
+================================ -->
     <section class="pricing bg-lighten">
       <div class="container">
+        <!-- Section header -->
         <div class="section-container">
           <div class="bar-code"><i class="fas fa-barcode"></i></div>
           <div class="section-name"><h3 class="title">Simple Pricing</h3></div>
         </div>
+        <!-- card container grid: small/medium/large = 1/2/3 -->
         <div
           class="medium-2 large-3 align-center justify-center gap-1 medium-gap-2"
         >
           <div>
+            <!-- Pricing Card -->
             <div class="pricing-card">
               <span class="price-icon">
                 <i class="fa-solid fa-circle-dollar-to-slot"></i>
@@ -669,6 +735,7 @@
             </div>
           </div>
           <div>
+            <!-- Pricing Card with exclusive badge -->
             <div class="pricing-card">
               <div class="flex justify-end">
                 <div class="exclusive-badge">
@@ -688,6 +755,7 @@
             </div>
           </div>
           <div>
+            <!-- Pricing Card -->
             <div class="pricing-card">
               <span class="price-icon"
                 ><i class="fa-solid fa-circle-dollar-to-slot"></i
@@ -701,13 +769,15 @@
         </div>
       </div>
     </section>
-    <!-- -------------------- pricing section ends here ----------------------  -->
 
-    <!-- -------------------- statistics section starts here ----------------------  -->
+    <!-- ===============================
+     STATISTICS SECTION
+================================ -->
     <div class="bg-white statistics">
       <div class="container">
+        <!-- grid-container: small/large = 2/4 -->
         <ul class="small-2 larger-4 gap-2 medium-gap-1 stats-content">
-          <!-- individual stats component  -->
+          <!-- individual stat component  -->
           <li>
             <i class="fa-solid fa-tag"></i>
             <div>
@@ -715,6 +785,7 @@
               <p>Active Coupons</p>
             </div>
           </li>
+          <!-- individual stat component  -->
           <li>
             <i class="fa-solid fa-users"></i>
             <div>
@@ -722,6 +793,7 @@
               <p>Happy Customers</p>
             </div>
           </li>
+          <!-- individual stat component  -->
           <li>
             <i class="fa-solid fa-store"></i>
             <div>
@@ -729,6 +801,7 @@
               <p>Partner Stores</p>
             </div>
           </li>
+          <!-- individual stat component  -->
           <li>
             <i class="fa-solid fa-percent"></i>
             <div>
@@ -739,12 +812,14 @@
         </ul>
       </div>
     </div>
-    <!-- -------------------- statistics section ends here ----------------------  -->
 
-    <!-- -------------------- testimonials section starts here ----------------------  -->
+    <!-- ===============================
+     TESTIMONIALS SECTION
+================================ -->
     <div class="testimonials">
       <div class="container">
         <div class="medium-8 align-center gap-2">
+          <!-- Text content -->
           <div class="text-content medium-span-3 flex flex-col justify-center">
             <h3 class="title">
               Feedback &amp; <br />
@@ -756,7 +831,9 @@
             </p>
           </div>
           <div class="medium-span-5 medium-py-5">
+            <!-- Cards container: testimonial cards -->
             <div class="cards-container">
+              <!-- Individual testimonial card -->
               <div class="testimonial-card">
                 <div class="flex align-center gap-1">
                   <img
@@ -778,6 +855,7 @@
                   </p>
                 </div>
               </div>
+              <!-- Individual testimonial card -->
               <div class="testimonial-card">
                 <div class="flex align-center gap-1">
                   <img
@@ -799,6 +877,7 @@
                   </p>
                 </div>
               </div>
+              <!-- Individual testimonial card -->
               <div class="testimonial-card">
                 <div class="flex align-center gap-1">
                   <img
@@ -820,6 +899,7 @@
                   </p>
                 </div>
               </div>
+              <!-- Individual testimonial card -->
               <div class="testimonial-card">
                 <div class="flex align-center gap-1">
                   <img
@@ -862,6 +942,7 @@
                   </p>
                 </div>
               </div>
+              <!-- Individual testimonial card -->
               <div class="testimonial-card">
                 <div class="flex align-center gap-1">
                   <img
@@ -884,6 +965,7 @@
                 </div>
               </div>
             </div>
+            <!-- carousel buttons -->
             <div class="btn-container">
               <button class="btn" id="prev">Prev</button
               ><button class="btn" id="next">Next</button>
@@ -892,18 +974,21 @@
         </div>
       </div>
     </div>
-    <!-- -------------------- testimonials section ends here ----------------------  -->
 
-    <!-- -------------------- newsletter section starts here ----------------------  -->
+    <!-- ===============================
+     NEWSLETTER SECTION
+================================ -->
     <div class="news-letter">
       <div class="container">
+        <!-- content for newsletter -->
         <div class="content medium-5 align-center">
           <div class="medium-span-2 text-center">
             <h5 class="sub-title">Subscribe Our</h5>
             <h3 class="title">NewsLetter</h3>
           </div>
+          <!-- Input and subscribe button -->
           <div class="medium-span-3 flex pl-1">
-            <!-- <input v-bind="$attrs" v-model="modelValue" emit="$emit('update:modelValue', $event.target.value)"> --><input
+            <input
               class="bg-white"
               placeholder="Please Enter Your Email"
             /><button class="btn bg-secondary text-white">Subscribe</button>
@@ -911,11 +996,13 @@
         </div>
       </div>
     </div>
-    <!-- -------------------- newsletter section ends here ----------------------  -->
 
-    <!-- footer section starts here  -->
+    <!-- ===============================
+     FOOTER SECTION START
+================================ -->
     <footer class="footer">
       <div class="container medium-2 large-4 gap-2 p-1 medium-p-2">
+         <!-- Footer logo and social media links -->
         <div>
           <div class="logo">
             <img
@@ -932,6 +1019,7 @@
             <a href="/#"><i class="fab fa-pinterest-p"></i></a>
           </div>
         </div>
+        <!-- Quick navigation links -->
         <div>
           <h5 class="title">Quick Links</h5>
           <ul class="footer-links">
@@ -952,6 +1040,7 @@
             </li>
           </ul>
         </div>
+         <!-- Coupon policy related links -->
         <div>
           <h5 class="title">Coupon Policies</h5>
           <ul class="footer-links">
@@ -972,6 +1061,7 @@
             </li>
           </ul>
         </div>
+         <!-- Newsletter subscription form -->
         <div>
           <h5 class="title">Get Exclusive Deals</h5>
           <p>Subscribe to receive special offers before anyone else</p>
@@ -983,7 +1073,7 @@
           </form>
         </div>
       </div>
-      <!-- Copyright & Bottom Bar -->
+      <<!-- Footer bottom copyright -->
       <div class="footer-bottom">
         © 2025 CouponSavings. All rights reserved.
       </div>
