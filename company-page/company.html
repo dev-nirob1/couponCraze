@@ -4,28 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Company Page</title>
+    <!-- font-awesome cdn  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <!-- link to external css file  -->
     <link rel="stylesheet" href="./../vendor/styles/grid.css" />
     <link rel="stylesheet" href="./../vendor/styles/main.css" />
-    <!-- <link rel="stylesheet" href="./company.css" /> -->
   </head>
   <body>
-    <!-- navbar section starts here  -->
+    <!-- ========================================
+    1. NAVBAR SECTION
+========================================= -->
     <header class="navbar">
       <nav class="flex justify-between align-center container">
         <!-- Logo -->
-        <a href="#" class="logo">
-          <img
+        <a href="#" class="logo"
+          ><img
             class="height-full width-full"
             src="./../vendor/assets/logo.png"
             alt="logo"
           />
           <span class="brand">CouponCraze</span>
         </a>
-        <!-- Mobile Menu Button -->
+        <!-- Mobile Menu Toggle Button -->
         <button class="btn hamburger">
           <i class="fas fa-bars fa-2xl"></i>
         </button>
@@ -44,20 +47,23 @@
         </ul>
       </nav>
     </header>
-    <!-- navbar section ends here  -->
-
-    <!-- breadcrumb section  -->
+  <!-- ========================================
+    2. BREADCRUMB SECTION
+========================================= -->
     <section class="breadcrumb bg-primary text-white">
       <ul class="container flex align-center gap-1">
         <li><a href="/">Home</a></li>
-        <li>Companies</li>
+        <li>companies</li>
       </ul>
     </section>
-    <!-- breadcrumb section ends here  -->
 
-    <!-- company cards section -->
+    <!-- ===============================
+    3. COMPANIES SECTION
+================================ -->
     <div class="container py-4">
+       <!-- grid container : mobile-tablets-desktop = 1/2/4  -->
       <div class="medium-2 large-4 gap-1 large-gap-2 px-1">
+         <!-- clickable card with logo and name  -->
         <a href="#" class="company-card">
           <img
             class="height-full width-full"
@@ -66,7 +72,7 @@
           />
           <h3 class="title">Nike</h3>
         </a>
-
+ <!-- clickable card with logo and name  -->
         <a href="#" class="company-card">
           <img
             class="height-full width-full"
@@ -75,7 +81,7 @@
           />
           <h3 class="title">Adidas</h3>
         </a>
-
+ <!-- clickable card with logo and name  -->
         <a href="#" class="company-card">
           <img
             class="height-full width-full"
@@ -84,7 +90,7 @@
           />
           <h3 class="title">Apple</h3>
         </a>
-
+ <!-- clickable card with logo and name  -->
         <a href="#" class="company-card">
           <img
             class="height-full width-full"
@@ -93,7 +99,7 @@
           />
           <h3 class="title">Samsung</h3>
         </a>
-
+ <!-- clickable card with logo and name  -->
         <a href="#" class="company-card">
           <img
             class="height-full width-full"
@@ -102,7 +108,7 @@
           />
           <h3 class="title">Zara</h3>
         </a>
-
+ <!-- clickable card with logo and name  -->
         <a href="#" class="company-card">
           <img
             class="height-full width-full"
@@ -111,12 +117,12 @@
           />
           <h3 class="title">Amazon</h3>
         </a>
-
       </div>
     </div>
-<!-- company cards section ends -->
 
-    <!-- footer section starts here  -->
+  <!-- ========================================
+    4. FOOTER SECTION
+========================================= -->
     <footer class="footer">
       <div class="container medium-2 large-4 gap-2 p-1 medium-p-2">
         <div>
@@ -191,6 +197,5 @@
         © 2025 CouponSavings. All rights reserved.
       </div>
     </footer>
-    <!-- footer section ends here  -->
   </body>
 </html>
