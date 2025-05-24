@@ -19,5 +19,9 @@ const navbarAnimation = () => {
     lastScroll = currentScroll;
   });
 };
+
+const getCode = () => {
+  const getBtn = document.getElementById('get-code');
+}
 navbarAnimation()
 
