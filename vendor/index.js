@@ -20,9 +20,21 @@ const navbarAnimation = () => {
   });
 };
 
+const navbar = document.querySelector('.navbar');
+const toggleMenu = document.querySelector('.hamburger');
+const nav_links = document.querySelector('.nav-links')
+
+toggleMenu.addEventListener('click', ()=> {
+  if(nav_links.classList.contains('active')){
+    nav_links.classList.remove('active')
+  }else{
+    nav_links.classList.add('active')
+  }
+})
+
+const modal = document.querySelector(".modal");
 const getCodeButton = document.querySelectorAll(".coupon-card button");
 const closeModal = document.querySelectorAll(".modal .close-btn");
-const modal = document.querySelector(".modal");
 
 getCodeButton.forEach((open) => {
   open.addEventListener("click", () => {

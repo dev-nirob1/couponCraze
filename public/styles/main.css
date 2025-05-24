@@ -376,8 +376,6 @@ h6 {
 .hamburger {
   display: block;
   color: var(--white-color);
-  height: 2rem;
-  width: 3rem;
   border: none;
   cursor: pointer;
 }
