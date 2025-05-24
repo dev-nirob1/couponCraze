@@ -7,7 +7,6 @@
    License: [Insert License Type if applicable]
    =================================== */
 
-
 /* ===============================
     GOOGLE FONTS
 =============================== */
@@ -382,7 +381,97 @@ h6 {
   border: none;
   cursor: pointer;
 }
-/* ---------- 4. COUPON CARDS ---------- */
+
+/* ---------- 4. Popup component ---------- */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: 80vh;
+  max-height: 90vh;
+  padding: 2rem;
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  overflow: auto;
+  z-index: 1001;
+  animation: modalFadeIn 0.3s ease-out;
+}
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+.modal-details .title {
+  padding: 2.5rem 0 3.5rem 0;
+  text-align: center;
+  color: var(--white-color);
+}
+.discount {
+  position: absolute;
+  bottom: -4rem;
+  left: 50%;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background-color: var(--alternative-color);
+  color: var(--white-color);
+}
+
+.discount .sub-title {
+  line-height: 7rem;
+  margin: 0 auto;
+  width: fit-content;
+}
+.modal-body ul {
+  margin-top: 3rem;
+  padding: 0.5rem 0 0.25rem 0;
+  list-style: none;
+}
+.modal-body ul i {
+  color: var(--primary-color);
+}
+.modal-body ul li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0.75rem 0;
+}
+
+.modal-content .close-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border-radius: 0 0.5rem 0 0.5rem;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  z-index: 1002;
+  margin: 0;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- 5. COUPON CARDS ---------- */
 .coupon-card {
   position: relative;
   background: linear-gradient(
@@ -1490,6 +1579,19 @@ h6 {
   .breadcrumb ul {
     font-size: 1.5rem;
   }
+
+  /* popup component  */
+  .modal-content {
+    width: 90%;
+    height: 85vh;
+  }
+  .discount {
+    left: 85%;
+  }
+  .modal-body ul {
+    margin-top: 0;
+  }
+
   /* ========================
      PAGE SECTIONS
   ======================== */
