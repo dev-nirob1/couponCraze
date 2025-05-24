@@ -10,20 +10,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <!-- link to external css file  -->
-    <link rel="stylesheet" href="./../vendor/styles/grid.css" />
-    <link rel="stylesheet" href="./../vendor/styles/main.css" />
+    <link rel="stylesheet" href="./../public/styles/grid.css" />
+    <link rel="stylesheet" href="./../public/styles/main.css" />
   </head>
   <body>
     <!-- ========================================
     1. NAVBAR SECTION
 ========================================= -->
-    <header class="navbar">
+    <header class="navbar bg-secondary">
       <nav class="flex justify-between align-center container">
         <!-- Logo -->
-        <a href="#" class="logo"
-          ><img
+        <a href="#" class="logo">
+          <img
             class="height-full width-full"
-            src="./../vendor/assets/logo.png"
+            src="./../public/assets/logo.png"
             alt="logo"
           />
           <span class="brand">CouponCraze</span>
@@ -35,19 +35,17 @@
         <!-- Navigation Links -->
         <ul class="nav-links">
           <li>
-            <a href="/">Home</a>
+            <a href="../index.html">Home</a>
           </li>
-          <li><a href="/coupon_list" class="">Latest Coupons</a></li>
+          <li><a href="../latest-coupon-page/latest.html" class="">Latest Coupons</a></li>
           <li>
-            <a href="/coupon_list/exclusive" class="">Exclusive Coupons</a>
+            <a href="../exclusive-coupon-page/exclusive.html" class="">Exclusive Coupons</a>
           </li>
-          <li><a href="/coupon_list/ending_soon" class="">Ending Soon</a></li>
-          <li><a href="/categories" class="">Categories</a></li>
-          <li><a href="/login">Login</a></li>
+          <li><a href="../ending-soon-page/ending.html" class="">Ending Soon</a></li>
+          <li><a href="../categories-page/categories.html" class="">Categories</a></li>
         </ul>
       </nav>
     </header>
-
     <!-- ========================================
     2. BREADCRUMB SECTION
 ========================================= -->
