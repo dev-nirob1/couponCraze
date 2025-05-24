@@ -22,33 +22,22 @@ const navbarAnimation = () => {
 
 const getCodeButton = document.querySelectorAll(".coupon-card button");
 const closeModal = document.querySelectorAll(".modal .close-btn");
-const modal = document.querySelector('.modal')
+const modal = document.querySelector(".modal");
 
-getCodeButton.forEach(open => {
+getCodeButton.forEach((open) => {
   open.addEventListener("click", () => {
-    modal.style.display = 'flex'
+    modal.style.display = "flex";
     console.log("modal open ");
   });
-})
+});
 
-closeModal.forEach(close => {
+closeModal.forEach((close) => {
   close.addEventListener("click", () => {
-    modal.style.display = 'none'
+    modal.style.display = "none";
     console.log("modal closed ");
   });
-  
-})
+});
 
-// console.log(getCodeButton);
-// const getCode = () => {
-//   getBtn.addEventListener("click", () => {
-//     isModalOpen = true;
-//   });
-//   closeModal.addEventListener("click", () => {
-//     isModalOpen = false;
-//     console.log(isModalOpen);
-//   });
-// };
-// getCode();
+console.log("javascript loaded");
 
 navbarAnimation();
