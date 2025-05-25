@@ -1409,6 +1409,7 @@ h6 {
   background: var(--white-color);
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
+  transition: all .5 ease-in-out;
 }
 
 .testimonial-card p {
