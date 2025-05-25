@@ -1446,6 +1446,7 @@ h6 {
 
 .news-letter input {
   outline: none;
+  padding: 1rem;
   border: 2px solid var(--secondary-color);
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
