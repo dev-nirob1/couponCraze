@@ -97,5 +97,5 @@ const owlCarousel = () => {
     }
   });
 };
-owlCarousel();
 navbarAnimation();
+// owlCarousel();
