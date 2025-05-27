@@ -371,7 +371,17 @@ h6 {
 .navbar ul li a:hover {
   color: var(--alternative-color);
 }
-
+/* dropdown menu  */
+.dropdown-container {
+  position: relative;
+}
+.dropdown-menu {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+.dropdown-menu a {
+  display: block;
+}
 /* Mobile menu toggle */
 .hamburger {
   display: block;
@@ -1410,7 +1420,7 @@ h6 {
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
   scroll-snap-align: start;
-  transition: all .5 ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 
 .testimonial-card p {
@@ -1764,6 +1774,24 @@ h6 {
 
   .navbar ul li a:hover::after {
     width: 100%;
+  }
+  /* dropdonw menu  */
+  .dropdown-menu {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 10rem;
+    margin: 0;
+    padding: 2rem 1rem;
+    background-color: var(--secondary-color);
+    display: none;
+    transition: all 0.5s;
+  }
+  .dropdown-container:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu a {
+    margin-bottom: 0.25rem;
   }
   /* expand navlinks on desktop  */
   .hamburger {
