@@ -98,4 +98,4 @@ const owlCarousel = () => {
   });
 };
 navbarAnimation();
-// owlCarousel();
+owlCarousel();

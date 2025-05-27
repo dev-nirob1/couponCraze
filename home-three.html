@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home page - 2</title>
+    <title>Home page - 3</title>
     <!-- font-awesome cdn  -->
     <link
       rel="stylesheet"
@@ -12,7 +12,6 @@
     <!-- link to external css file  -->
     <link rel="stylesheet" href="./public/styles/grid.css" />
     <link rel="stylesheet" href="./public/styles/main.css" />
-    <link rel="stylesheet" href="./home-two.css" />
 
     <!-- swiper js cdn  -->
     <link
@@ -21,10 +20,64 @@
     />
   </head>
   <body>
+       <!-- ========================================
+    POPUP/ MODAL
+========================================= -->
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-details">
+          <!-- Coupon Header -->
+          <div class="bg-primary relative">
+            <h3 class="title">Ramadan Special Offer</h3>
+            <div class="discount">
+              <h5 class="sub-title">20% OFF</h5>
+            </div>
+          </div>
+
+          <!-- modal Body -->
+          <div class="modal-body">
+            <ul>
+              <li>
+                <i class="fa-solid fa-stopwatch text-secondary"></i>
+                <span class="text-bold">Expires:</span>
+                <span>2025-04-28 (11:59 PM)</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-tag text-secondary"></i>
+                <span class="text-bold">Category:</span>
+                <span>Ramadan Essentials</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-store text-secondary"></i>
+                <span class="text-bold">Valid at:</span>
+                <span>All participating stores</span>
+              </li>
+            </ul>
+            <p>
+              Enjoy 20% discount on all grocery items during this holy month of
+              Ramadan. Minimum purchase of $50 required. Offer valid until
+              supplies last. Cannot be combined with other promotions.
+            </p>
+
+            <button class="btn bg-secondary width-full text-white">
+              <i class="fa-solid fa-ticket"></i> Reveal Code
+            </button>
+          </div>
+          <small class="text-center text-light d-block">
+            *Terms and condition applies
+          </small>
+        </div>
+
+        <!-- Close Button -->
+        <button class="btn close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
     <!-- ========================================
      NAVBAR SECTION
 ========================================= -->
-    <header class="navbar">
+   <header class="navbar">
       <nav class="flex justify-between align-center container">
         <!-- Logo -->
         <a href="#" class="logo">
@@ -42,10 +95,12 @@
         <!-- Navigation Links -->
         <ul class="nav-links">
           <li class="dropdown-container">
-            <a href="./index.html">Home <i class="fa-solid fa-plus"></i></a>
+            <a href="./index.html"
+              >Home <i class="fa-solid fa-angle-down"></i
+            ></a>
             <div class="dropdown-menu">
-              <a href="./home-2.html">Home 1</a>
-              <a href="./home-3.html">Home 2</a>
+              <a href="./home-two.html">Home 1</a>
+              <a href="./home-three.html">Home 2</a>
             </div>
           </li>
           <li><a href="./latest.html" class="">Latest Coupons</a></li>
@@ -57,28 +112,106 @@
         </ul>
       </nav>
     </header>
-
     <!-- ========================================
      HERO SECTION (SLIDER)
 ========================================= -->
 
-    <div class="home-two-banner">
-      <div class="video-bg">
-        <video muted autoplay loop src="./public/assets/online-shopping.mp4"></video>
-      </div>
-      <div class="banner-content">
-        <div>
-          <h1 class="hero-title">Guaranteed Working Coupon Codes</h1>
-          <p>
-            We thoroughly test all our promo codes to ensure they work—so you save time and money at checkout. Enjoy a 95% success rate on all our offers!
-          </p>
-          <div class="flex gap-1 justify-center">
-            <button class="btn bg-secondary text-white">GET DEALS</button>
-            <button class="btn bg-alternative text-white">LEARN MORE</button>
+    <section class="home-three-banner relative bg-primary px-1">
+      <div class="container pt-2">
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper py-5">
+            <div class="swiper-slide">
+              <div class="medium-2 align-center justify-between gap-3">
+                <!-- Text Content -->
+                <div>
+                  <div>
+                    <h1 class="hero-title">Exclusive Coupons &</h1>
+                    <h1 class="hero-title">Huge Savings</h1>
+                  </div>
+                  <p>
+                    Unlock thousands of verified deals and save up to 80% at
+                    your favorite retailers. New coupons added daily for maximum
+                    savings!
+                  </p>
+                  <button class="btn bg-secondary text-white">
+                    Explore Now
+                  </button>
+                </div>
+                <!-- Hero Image -->
+                <div class="img">
+                  <img
+                    class="width-full height-full"
+                    src="https://media.istockphoto.com/id/687572186/photo/handsome-young-man-in-shopping.jpg?s=612x612&w=0&k=20&c=P5__LphyJf3BZd4ha1SKHgzv1UC_7foYccB9L6-29Qo="
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="medium-2 align-center justify-between gap-4">
+                <!-- Text Content -->
+                <div>
+                  <div>
+                    <h1 class="hero-title">Exclusive Coupons &</h1>
+                    <h1 class="hero-title">Huge Savings</h1>
+                  </div>
+                  <p>
+                    Unlock thousands of verified deals and save up to 80% at
+                    your favorite retailers. New coupons added daily for maximum
+                    savings!
+                  </p>
+                  <button class="btn bg-secondary text-white">
+                    Explore Now
+                  </button>
+                </div>
+                <!-- Hero Image -->
+                <div class="img">
+                  <img
+                    class="width-full height-full"
+                    src="https://media.istockphoto.com/id/687572186/photo/handsome-young-man-in-shopping.jpg?s=612x612&w=0&k=20&c=P5__LphyJf3BZd4ha1SKHgzv1UC_7foYccB9L6-29Qo="
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="medium-2 align-center justify-between gap-4">
+                <!-- Text Content -->
+                <div>
+                  <div>
+                    <h1 class="hero-title">Exclusive Coupons &</h1>
+                    <h1 class="hero-title">Huge Savings</h1>
+                  </div>
+                  <p>
+                    Unlock thousands of verified deals and save up to 80% at
+                    your favorite retailers. New coupons added daily for maximum
+                    savings!
+                  </p>
+                  <button class="btn bg-secondary text-white">
+                    Explore Now
+                  </button>
+                </div>
+                <!-- Hero Image -->
+                <div class="img">
+                  <img
+                    class="width-full height-full"
+                    src="https://media.istockphoto.com/id/687572186/photo/handsome-young-man-in-shopping.jpg?s=612x612&w=0&k=20&c=P5__LphyJf3BZd4ha1SKHgzv1UC_7foYccB9L6-29Qo="
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Navigation buttons -->
+         <div class="swiper-btn">
+           <div class="button-prev"><i class="fa-solid fa-arrow-right"></i></div>
+           <div class="button-next"><i class="fa-solid fa-arrow-left"></i></div>
+         </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- ========================================
      CATEGORIES SECTION

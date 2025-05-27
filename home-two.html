@@ -12,7 +12,6 @@
     <!-- link to external css file  -->
     <link rel="stylesheet" href="./public/styles/grid.css" />
     <link rel="stylesheet" href="./public/styles/main.css" />
-    <link rel="stylesheet" href="./home-3.css" />
 
     <!-- swiper js cdn  -->
     <link
@@ -21,6 +20,60 @@
     />
   </head>
   <body>
+       <!-- ========================================
+    POPUP/ MODAL
+========================================= -->
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-details">
+          <!-- Coupon Header -->
+          <div class="bg-primary relative">
+            <h3 class="title">Ramadan Special Offer</h3>
+            <div class="discount">
+              <h5 class="sub-title">20% OFF</h5>
+            </div>
+          </div>
+
+          <!-- modal Body -->
+          <div class="modal-body">
+            <ul>
+              <li>
+                <i class="fa-solid fa-stopwatch text-secondary"></i>
+                <span class="text-bold">Expires:</span>
+                <span>2025-04-28 (11:59 PM)</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-tag text-secondary"></i>
+                <span class="text-bold">Category:</span>
+                <span>Ramadan Essentials</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-store text-secondary"></i>
+                <span class="text-bold">Valid at:</span>
+                <span>All participating stores</span>
+              </li>
+            </ul>
+            <p>
+              Enjoy 20% discount on all grocery items during this holy month of
+              Ramadan. Minimum purchase of $50 required. Offer valid until
+              supplies last. Cannot be combined with other promotions.
+            </p>
+
+            <button class="btn bg-secondary width-full text-white">
+              <i class="fa-solid fa-ticket"></i> Reveal Code
+            </button>
+          </div>
+          <small class="text-center text-light d-block">
+            *Terms and condition applies
+          </small>
+        </div>
+
+        <!-- Close Button -->
+        <button class="btn close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
     <!-- ========================================
      NAVBAR SECTION
 ========================================= -->
@@ -42,10 +95,12 @@
         <!-- Navigation Links -->
         <ul class="nav-links">
           <li class="dropdown-container">
-            <a href="./index.html">Home <i class="fa-solid fa-plus"></i></a>
+            <a href="./index.html"
+              >Home <i class="fa-solid fa-angle-down"></i
+            ></a>
             <div class="dropdown-menu">
-              <a href="./home-2.html">Home 1</a>
-              <a href="./home-3.html">Home 2</a>
+              <a href="./home-two.html">Home 1</a>
+              <a href="./home-three.html">Home 2</a>
             </div>
           </li>
           <li><a href="./latest.html" class="">Latest Coupons</a></li>
@@ -57,74 +112,29 @@
         </ul>
       </nav>
     </header>
-   <!-- ========================================
+
+    <!-- ========================================
      HERO SECTION (SLIDER)
 ========================================= -->
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="home-two-banner">
-            <div class="banner-content">
-              <div>
-                <h1 class="hero-title">Guaranteed Working Coupon Codes</h1>
-                <p>
-                  We test all our promo codes so you don't waste time at
-                  checkout. 95% success rate on all offers!
-                </p>
-                <div class="flex gap-1 justify-center">
-                  <button class="btn bg-secondary text-white">GET DEALS</button>
-                  <button class="btn bg-alternative text-white">
-                    LEARN MORE
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="home-two-banner">
-            <div class="banner-content">
-              <div>
-                <h1 class="hero-title">Exclusive Discount Coupons & Deals</h1>
-                <p>
-                  Get instant access to verified promo codes, special offers,
-                  and limited-time deals from your favorite brands. Save big on
-                  every purchase!
-                </p>
-                <div class="flex gap-1 justify-center">
-                  <button class="btn bg-secondary text-white">GET DEALS</button>
-                  <button class="btn bg-alternative text-white">
-                    LEARN MORE
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="home-two-banner">
-            <div class="banner-content">
-              <div>
-                <h1 class="hero-title">Limited-Time Coupon Codes</h1>
-                <p>
-                  Hurry! Grab these exclusive discounts before they expire.
-                  Fresh deals updated daily for maximum savings.
-                </p>
-                <div class="flex gap-1 justify-center">
-                  <button class="btn bg-secondary text-white">GET DEALS</button>
-                  <button class="btn bg-alternative text-white">
-                    LEARN MORE
-                  </button>
-                </div>
-              </div>
-            </div>
+
+    <div class="home-two-banner">
+      <div class="video-bg">
+        <video muted autoplay loop src="./public/assets/online-shopping.mp4"></video>
+      </div>
+      <div class="banner-content">
+        <div>
+          <h1 class="hero-title">Guaranteed Working Coupon Codes</h1>
+          <p>
+            We thoroughly test all our promo codes to ensure they work—so you save time and money at checkout. Enjoy a 95% success rate on all our offers!
+          </p>
+          <div class="flex gap-1 justify-center">
+            <button class="btn bg-secondary text-white">GET DEALS</button>
+            <button class="btn bg-alternative text-white">LEARN MORE</button>
           </div>
         </div>
       </div>
-
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
+
     <!-- ========================================
      CATEGORIES SECTION
 ========================================= -->
