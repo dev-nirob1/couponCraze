@@ -29,17 +29,9 @@
     max-width: 60%;
   }
   .banner-content .btn {
-    background-color: var(--secondary-color);
-    color: var(--white-color);
     font-size: 1rem;
     font-weight: 600;
     padding: 1.1rem 2.5rem;
     border-radius: 0.5rem;
-  }
-  .banner-content .highlight {
-    font-size: 2rem;
-    padding: 1rem;
-    color: var(--primary-color);
-    background-color: var(--primary-lighten-color);
   }
 }
