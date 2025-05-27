@@ -3,47 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home 1</title>
+    <title>Home page - 2</title>
     <link rel="stylesheet" href="./public/styles/grid.css" />
     <link rel="stylesheet" href="./public/styles/main.css" />
-    <style>
-      .home-two-banner {
-        background-color: var(--primary-color);
-        text-align: center;
-        color: var(--white-color);
-        width: 100vw;
-        height: 100vh;
-        padding-top: 5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+    <link rel="stylesheet" href="./home-two.css" />
 
-      .banner-content p {
-        font-size: 1.25rem;
-        margin: 0.75rem 0;
-      }
+    <!-- swiper js cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-      @media (min-width: 992px) {
-        .banner-content {
-          max-width: 60%;
-        }
-        .banner-content .btn {
-          background-color: var(--secondary-color);
-          color: var(--white-color);
-          font-size: 1rem;
-          font-weight: 600;
-          padding: 1.1rem 2.5rem;
-          border-radius: 0.5rem;
-        }
-        .banner-content .highlight {
-          font-size: 2rem;
-          padding: 1rem;
-          color: var(--primary-color);
-          background-color: var(--primary-lighten-color);
-        }
-      }
-    </style>
   </head>
   <body>
     <!-- ========================================
@@ -79,22 +49,81 @@
       </nav>
     </header>
 
-
-    <div class="home-two-banner">
-      <div class="banner-content">
-        <div>
-          <h3 class="title">Unlock Exclusive Coupon Savings</h3>
-          <h1 class="hero-title">Hurry, Top <span class="highlight">Coupons</span> Expire Soon!</h1>
-          <p>
-            Join our free coupon community and start saving on your favorite
-            brands. Discover limited-time offers, daily discounts, and exclusive
-            promo codes—all in one place.
-          </p>
-          <div>
-            <button class="btn bg-alternative text-white">GET DEALS</button>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="home-two-banner">
+            <div class="banner-content">
+              <div>
+                <h3 class="title">Unlock Exclusive Coupon Savings</h3>
+                <h1 class="hero-title">
+                  Hurry, Top <span class="highlight">Coupons</span> Expire Soon!
+                </h1>
+                <p>
+                  Join our free coupon community and start saving on your
+                  favorite brands. Discover limited-time offers, daily
+                  discounts, and exclusive promo codes—all in one place.
+                </p>
+                <div>
+                  <button class="btn bg-alternative text-white">
+                    GET DEALS
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="home-two-banner">
+            <div class="banner-content">
+              <div>
+                <h3 class="title">Unlock Exclusive Coupon Savings</h3>
+                <h1 class="hero-title">
+                  Hurry, Top <span class="highlight">Coupons</span> Expire Soon!
+                </h1>
+                <p>
+                  Join our free coupon community and start saving on your
+                  favorite brands. Discover limited-time offers, daily
+                  discounts, and exclusive promo codes—all in one place.
+                </p>
+                <div>
+                  <button class="btn bg-alternative text-white">
+                    GET DEALS
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="home-two-banner">
+            <div class="banner-content">
+              <div>
+                <h3 class="title">Unlock Exclusive Coupon Savings</h3>
+                <h1 class="hero-title">
+                  Hurry, Top <span class="highlight">Coupons</span> Expire Soon!
+                </h1>
+                <p>
+                  Join our free coupon community and start saving on your
+                  favorite brands. Discover limited-time offers, daily
+                  discounts, and exclusive promo codes—all in one place.
+                </p>
+                <div>
+                  <button class="btn bg-alternative text-white">
+                    GET DEALS
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./vendor/swiper.js"></script>
   </body>
 </html>

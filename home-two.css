@@ -1,0 +1,45 @@
+.home-two-banner {
+  background-color: var(--primary-color);
+  text-align: center;
+  color: var(--white-color);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content p {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    padding: 2rem;
+    color: var(--primary-color)!important;
+    background-color: var(--primary-lighten-color);
+    border-radius: .5rem;
+}
+
+
+@media (min-width: 992px) {
+  .banner-content {
+    max-width: 60%;
+  }
+  .banner-content .btn {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1.1rem 2.5rem;
+    border-radius: 0.5rem;
+  }
+  .banner-content .highlight {
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--primary-color);
+    background-color: var(--primary-lighten-color);
+  }
+}
