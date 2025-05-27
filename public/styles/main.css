@@ -812,10 +812,10 @@ h6 {
 }
 
 /* ===================================
-   HOME PAGE STYLES
+   HOME PAGE --1 STYLES
 =================================== */
 
-/* -------- 1. Hero Section -------- */
+/* -------- 1. HERO SECTION-------- */
 /* Main hero container with gradient and animated stars */
 .hero {
   padding: 2rem 1rem;
@@ -1472,6 +1472,45 @@ h6 {
 }
 
 /* ===================================
+   HOME PAGE --2 STYLES
+=================================== */
+
+/* -------- HERO SECTION -------- */
+.home-two-banner {
+  position: relative;
+  text-align: center;
+  color: var(--white-color);
+  width: 100vw;
+  height: auto;
+  padding: 5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-two-banner .banner-content {
+  margin: 5rem 0;
+  z-index: 5;
+}
+.banner-content p {
+  font-size: 1.25rem;
+  margin-top: 1.4rem;
+}
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-bg video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ===================================
    LATEST COUPON PAGE STYLES
    (Note: Uses reusable components styled in COMMON COMPONENTS)
 =================================== */
@@ -1519,7 +1558,7 @@ h6 {
   margin-top: 5.5rem;
 }
 
-.banner-content {
+.company-banner .banner-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1529,12 +1568,12 @@ h6 {
   width: 100%;
 }
 
-.banner-text {
+.company-banner .banner-text {
   flex: 1;
   min-width: 280px;
 }
 
-.company-logo {
+.company-banner .company-logo {
   width: 120px;
   height: 120px;
   object-fit: cover;
@@ -1606,7 +1645,7 @@ h6 {
   /* ========================
      PAGE SECTIONS
   ======================== */
-  /* ----------Hero Section --------------  */
+  /* ----------HERO SECTION (HOME-PAGE - 1) --------------  */
   .hero .content {
     margin-top: 3rem;
   }
@@ -1644,6 +1683,11 @@ h6 {
     z-index: -1;
   }
 
+  /* ----------HERO SECTION -- 2 (HOME PAGE-2)--------------  */
+  .home-two-banner .banner-content {
+    margin: 10rem 1rem;
+    width: 80%;
+  }
   /* ----- ENDING SOON ----- */
   .masonry-grid {
     columns: 2;
@@ -1805,6 +1849,16 @@ h6 {
   /* ========================
      PAGE SECTIONS
   ======================== */
+  /* ----------HERO SECTION -- 2 (HOME PAGE-2)--------------  */
+  .home-two-banner .banner-content {
+    max-width: 70%;
+  }
+  .home-two-banner .banner-content .btn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1.1rem 2.5rem;
+    border-radius: 0.5rem;
+  }
 
   /* -------ending soon ------- */
   .ending-image {
