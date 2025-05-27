@@ -1,29 +1,40 @@
 .home-two-banner {
+  position: relative;
   background-color: var(--primary-color);
   text-align: center;
   color: var(--white-color);
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+.banner-content {
+  padding: 5rem 1rem;
+}
 .banner-content p {
   font-size: 1.25rem;
   margin-top: 2rem;
 }
 
 .swiper-button-next,
-.swiper-button-prev{
-    padding: 2rem;
-    color: var(--primary-color)!important;
-    background-color: var(--primary-lighten-color);
-    border-radius: .5rem;
+.swiper-button-prev {
+  color: var(--white-color) !important;
 }
 
-
+@media (min-width: 768px) {
+  .banner-content {
+    max-width: 80%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 2rem;
+    color: var(--primary-color) !important;
+    background-color: var(--primary-lighten-color);
+    border-radius: 0.5rem;
+  }
+}
 @media (min-width: 992px) {
   .banner-content {
     max-width: 60%;
