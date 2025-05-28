@@ -12,6 +12,51 @@
 =============================== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+.coupon {
+  position: absolute;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  color: #111827;
+  width: 220px;
+  opacity: 1;
+}
+
+.coupon-1 {
+  top: 0;
+  right: 0;
+  transform: translateX(-120%) rotate(-5deg);
+  animation: slideInLeft 0.8s ease-out 0.8s forwards;
+  border-top: 5px solid #f43f5e;
+}
+
+.coupon-2 {
+  top: 50px;
+  right: 0;
+  transform: translateX(-50%) rotate(2deg);
+  animation: slideInUp 0.8s ease-out 1s forwards;
+  border-top: 5px solid #6c5ce7;
+}
+
+
+
+.img-full {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.banner-img::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  width: 60px;
+  height: 100%;
+  background: linear-gradient(to right, var(--primary-color), rgb(from var(--primary-color) r g b / 0%) );
+}
+.banner-img{
+  position: relative;
+}
 /* ===================================
    RESET STYLES
 =================================== */
@@ -819,7 +864,7 @@ h6 {
 /* Main hero container with gradient and animated stars */
 .hero {
   padding: 2rem 1rem;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--primary-color);
 }
 .hero .content {
@@ -1479,8 +1524,8 @@ h6 {
   text-align: center;
   color: var(--white-color);
   width: 100vw;
-  height: auto;
-  padding: 5rem 1rem;
+  min-height: 100vh;
+  padding: 3rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1513,27 +1558,14 @@ h6 {
 .home-three-banner {
   background-color: var(--primary-color);
   color: var(--white-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
-.button-next,
-.button-prev {
-  position: absolute;
-  top: 53%;
-  z-index: 99;
-  padding: 0.5rem 1rem;
-  color: var(--primary-color);
-  background-color: var(--primary-lighten-color);
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
 
-.button-next {
-  left: 0;
-}
-.button-prev {
-  right: 0;
-}
+
 
 /* ===================================
    LATEST COUPON PAGE STYLES
@@ -1722,18 +1754,7 @@ h6 {
     height: 350px;
   }
   /* swiper navigation button  */
-  .button-next,
-  .button-prev {
-    width: fit-content;
-    top: 88%;
-    font-size: 1.5rem;
-  }
-  .button-next {
-    left: 42%;
-  }
-  .button-prev {
-    right: 42%;
-  }
+
   /* ----- ENDING SOON ----- */
   .masonry-grid {
     columns: 2;
@@ -1918,16 +1939,7 @@ h6 {
     border-radius: 0.5rem;
   }
   /* swiper navigation button  */
-  .button-next,
-  .button-prev {
-    top: 89%;
-  }
-  .button-next {
-    left: 44%;
-  }
-  .button-prev {
-    right: 44%;
-  }
+ 
   /* -------ending soon ------- */
   .ending-image {
     bottom: -6rem;
