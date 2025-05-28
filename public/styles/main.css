@@ -819,6 +819,7 @@ h6 {
 /* Main hero container with gradient and animated stars */
 .hero {
   padding: 2rem 1rem;
+  height: 100vh;
   background-color: var(--primary-color);
 }
 .hero .content {
@@ -866,8 +867,8 @@ h6 {
 .star-2,
 .star-3 {
   position: absolute;
-  height: 130px;
-  width: 130px;
+  height: 80px;
+  width: 80px;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -1385,7 +1386,7 @@ h6 {
 .cards-container {
   padding: 1rem 0.75rem;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   gap: 2rem;
   transition: all 0.5s ease-in-out;
@@ -1406,9 +1407,6 @@ h6 {
   background-color: var(--secondary-color);
 }
 
-.cards-container::-webkit-scrollbar {
-  display: none;
-}
 
 /* testimonials/feedback card */
 .testimonial-card {
