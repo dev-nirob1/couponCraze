@@ -1551,7 +1551,7 @@ h6 {
 
  .swiper-btn {
   position: absolute;
-  bottom: 5rem;
+  bottom: 1rem;
   left: 1rem;
 }
 
@@ -1898,21 +1898,21 @@ h6 {
     width: 100%;
   }
   /* dropdonw menu  */
-  .dropdown-menu {
+  .navbar .dropdown-menu {
     position: absolute;
-    top: 2rem;
+    top: 1.75rem;
     left: 0;
     width: 10rem;
     margin: 0;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     background-color: var(--secondary-color);
     display: none;
     transition: all 0.5s;
   }
-  .dropdown-container:hover .dropdown-menu {
+  .navbar .dropdown-container:hover .dropdown-menu {
     display: block;
   }
-  .dropdown-menu a {
+  .navbar .dropdown-menu a {
     margin-bottom: 0.25rem;
   }
   /* expand navlinks on desktop  */
