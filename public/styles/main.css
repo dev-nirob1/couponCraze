@@ -1741,8 +1741,11 @@ h6 {
   }
 
   /* ----------HERO SECTION -- 2 (HOME PAGE-2)--------------  */
+  .home-two-banner {
+    min-height: 100vh;
+  }
   .home-two-banner .banner-content {
-    margin: 10rem 1rem;
+    /* margin: 10rem 1rem; */
     width: 80%;
   }
 
