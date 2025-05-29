@@ -12,6 +12,7 @@
     <!-- link to external css file  -->
     <link rel="stylesheet" href="./public/styles/grid.css" />
     <link rel="stylesheet" href="./public/styles/main.css" />
+    <link rel="stylesheet" href="./slider.css" />
 
     <!-- swiper js cdn  -->
     <link
@@ -20,122 +21,123 @@
     />
   </head>
   <body>
-    <section class="home-three-banner relative bg-primary px-1">
-      <div class="container pt-2">
-        <!-- Swiper Container -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper py-5">
-            <div class="swiper-slide">
-              <div class="medium-2 align-center justify-between gap-3">
-                <!-- Text Content -->
-                <div>
-                  <div>
-                    <h1 class="hero-title">Exclusive Coupons &</h1>
-                    <h1 class="hero-title">Huge Savings</h1>
-                  </div>
-                  <p>
-                    Unlock thousands of verified deals and save up to 80% at
-                    your favorite retailers. New coupons added daily for maximum
-                    savings!
-                  </p>
-                  <button class="btn bg-secondary text-white">
-                    Explore Now
-                  </button>
-                </div>
-                <!-- Hero Image -->
-                <div class="img">
-                  <img
-                    class="width-full height-full"
-                    src="https://media.istockphoto.com/id/687572186/photo/handsome-young-man-in-shopping.jpg?s=612x612&w=0&k=20&c=P5__LphyJf3BZd4ha1SKHgzv1UC_7foYccB9L6-29Qo="
-                    alt=""
-                  />
-                </div>
-                <div class="coupon coupon-1">
-                  <div class="coupon-discount">50% OFF</div>
-                  <div class="coupon-brand">Amazon</div>
-                  <div class="coupon-expiry">Expires in 2 days</div>
-                </div>
-                <div class="coupon coupon-2">
-                  <div class="coupon-discount">$20 OFF</div>
-                  <div class="coupon-brand">Nike</div>
-                  <div class="coupon-expiry">Expires in 5 days</div>
-                </div>
-              </div>
+        <!-- ========================================
+     NAVBAR SECTION
+========================================= -->
+    <header class="navbar">
+      <nav class="flex justify-between align-center container">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <img
+            class="height-full width-full"
+            src="./public/assets/logo.png"
+            alt="logo"
+          />
+          <span class="brand">CouponCraze</span>
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="btn hamburger">
+          <i class="fas fa-bars fa-2xl"></i>
+        </button>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li class="dropdown-container">
+            <a href="./index.html"
+              >Home <i class="fa-solid fa-angle-down"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="./home-two.html">Home 1</a>
+              <a href="./home-three.html">Home 2</a>
             </div>
+          </li>
+          <li><a href="./latest.html" class="">Latest Coupons</a></li>
+          <li>
+            <a href="./exclusive.html" class="">Exclusive Coupons</a>
+          </li>
+          <li><a href="./ending.html" class="">Ending Soon</a></li>
+          <li><a href="./categories.html" class="">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
 
-            <div class="swiper-slide">
-              <div class="medium-2 align-center justify-between gap-4">
-                <!-- Text Content -->
-                <div>
-                  <div>
-                    <h1 class="hero-title">Exclusive Coupons &</h1>
-                    <h1 class="hero-title">Huge Savings</h1>
-                  </div>
-                  <p>
-                    Unlock thousands of verified deals and save up to 80% at
-                    your favorite retailers. New coupons added daily for maximum
-                    savings!
-                  </p>
-                  <button class="btn bg-secondary text-white">
-                    Explore Now
-                  </button>
-                </div>
-                <!-- Hero Image -->
-                <div class="img">
-                  <img
-                    class="width-full height-full"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
-                    alt=""
-                  />
-                </div>
-              </div>
+    <section>
+      <div class="medium-2 banner-three">
+        <div class="bg-primary flex align-center justify-end px-1">
+          <div class="banner-content">
+            <div>
+              <h1 class="hero-title">Exclusive Coupons &</h1>
+              <h1 class="hero-title">Huge Savings</h1>
             </div>
-            <div class="swiper-slide">
-              <div class="medium-2 align-center justify-between gap-4">
-                <!-- Text Content -->
-                <div>
-                  <div>
-                    <h1 class="hero-title">Exclusive Coupons &</h1>
-                    <h1 class="hero-title">Huge Savings</h1>
-                  </div>
-                  <p>
-                    Unlock thousands of verified deals and save up to 80% at
-                    your favorite retailers. New coupons added daily for maximum
-                    savings!
-                  </p>
-                  <button class="btn bg-secondary text-white">
-                    Explore Now
-                  </button>
-                </div>
-                <!-- Hero Image -->
-                <div class="img">
-                  <img
-                    class="width-full height-full"
-                    src="https://media.istockphoto.com/id/687572186/photo/handsome-young-man-in-shopping.jpg?s=612x612&w=0&k=20&c=P5__LphyJf3BZd4ha1SKHgzv1UC_7foYccB9L6-29Qo="
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
+            <p>
+              Unlock thousands of verified deals and save up to 80% at your
+              favorite retailers. New coupons added daily for maximum savings!
+            </p>
+            <button class="btn bg-secondary text-white">Explore Now</button>
           </div>
-
-          <button
-            style="border: 1px solid; border-right: none"
-            class="button-prev btn text-white mr-1"
-          >
-            <i class="fa-solid fa-arrow-left"></i> Prev
-          </button>
-          <button
-            style="border: 1px solid; border-left: none"
-            class="button-next btn text-white"
-          >
-            Next <i class="fa-solid fa-arrow-right"></i>
-          </button>
+        </div>
+        <div class="banner-img">
+          <img
+            class="img-full"
+            src="https://media.istockphoto.com/id/687572186/photo/handsome-young-man-in-shopping.jpg?s=612x612&w=0&k=20&c=P5__LphyJf3BZd4ha1SKHgzv1UC_7foYccB9L6-29Qo="
+            alt=""
+          />
         </div>
       </div>
     </section>
+    <!-- <section class="home-three-banner">
+      <div class="container relative">
+        <div class="medium-2 align-center justify-between gap-3">
+          
+          <div>
+            <div>
+              <h1 class="hero-title">Exclusive Coupons &</h1>
+              <h1 class="hero-title">Huge Savings</h1>
+            </div>
+            <p>
+              Unlock thousands of verified deals and save up to 80% at your
+              favorite retailers. New coupons added daily for maximum savings!
+            </p>
+            <button class="btn bg-secondary text-white">Explore Now</button>
+          </div>
+          <div class="">
+            <img
+              class="img-full"
+              src="https://media.istockphoto.com/id/687572186/photo/handsome-young-man-in-shopping.jpg?s=612x612&w=0&k=20&c=P5__LphyJf3BZd4ha1SKHgzv1UC_7foYccB9L6-29Qo="
+              alt=""
+            />
+          </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <div class="discount-card">
+            <h1>20</h1>
+            <div>
+              <p>%</p>
+              <p>off</p>
+            </div>
+          </div>
+          <div class="coupon-1">
+            <span>50% OFF</span>
+            <h5>Amazon</h5>
+            <small>Expires in 2 days</small>
+          </div>
+          <div class="coupon-2">
+            <span>$20 OFF</span>
+            <h5>Nike</h5>
+            <small>Expires in 5 days</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-btn">
+        <button class="button-prev btn">
+          <i class="fa-solid fa-arrow-left"></i> Prev
+        </button>
+        <button class="button-next btn">
+          Next <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./vendor/swiper.js"></script>
 
     <script src="./vendor/index.js"></script>

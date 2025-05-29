@@ -12,7 +12,7 @@
 =============================== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-.coupon {
+/* .coupon {
   position: absolute;
   background: white;
   border-radius: 12px;
@@ -37,11 +37,11 @@
   transform: translateX(-50%) rotate(2deg);
   animation: slideInUp 0.8s ease-out 1s forwards;
   border-top: 5px solid #6c5ce7;
-}
+} */
 
 
 
-.img-full {
+/* .img-full {
   width: 100%;
   min-height: 100%;
   object-fit: cover;
@@ -56,7 +56,8 @@
 }
 .banner-img{
   position: relative;
-}
+} */
+
 /* ===================================
    RESET STYLES
 =================================== */
@@ -1555,14 +1556,14 @@ h6 {
    HOME PAGE --3 STYLES
 =================================== */
 /* -------- HERO SECTION -3 -------- */
-.home-three-banner {
+/* .home-three-banner {
   background-color: var(--primary-color);
   color: var(--white-color);
   min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
-}
+} */
 
 
 
@@ -1747,12 +1748,12 @@ h6 {
   }
 
   /* ----------HERO SECTION -- 2 (HOME PAGE-2)--------------  */
-  .home-three-banner .content {
+  /* .home-three-banner .content {
     max-width: 80%;
   }
   .home-three-banner .img {
     height: 350px;
-  }
+  } */
   /* swiper navigation button  */
 
   /* ----- ENDING SOON ----- */
@@ -1928,7 +1929,7 @@ h6 {
   }
 
   /* ----------HERO SECTION -- 3 (HOME PAGE-3)--------------  */
-  .home-three-banner .img {
+  /* .home-three-banner .img {
     height: 480px;
   }
 
@@ -1937,7 +1938,7 @@ h6 {
     font-weight: 600;
     padding: 1.1rem 2.5rem;
     border-radius: 0.5rem;
-  }
+  } */
   /* swiper navigation button  */
  
   /* -------ending soon ------- */
