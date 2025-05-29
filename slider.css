@@ -1,11 +1,10 @@
 .banner-three {
   min-height: 100vh;
 }
-.banner-three img {
-  display: block
-}
+
 .banner-content {
   max-width: 650px;
+  padding: 8rem 1rem 4rem 1rem;
 }
 .banner-img::before {
   content: "";
@@ -23,26 +22,32 @@
 .banner-img {
   position: relative;
 }
+.img-full {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
 
 .swiper-btn {
   position: absolute;
   width: 100px;
-  bottom: 5rem;
+  bottom: 1rem;
+  /* bottom: 3rem;  */
+  /* bottom: 5rem;  */
   left: 1rem;
   z-index: 2;
   margin: 0 auto;
 }
 
-.button-prev {
-  border: 1px solid var(--white-color);
-  border-radius: 0.5rem 0 0.5rem 0;
-  color: var(--white-color);
-  z-index: 1;
-}
+.button-prev,
 .button-next {
   border: 1px solid var(--white-color);
   border-radius: 0.5rem 0 0.5rem 0;
   color: var(--white-color);
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  font-size: 1rem;
   z-index: 1;
 }
 
@@ -50,8 +55,8 @@
   position: relative;
 }
 
-@media (min-width: 768px){
-   .banner-img::before {
+@media (min-width: 768px) {
+  .banner-img::before {
     content: "";
     position: absolute;
     left: -1px;
@@ -79,11 +84,6 @@
   overflow: hidden;
 }
 
-.img-full {
-  width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-}
 /* .banner-img::before {
   content: '';
   position: absolute;
@@ -92,8 +92,6 @@
   height: 100%;
   background: linear-gradient(to right, var(--primary-color), rgb(from var(--primary-color) r g b / 0%) );
 } */
-
-
 
 .coupon-1,
 .coupon-2 {
@@ -149,7 +147,6 @@
   } */
 }
 @media (min-width: 992px) {
- 
   .slider-btn {
     position: absolute;
     bottom: 4.5rem;
