@@ -25,7 +25,6 @@
 }
 .banner-img {
   position: relative;
-  order: 1;
 }
 .img-full {
   width: 100%;
@@ -41,7 +40,6 @@
   /* bottom: 5rem;  */
   left: 1rem;
   z-index: 2;
-  margin: 0 auto;
 }
 
 .button-prev,
@@ -61,7 +59,7 @@
 }
 
 @media (min-width: 768px) {
-  .banner-img::before {
+ .banner-three .banner-img::before {
     content: "";
     position: absolute;
     left: -1px;

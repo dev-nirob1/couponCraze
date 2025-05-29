@@ -1540,7 +1540,7 @@ h6 {
     rgb(from var(--primary-lighten-color) r g b / 0%)
   );
 }
-.banner-three .banner-img {
+.banner-three .banner-img, .swiper {
   position: relative;
 }
 .img-full {
@@ -1549,27 +1549,22 @@ h6 {
   object-fit: cover;
 }
 
-.banner-three .swiper-btn {
+ .swiper-btn {
   position: absolute;
-  width: 100px;
-  bottom: 1rem;
+  bottom: 5rem;
   left: 1rem;
 }
 
-.banner-three .button-prev,
-.banner-three .button-next {
+ .button-prev,
+ .button-next {
+  color: var(--white-color);
   border: 1px solid var(--white-color);
   border-radius: 0.5rem 0 0.5rem 0;
-  color: var(--white-color);
   display: flex;
   align-items: center;
   gap: 0.25rem;
   font-size: 1rem;
   z-index: 1;
-}
-
-.banner-three .swiper {
-  position: relative;
 }
 
 /* ===================================
