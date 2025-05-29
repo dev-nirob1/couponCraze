@@ -139,7 +139,7 @@
 }
 .coupon-2 {
   bottom: 2rem;
-  right: 3rem;
+  right: 0;
   transform: rotate(8deg);
   border-top: 5px solid #6c5ce7;
 }
@@ -151,9 +151,9 @@
     height: 500px;
     margin: 0 auto;
     width: 80%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
   }
-  .img img {
+ .home-three-banner .img img {
     border-radius: 50%;
   }
 }
