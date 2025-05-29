@@ -711,6 +711,8 @@ h6 {
   align-items: center;
   font-size: 1.5rem;
   font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 2rem;
 }
 
 .footer .logo img {
