@@ -23,6 +23,36 @@
 .banner-img {
   position: relative;
 }
+
+.swiper-btn {
+  position: absolute;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 5rem;
+  left: 1rem;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.button-prev {
+  border: 1px solid var(--white-color);
+  border-radius: 0.5rem 0 0.5rem 0;
+  color: var(--white-color);
+  z-index: 1;
+}
+.button-next {
+  border: 1px solid var(--white-color);
+  border-radius: 0.5rem 0 0.5rem 0;
+  color: var(--white-color);
+  z-index: 1;
+}
+
+.swiper {
+  position: relative;
+}
+
 @media (min-width: 768px){
    .banner-img::before {
     content: "";
@@ -67,16 +97,7 @@
 } */
 
 
-.button-prev {
-  border: 1px solid var(--white-color);
-  border-radius: 0.5rem 0 0.5rem 0;
-  color: var(--white-color);
-}
-.button-next {
-  border: 1px solid var(--white-color);
-  border-radius: 0.5rem 0 0.5rem 0;
-  color: var(--white-color);
-}
+
 .coupon-1,
 .coupon-2 {
   position: absolute;

@@ -1,14 +1,12 @@
 var swiper = new Swiper(".mySwiper", {
   loop: true,
-  cssMode: true,
-  // autoplay: {
-  //   delay: 3000,
-  // },
-  navigation: {
-    prevEl: ".button-prev",
-    nextEl: ".button-next",
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
   },
-  mousewheel: true,
-  keyboard: true,
+  speed: 600,
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
 });
-
