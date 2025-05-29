@@ -25,6 +25,7 @@
 }
 .banner-img {
   position: relative;
+  border-radius: 50%;
 }
 .img-full {
   width: 100%;
@@ -59,7 +60,7 @@
 }
 
 @media (min-width: 768px) {
- .banner-three .banner-img::before {
+  .banner-three .banner-img::before {
     content: "";
     position: absolute;
     left: -1px;
@@ -75,9 +76,6 @@
   .swiper-btn {
     bottom: 3rem;
   }
-}
-@media (min-width: 992px) {
-
 }
 
 .home-three-banner {
@@ -113,7 +111,7 @@
 .discount-card {
   position: absolute;
   bottom: 25%;
-  right: 43%;
+  right: 40%;
   rotate: -40deg;
   display: flex;
   align-items: center;
@@ -134,14 +132,14 @@
   margin: 0;
 }
 .coupon-1 {
-  top: 4rem;
-  right: -2rem;
+  top: 3rem;
+  right: 3rem;
   transform: rotate(-9deg);
   border-top: 5px solid #f43f5e;
 }
 .coupon-2 {
-  bottom: -2rem;
-  right: 7rem;
+  bottom: 2rem;
+  right: 3rem;
   transform: rotate(8deg);
   border-top: 5px solid #6c5ce7;
 }
@@ -149,9 +147,15 @@
   .home-three-banner .content {
     max-width: 80%;
   }
-  /* .home-three-banner .img {
-    height: 350px;
-  } */
+  .home-three-banner .img {
+    height: 500px;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 50%;
+  }
+  .img img {
+    border-radius: 50%;
+  }
 }
 @media (min-width: 992px) {
   .slider-btn {
