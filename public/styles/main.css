@@ -186,6 +186,9 @@ h6 {
 .align-center {
   align-items: center;
 }
+.align-end {
+  align-items: end;
+}
 
 .justify-between {
   justify-content: space-between;
@@ -208,6 +211,7 @@ h6 {
   font-size: 1rem;
   text-align: center;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 /* ===================================

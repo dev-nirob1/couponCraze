@@ -1,6 +1,6 @@
 .container {
 	margin: 0px auto;
-	max-width: 100%;
+	max-width: 90%;
 }
 [class^="all-"], [class*=" all-"], [class^="small-"], [class*=" small-"], [class^="medium-"], [class*=" medium-"], [class^="large-"], [class*=" large-"], [class^="larger-"], [class*=" larger-"], [class^="largest-"], [class*=" largest-"] {
     display:grid;

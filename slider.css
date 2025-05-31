@@ -63,7 +63,7 @@
   .banner-three .banner-img::before {
     content: "";
     position: absolute;
-    left: -1px;
+    left: 0;
     top: 0;
     width: 80px;
     height: 100%;

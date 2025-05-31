@@ -13,6 +13,7 @@
 .swiper-btn {
   position: absolute;
   bottom: 1rem;
+  left: 5rem;
 }
 .button-prev,
 .button-next {
