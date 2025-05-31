@@ -5,66 +5,108 @@
   align-items: center;
   justify-content: center;
 }
-
-/* discount tag  */
+/* discount percentage tag  */
 .discount-card {
   position: absolute;
-  right: 5rem;
-  top: 5rem;
+  rotate: -45deg;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
-  width: fit-content;
   color: var(--white-color);
   background-color: var(--secondary-color);
 }
 .discount-card h1 {
-    font-weight: 900;
-  }
-  .discount-card P {
-    font-weight: 600;
-  }
-  .discount-card h1,
-  .discount-card p {
-    margin: 0;
-  }
-
-  /* discount coupon tag  */
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.discount-card P {
+  font-weight: 600;
+}
+.discount-card h1,
+.discount-card p {
+  margin: 0;
+}
+/* discount coupon tag  */
 .coupon-1,
 .coupon-2 {
   position: absolute;
-  color: var(--secondary-color);
   background: var(--white-color);
-  border-radius: 12px;
+  border-radius: 0.75rem;
   padding: 1.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  width: 180px;
-}
-.discount-card {
-  top: 50%;
-  right: 40%;
-}
-.coupon-1 {
-  border-top: 3px solid var(--danger-color);
-  right: 2rem;
-  bottom: 5rem;
-}
-.coupon-2 {
-  border-top: 3px solid var(--secondary-color);
-  right: 5rem;
-  top: 2rem;
+  box-shadow: var(--box-shadow);
+  /* width: 180px; */
 }
 
-/* hero image  */
-.hero-three-img {
-  width: 450px;
-  height: 450px;
-  margin: 0 auto;
+@media (min-width: 768px) {
+  .discount-card {
+    top: 60%;
+    right: 38%;
+    padding: 0.75rem 1rem;
+  }
+
+  .discount-card h1 {
+    font-size: 2rem;
+  }
+  .coupon-1,
+  .coupon-2 {
+    padding: 1rem;
+    width: 130px;
+  }
+  .coupon-1 {
+    border-top: 3px solid var(--danger-color);
+    rotate: -10deg;
+    right: 1rem;
+    bottom: 1rem;
+  }
+  .coupon-2 {
+    border-top: 3px solid var(--secondary-color);
+    rotate: 3deg;
+    right: 1rem;
+    top: 0;
+  }
+  /* hero image  */
+  .hero-three-img {
+    width: 340px;
+    height: 340px;
+    margin: 0 auto;
+  }
+
+  .hero-three-img img {
+    border-radius: 50%;
+  }
 }
-.hero-three-img img {
-  border-radius: 50%;
+@media (min-width: 992px) {
+  .discount-card {
+    top: 50%;
+    right: 38%;
+    padding: 1rem 2rem;
+  }
+
+  .discount-card h1 {
+    font-size: 3.5rem;
+  }
+  .coupon-1,
+  .coupon-2 {
+    padding: 1.5rem;
+    width: 180px;
+  }
+  .coupon-1 {
+    rotate: 10deg;
+    right: 2rem;
+    bottom: 4rem;
+  }
+  .coupon-2 {
+    rotate: 3deg;
+    right: 2rem;
+    top: 3rem;
+  }
+  /* hero image  */
+  .hero-three-img {
+    width: 500px;
+    height: 500px;
+  }
 }
 
 /* slider-3 button styles  */
@@ -81,7 +123,7 @@
 .button-prev::before {
   content: "";
   position: absolute;
-  border: 2px solid var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 .button-prev::before {
   left: 0;
