@@ -1,5 +1,6 @@
 .hero-three {
   min-height: 100vh;
+  padding: 5rem 0;
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
@@ -25,16 +26,17 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   color: var(--white-color);
   background-color: var(--secondary-color);
 }
 .discount-card h1 {
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 .discount-card P {
+  font-size: 0.75rem;
   font-weight: 600;
 }
 .discount-card h1,
@@ -47,8 +49,7 @@
   position: absolute;
   background: var(--white-color);
   border-radius: 0.75rem;
-  padding: 1.5rem;
-  box-shadow: var(--box-shadow);
+  padding: 0.75rem 1rem;
   /* width: 180px; */
 }
 
@@ -80,6 +81,25 @@
   border-left: 0;
 }
 
+/* overlay cards  */
+.discount-card {
+  top: 60%;
+  left: 0.25rem;
+}
+.coupon-1 {
+  rotate: -10deg;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+.coupon-2 {
+  right: 0.25rem;
+  top: 50%;
+}
+
+.hero-three-img img {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .hero-three .swiper-controls {
     flex-direction: column;
@@ -90,7 +110,7 @@
   }
   .discount-card {
     top: 60%;
-    right: 38%;
+    left: 50%;
     padding: 0.75rem 1rem;
   }
 
