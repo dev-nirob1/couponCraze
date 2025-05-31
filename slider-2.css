@@ -7,12 +7,12 @@
 }
 
 .btn-container {
-    max-width: 1350px;
-    position: relative;
+  display: block;
+  position: relative;
 }
 .swiper-btn {
-    position: absolute;
-    bottom: 1rem;
+  position: absolute;
+  bottom: 1rem;
 }
 .button-prev,
 .button-next {
