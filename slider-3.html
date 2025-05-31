@@ -3,9 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>slider-3</title>
+     <!-- font-awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./public/styles/grid.css" />
     <link rel="stylesheet" href="./public/styles/main.css" />
+    <link rel="stylesheet" href="./slider-3.css">
     <!-- swiper js cdn  -->
     <link
       rel="stylesheet"
@@ -13,21 +19,21 @@
     />
   </head>
   <body>
-    <section class="bg-primary">
+    <section class="hero-three bg-primary">
       <div class="container medium-12">
-        <div class="flex flex-col align-center justify-center">
-          <button style="rotate: -90deg" class="btn bg-secondary button-next">
-            Prev
-          </button>
-          <button style="rotate: -90deg" class="btn bg-secondary button-prev">
-            Next
+        <div class="flex flex-col align-center justify-center gap-2">
+            <button class="button-next">
+              Next  <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          <button class="button-prev">
+           <i class="fa-solid fa-arrow-left"></i> Previous 
           </button>
         </div>
         <div class="span-11">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper span-11">
-              <div class="swiper-slide">
-                <div class="medium-2 align-center">
+              <div class="swiper-slide ">
+                <div class="medium-2 align-center relative">
                   <div>
                     <div>
                       <h1 class="hero-title">Exclusive Coupons &</h1>
@@ -42,7 +48,7 @@
                       Explore Now
                     </button>
                   </div>
-                  <div class="banner-three-img">
+                  <div class="hero-three-img">
                     <img
                       class="img-full"
                       src="https://media.istockphoto.com/id/687572186/photo/handsome-young-man-in-shopping.jpg?s=612x612&w=0&k=20&c=P5__LphyJf3BZd4ha1SKHgzv1UC_7foYccB9L6-29Qo="
@@ -50,9 +56,27 @@
                     />
                   </div>
                 </div>
+                 <!-- discount card  -->
+                  <div class="discount-card">
+                  <h1>20</h1>
+                  <div>
+                    <p>%</p>
+                    <p>off</p>
+                  </div>
+                </div>
+                <!-- discount coupon card  -->
+                <div class="coupon-1">
+                  <span>50% OFF</span>
+                  <h5 class="sub-title">Amazon</h5>
+                </div>
+                <!-- discount coupon card  -->
+                <div class="coupon-2">
+                  <span>$20 OFF</span>
+                  <h5 class="sub-title">Nike</h5>
+                </div>
               </div>
-              <div class="swiper-slide">
-                <div class="medium-2 align-center">
+              <div class="swiper-slide ">
+                <div class="medium-2 align-center relative">
                   <div>
                     <div>
                       <h1 class="hero-title">Exclusive Coupons &</h1>
@@ -67,13 +91,31 @@
                       Explore Now
                     </button>
                   </div>
-                  <div class="banner-three-img">
+                  <div class="hero-three-img">
                     <img
                       class="img-full"
                       src="https://media.istockphoto.com/id/687572186/photo/handsome-young-man-in-shopping.jpg?s=612x612&w=0&k=20&c=P5__LphyJf3BZd4ha1SKHgzv1UC_7foYccB9L6-29Qo="
                       alt=""
                     />
                   </div>
+                </div>
+                 <!-- discount card  -->
+                  <div class="discount-card">
+                  <h1>20</h1>
+                  <div>
+                    <p>%</p>
+                    <p>off</p>
+                  </div>
+                </div>
+                <!-- discount coupon card  -->
+                <div class="coupon-1">
+                  <span>50% OFF</span>
+                  <h5 class="sub-title">Amazon</h5>
+                </div>
+                <!-- discount coupon card  -->
+                <div class="coupon-2">
+                  <span>$20 OFF</span>
+                  <h5 class="sub-title">Nike</h5>
                 </div>
               </div>
             </div>
