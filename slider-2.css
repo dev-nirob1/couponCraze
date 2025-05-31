@@ -1,0 +1,38 @@
+.banner-three {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-container {
+    max-width: 1350px;
+    position: relative;
+}
+.swiper-btn {
+    position: absolute;
+    bottom: 1rem;
+}
+.button-prev,
+.button-next {
+  border: 1px solid var(--white-color);
+  border-radius: 0.5rem 0 0.5rem 0;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .banner-three .banner-three-img {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+  }
+  .banner-three .banner-three-img img {
+    border-radius: 50%;
+  }
+}
