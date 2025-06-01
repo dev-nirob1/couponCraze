@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .hero-three .swiper-controls {
   display: flex;
   flex-direction: row-reverse;
@@ -21,7 +22,6 @@
 /* discount percentage tag  */
 .discount-card {
   position: absolute;
-  rotate: -45deg;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -82,29 +82,50 @@
 
 /* overlay cards  */
 .discount-card {
-  top: 60%;
-  left: 0.25rem;
-}
-.coupon-1 {
-  rotate: -10deg;
-  right: 0.5rem;
-  bottom: 0.5rem;
-}
-.coupon-2 {
-  right: 0.25rem;
-  top: 50%;
+  rotate: -45deg;
+  top: 65%;
+  left: 0;
 }
 
+.coupon-1 {
+  border-top: 3px solid var(--danger-color);
+  right: .25rem;
+  top: 1rem;
+}
+.coupon-2 {
+  border-top: 3px solid var(--secondary-color);
+  rotate: -10deg;
+  right: .25rem;
+  bottom: 1rem;
+}
+
+.swiper-content {
+  order: 2;
+}
+.hero-three-img {
+  position: relative;
+  order: 1;
+  height: 280px;
+  width: 280px;
+  margin: 0 auto;
+}
 .hero-three-img img {
+  border-radius: 50%;
   display: block;
 }
 
+@media (min-width: 540px) {
+  .hero-three-img {
+    height: 400px;
+    width: 400px;
+  }
+}
 @media (min-width: 768px) {
   .hero-three .swiper-controls {
     flex-direction: column;
     order: 1;
   }
-    /* --------swiper-controls ------- */
+  /* --------swiper-controls ------- */
   .swiper-controls .button-next,
   .swiper-controls .button-prev {
     rotate: -90deg;
@@ -113,8 +134,6 @@
     order: 2;
   }
   .discount-card {
-    top: 60%;
-    left: 50%;
     padding: 0.75rem 1rem;
   }
 
@@ -127,19 +146,18 @@
     width: 130px;
   }
   .coupon-1 {
-    border-top: 3px solid var(--danger-color);
-    rotate: -10deg;
-    right: 1rem;
-    bottom: 1rem;
-  }
-  .coupon-2 {
-    border-top: 3px solid var(--secondary-color);
-    rotate: 3deg;
-    right: 1rem;
-    top: 0;
+  top: 2rem;
+}
+.coupon-2 {
+  bottom: 2rem;
+}
+
+  .swiper-content {
+    order: 1;
   }
   /* hero image  */
   .hero-three-img {
+    order: 2;
     width: 340px;
     height: 340px;
     margin: 0 auto;
@@ -151,8 +169,6 @@
 }
 @media (min-width: 992px) {
   .discount-card {
-    top: 50%;
-    right: 38%;
     padding: 1rem 2rem;
   }
 
@@ -162,22 +178,10 @@
   .coupon-1,
   .coupon-2 {
     padding: 1.5rem;
-    width: 180px;
-  }
-  .coupon-1 {
-    rotate: 10deg;
-    right: 2rem;
-    bottom: 4rem;
-  }
-  .coupon-2 {
-    rotate: 3deg;
-    right: 2rem;
-    top: 3rem;
   }
   /* hero image  */
   .hero-three-img {
     width: 500px;
     height: 500px;
   }
-
 }
