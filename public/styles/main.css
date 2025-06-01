@@ -827,7 +827,7 @@ h6 {
 /* -------- 1. HERO SECTION-------- */
 /* Main hero container with gradient and animated stars */
 .hero {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   min-height: 100vh;
   background-color: var(--primary-color);
 }
@@ -922,7 +922,7 @@ h6 {
 /* -------- 2. Category Section -------- */
 /* category section with traditional link cards with hover effect */
 .categories {
-  padding: 3.75rem 0;
+  padding: 3.75rem 1rem;
 }
 
 .categories .link-card {
@@ -958,7 +958,7 @@ h6 {
 /* -------- 3. Ending Soon Section -------- */
 /* Ending soon section with clock animation */
 .ending-soon {
-  padding: 3.5rem 0;
+  padding: 3.5rem 0.75rem;
   color: var(--white-color);
   overflow: hidden;
 }
@@ -1081,7 +1081,7 @@ h6 {
 /* -------- 4. About Us Section -------- */
 /* Website info with feature list */
 .about-us {
-  padding: 3.75rem 0;
+  padding: 3.75rem 1rem;
 }
 .about-us .title {
   margin-bottom: 1rem;
@@ -1146,7 +1146,7 @@ h6 {
 /* -------- 5. Featured Coupons -------- */
 /*featured coupon cards section with traditional link card */
 .featured-coupon {
-  padding: 3.75rem 0;
+  padding: 3.75rem 1rem;
 }
 
 .featured-coupon .link-card {
@@ -1180,7 +1180,7 @@ h6 {
 /* -------- 6. How It Works -------- */
 /* Process timeline section */
 .timeline-section {
-  padding: 3.75rem 0;
+  padding: 3.75rem 1rem;
 }
 .timeline-section .btn {
   font-size: 1.25rem;
@@ -1225,7 +1225,7 @@ h6 {
 
 /* -------- 7. Companies Section -------- */
 .company-section {
-  padding: 3.75rem 0;
+  padding: 3.75rem 1rem;
 }
 
 .company-section .link-card {
@@ -1260,7 +1260,7 @@ h6 {
 
 /* -------- 8. Pricing Plans -------- */
 .pricing {
-  padding: 3.75rem 0;
+  padding: 3.75rem 1rem;
 }
 
 /* pricing card */
@@ -1344,7 +1344,7 @@ h6 {
 /* -------- 9. Statistics -------- */
 /* overview of company stats  */
 .statistics {
-  padding: 3.75rem 0;
+  padding: 3.75rem 1rem;
   margin: 0 auto;
 }
 .stats-content {
@@ -1393,7 +1393,7 @@ h6 {
 }
 
 .cards-container {
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.75rem;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -1518,59 +1518,127 @@ h6 {
    HOME PAGE --3 STYLES
 =================================== */
 /* -------- HERO SECTION -3 -------- */
-.banner-three {
+.hero-three {
   min-height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.banner-three .banner-content {
-  max-width: 650px;
-  padding: 8rem 1rem 4rem 1rem;
+.hero-three .swiper-controls {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-three .swiper-controls {
+  order: 2;
+}
+
+.hero-three .span-11 {
+  order: 1;
+}
+
+/* discount percentage tag  */
+.hero-three .discount-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   color: var(--white-color);
+  background-color: var(--secondary-color);
 }
-.banner-three .banner-content p {
-  font-size: 1.1rem;
+.hero-three .discount-card h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
 }
-
-.banner-three .banner-img::before {
+.hero-three .discount-card P {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.hero-three .discount-card h1,
+.hero-three .discount-card p {
+  margin: 0;
+}
+/* discount coupon tag  */
+.hero-three .coupon-1,
+.hero-three .coupon-2 {
+  position: absolute;
+  background: var(--white-color);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  /* width: 180px; */
+}
+/*----------- swiper button styles ---------- */
+.hero-three .swiper-controls .button-next,
+.hero-three .swiper-controls .button-prev {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+}
+.hero-three .swiper-controls .button-next::after,
+.hero-three .swiper-controls .button-prev::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: -1px;
-  width: 100%;
-  height: 80px;
-  background: linear-gradient(
-    to bottom,
-    var(--primary-color),
-    rgb(from var(--primary-lighten-color) r g b / 0%)
-  );
+  border: 1px solid var(--secondary-color);
 }
-.banner-three .banner-img, .swiper {
+.hero-three .swiper-controls .button-prev::before {
+  left: 0;
+  height: 2.5rem;
+  width: 3.75rem;
+  border-right: 0;
+}
+.hero-three .swiper-controls .button-next::after {
+  right: 0;
+  height: 2.5rem;
+  width: 2.75rem;
+  border-left: 0;
+}
+/* overlay cards  */
+.hero-three .discount-card {
+  rotate: -45deg;
+  top: 65%;
+  left: 0;
+}
+.hero-three .coupon-1 {
+  border-top: 3px solid var(--danger-color);
+  right: 0.25rem;
+  top: 1rem;
+}
+.hero-three .coupon-2 {
+  border-top: 3px solid var(--secondary-color);
+  rotate: -10deg;
+  right: 0.25rem;
+  bottom: 1rem;
+}
+.hero-three .swiper-content {
+  order: 2;
+}
+.hero-three .hero-three-img {
   position: relative;
+  order: 1;
+  height: 280px;
+  width: 280px;
+  margin: 0 auto;
+}
+.hero-three .hero-three-img img {
+  border-radius: 50%;
+  display: block;
 }
 .img-full {
   width: 100%;
   min-height: 100%;
   object-fit: cover;
 }
-
- .swiper-btn {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-}
-
- .button-prev,
- .button-next {
-  color: var(--white-color);
-  border: 1px solid var(--white-color);
-  border-radius: 0.5rem 0 0.5rem 0;
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  font-size: 1rem;
-  z-index: 1;
-}
-
 /* ===================================
    LATEST COUPON PAGE STYLES
    (Note: Uses reusable components styled in COMMON COMPONENTS)
@@ -1658,6 +1726,11 @@ h6 {
     --heading-2: 1.75rem;
     --heading-3: 1.5rem;
     --heading-4: 1.375rem;
+  }
+  /* HOME - 3 SWIPER   */
+  .hero-three-img {
+    height: 400px;
+    width: 400px;
   }
 }
 
@@ -1754,23 +1827,41 @@ h6 {
   }
 
   /* ----------HERO SECTION -- 3 (HOME PAGE-3)--------------  */
-  .banner-three .banner-img::before {
-    left: -1px;
-    top: 0;
-    width: 80px;
-    height: 100%;
-    background: linear-gradient(
-      to right,
-      var(--primary-color),
-      rgb(from var(--primary-lighten-color) r g b / 0%)
-    );
+    .hero-three .swiper-controls {
+    flex-direction: column;
+    gap: 2rem;
+    order: 1;
   }
-  .banner-content .btn {
-    padding: 1rem 1.75rem;
-    font-size: 1.1rem;
+  /* --------swiper-controls ------- */
+  .hero-three .swiper-controls .button-next,
+  .hero-three .swiper-controls .button-prev {
+    rotate: -90deg;
   }
-  .swiper-btn {
-    bottom: 3rem;
+  .hero-three .hero-three .span-11 {
+    order: 2;
+  }
+  .hero-three .discount-card h1 {
+    font-size: 2rem;
+  }
+  .hero-three .discount-card {
+    top: 50%;
+    left: -3rem;
+    padding: 0.75rem 1rem;
+  }
+  .hero-three .coupon-1,
+  .hero-three .coupon-2 {
+    padding: 1rem;
+    width: 130px;
+  }
+  .hero-three .swiper-content {
+    order: 1;
+  }
+  /* hero image  */
+  .hero-three .hero-three-img {
+    order: 2;
+    width: 340px;
+    height: 340px;
+    margin: 0 auto;
   }
 
   /* ----- ENDING SOON ----- */
@@ -1946,17 +2037,29 @@ h6 {
   }
 
   /* ----------HERO SECTION -- 3 (HOME PAGE-3)--------------  */
-  /* .home-three-banner .img {
-    height: 480px;
+   .hero-three .discount-card {
+    padding: 1rem 2rem;
   }
-
-  .home-three-banner .btn {
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 1.1rem 2.5rem;
-    border-radius: 0.5rem;
-  } */
-  /* swiper navigation button  */
+  .hero-three .discount-card h1 {
+    font-size: 3.5rem;
+  }
+  .hero-three .coupon-1,
+  .hero-three .coupon-2 {
+    padding: 1.5rem;
+  }
+  .hero-three .coupon-1 {
+    right: 1rem;
+    top: 3rem;
+  }
+  .hero-three .coupon-2 {
+    right: 1rem;
+    bottom: 3rem;
+  }
+  /* hero image  */
+  .hero-three .hero-three-img {
+    width: 500px;
+    height: 500px;
+  }
 
   /* -------ending soon ------- */
   .ending-image {
