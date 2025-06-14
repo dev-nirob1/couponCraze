@@ -1,5 +1,5 @@
 .container {
-	margin: 0px auto;
+	margin: 0 auto;
 	max-width: 90%;
 }
 [class^="all-"], [class*=" all-"], [class^="small-"], [class*=" small-"], [class^="medium-"], [class*=" medium-"], [class^="large-"], [class*=" large-"], [class^="larger-"], [class*=" larger-"], [class^="largest-"], [class*=" largest-"] {
@@ -267,8 +267,7 @@ button, input[type=submit], .button{
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 	.container {
-		margin: 0 auto;
-		max-width: 720px;
+		max-width: 540px;
 	}
 	/* Grid */
 	.small-1{--gridTC:repeat(1,1fr);}
@@ -390,8 +389,7 @@ button, input[type=submit], .button{
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.container {
-		margin: 0 auto;
-		max-width: 960px;
+		max-width: 720px;
 	}
 	.medium-1{--gridTC:repeat(1,1fr);}
 	.medium-2{--gridTC:repeat(2,1fr);}
@@ -511,8 +509,7 @@ button, input[type=submit], .button{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 	.container {
-		margin: 0 auto;
-		max-width: 1140px;
+		max-width: 960px;
 	}
 	/* Grid */
 	.large-1{--gridTC:repeat(1,1fr);}
@@ -634,8 +631,7 @@ button, input[type=submit], .button{
 /* Larger devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 	.container {
-		margin: 0 auto;
-		max-width: 1320px;
+		max-width: 1140px;
 	}
 	/* Grid */
 	.larger-1{--gridTC:repeat(1,1fr);}
@@ -756,6 +752,9 @@ button, input[type=submit], .button{
 }
 /* Largest devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
 	/* Grid */
 	.largest-1{--gridTC:repeat(1,1fr);}
 	.largest-2{--gridTC:repeat(2,1fr);}

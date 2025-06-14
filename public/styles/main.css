@@ -632,8 +632,8 @@ h6 {
 
 /* ---------- 8. BREADCRUMBS ---------- */
 .breadcrumb {
-  margin-top: 5.5rem;
-  padding: 3rem 1rem;
+  /* margin-top: 5.5rem; */
+  padding: 8rem 0 3rem 0;
   background: linear-gradient(
       rgba(255, 255, 255, 0.104),
       rgba(255, 255, 255, 0.142)
@@ -1081,7 +1081,7 @@ h6 {
 /* -------- 4. About Us Section -------- */
 /* Website info with feature list */
 .about-us {
-  padding: 3.75rem 1rem;
+  padding: 3.75rem 0;
 }
 .about-us .title {
   margin-bottom: 1rem;
@@ -1146,7 +1146,7 @@ h6 {
 /* -------- 5. Featured Coupons -------- */
 /*featured coupon cards section with traditional link card */
 .featured-coupon {
-  padding: 3.75rem 1rem;
+  padding: 3.75rem 0;
 }
 
 .featured-coupon .link-card {
@@ -1497,8 +1497,7 @@ h6 {
 .home-two-banner .banner-content {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5));
-  filter: blur(10%);
+  background: linear-gradient(to right, rgba(0,0,0,.1), rgba(0,0,0,.1));
   margin: 5rem 0;
   z-index: 5;
 }

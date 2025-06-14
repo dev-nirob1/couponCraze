@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Swiper with Navigation</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        .swiper-container {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 20px;
+        }
+        .swiper-button-prev {
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%) rotate(90deg);
+        }
+        .swiper-button-next {
+            left: 50%;
+            bottom: 20px;
+            top: auto;
+            transform: translateX(-50%) rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-color: #ff5733;">Slide 1 (Click me)</div>
+            <div class="swiper-slide" style="background-color: #33ff57;">Slide 2 (Click me)</div>
+            <div class="swiper-slide" style="background-color: #3357ff;">Slide 3 (Click me)</div>
+            <div class="swiper-slide" style="background-color: #f033ff;">Slide 4 (Click me)</div>
+        </div>
+        
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper-container', {
+        // Required parameters
+        direction: 'vertical',
+        slidesPerView: 1,
+        
+        // Enable autoplay
+        autoplay: {
+            delay: 3000, // 3 seconds between slides
+            disableOnInteraction: false, // continue autoplay after user interaction
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+
+    });
+
+    </script>
+</body>
+</html>
