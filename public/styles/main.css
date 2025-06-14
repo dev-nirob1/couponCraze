@@ -310,7 +310,7 @@ h6 {
 .navbar {
   backdrop-filter: blur(50px);
   color: var(--white-color);
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -1683,11 +1683,11 @@ h6 {
     var(--secondary-color)
   );
   color: var(--white-color);
-  padding: 3.75rem 1rem;
+  padding: 8.75rem 1rem 3.75rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5.5rem;
+  /* margin-top: 5.5rem; */
 }
 
 .company-banner .banner-content {
