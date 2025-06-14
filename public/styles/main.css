@@ -827,9 +827,12 @@ h6 {
 /* -------- 1. HERO SECTION-------- */
 /* Main hero container with gradient and animated stars */
 .hero {
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   min-height: 100vh;
   background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero .content {
   position: relative;
@@ -922,7 +925,7 @@ h6 {
 /* -------- 2. Category Section -------- */
 /* category section with traditional link cards with hover effect */
 .categories {
-  padding: 3.75rem 1rem;
+  padding: 3.75rem 0;
 }
 
 .categories .link-card {
@@ -958,7 +961,7 @@ h6 {
 /* -------- 3. Ending Soon Section -------- */
 /* Ending soon section with clock animation */
 .ending-soon {
-  padding: 3.5rem 0.75rem;
+  padding: 3.5rem 0;
   color: var(--white-color);
   overflow: hidden;
 }
@@ -1031,16 +1034,16 @@ h6 {
 .countdown-timer {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: .75rem;
   margin: 1.5rem 0;
 }
 
 .countdown-timer > div {
   background: rgb(from var(--primary-color) r g b/15%);
-  height: 5.5rem;
-  width: 5.5rem;
+  height: 5rem;
+  width: 5rem;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: .5rem;
   transition: all 0.3s ease;
   animation: pulse 2s infinite;
 }
@@ -1068,7 +1071,7 @@ h6 {
   }
 
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
     opacity: 1;
   }
 
@@ -1180,7 +1183,7 @@ h6 {
 /* -------- 6. How It Works -------- */
 /* Process timeline section */
 .timeline-section {
-  padding: 3.75rem 1rem;
+  padding: 3.75rem 0;
 }
 .timeline-section .btn {
   font-size: 1.25rem;
@@ -1225,7 +1228,7 @@ h6 {
 
 /* -------- 7. Companies Section -------- */
 .company-section {
-  padding: 3.75rem 1rem;
+  padding: 3.75rem 0;
 }
 
 .company-section .link-card {
@@ -1260,7 +1263,7 @@ h6 {
 
 /* -------- 8. Pricing Plans -------- */
 .pricing {
-  padding: 3.75rem 1rem;
+  padding: 3.75rem 0;
 }
 
 /* pricing card */
@@ -1268,7 +1271,7 @@ h6 {
   position: relative;
   text-align: center;
   border-radius: 0.75rem;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   transition: all 0.5s;
   background-color: var(--white-color);
   box-shadow: var(--box-shadow);
@@ -1344,7 +1347,7 @@ h6 {
 /* -------- 9. Statistics -------- */
 /* overview of company stats  */
 .statistics {
-  padding: 3.75rem 1rem;
+  padding: 3.75rem 0;
   margin: 0 auto;
 }
 .stats-content {
