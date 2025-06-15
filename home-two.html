@@ -256,37 +256,7 @@
         </div>
         <!-- Grid: Countdown + Coupon Cards -->
         <div class="large-3 gap-1 medium-gap-2 align-center">
-          <!-- Countdown Timer -->
-          <div class="text-center large-span-1">
-            <div>
-              <h3 class="title">Ending Soon</h3>
-              <h5 class="sub-title mb-2">
-                Grab these deals before they expire!
-              </h5>
-
-              <!-- Analog clock animation  -->
-              <div class="clock">
-                <div class="hour-hand"></div>
-                <div class="minute-hand"></div>
-              </div>
-
-              <!-- Digital Countdown -->
-              <div class="countdown-timer">
-                <div>
-                  <h4 class="title">11</h4>
-                  <small>Hours</small>
-                </div>
-                <div>
-                  <h4 class="title">59</h4>
-                  <small>Minutes</small>
-                </div>
-                <div>
-                  <h4 class="title">59</h4>
-                  <small>Seconds</small>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           <!-- Coupon Cards container with 2 column from medium device -->
           <div class="large-span-2">
             <div class="masonry-grid">
@@ -396,6 +366,37 @@
               </div>
             </div>
           </div>
+          <!-- Countdown Timer -->
+          <div class="text-center large-span-1">
+            <div>
+              <h3 class="title">Ending Soon</h3>
+              <h5 class="sub-title mb-2">
+                Grab these deals before they expire!
+              </h5>
+
+              <!-- Analog clock animation  -->
+              <div class="clock">
+                <div class="hour-hand"></div>
+                <div class="minute-hand"></div>
+              </div>
+
+              <!-- Digital Countdown -->
+              <div class="countdown-timer">
+                <div>
+                  <h4 class="title">11</h4>
+                  <small>Hours</small>
+                </div>
+                <div>
+                  <h4 class="title">59</h4>
+                  <small>Minutes</small>
+                </div>
+                <div>
+                  <h4 class="title">59</h4>
+                  <small>Seconds</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -448,45 +449,42 @@
         </div>
       </div>
     </section>
-    
+
     <!-- ========================================
      ABOUT SECTION START
 ========================================= -->
-    <section>
-      <div class="container about-us-two">
-        <div class="about-image">
-          <img
-            src="https://images.unsplash.com/photo-1740419014058-aa7e39329ced?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Happy shoppers using coupons"
-          />
+    <section class="container about-us-two">
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1740419014058-aa7e39329ced?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Happy shoppers using coupons"
+        />
+      </div>
+      <div class="about-two-content">
+        <div>
+          <h2>About Our Coupons</h2>
+          <p>
+            We partner with top brands to bring you exclusive discounts and
+            deals you won't find anywhere else. Our team carefully verifies
+            every coupon to ensure you get working, legitimate offers that
+            actually save you money. Whether you're shopping online or in-store,
+            we've got the best deals to help you stretch your budget further.
+          </p>
         </div>
-        <div class="about-two-content">
+        <div>
+          <h2>Our Services</h2>
           <div>
-            <h2>About Our Coupons</h2>
-            <p>
-              We partner with top brands to bring you exclusive discounts and
-              deals you won't find anywhere else. Our team carefully verifies
-              every coupon to ensure you get working, legitimate offers that
-              actually save you money. Whether you're shopping online or
-              in-store, we've got the best deals to help you stretch your budget
-              further.
-            </p>
-          </div>
-          <div>
-            <h2>Our Services</h2>
-            <div>
-              Beyond just listing coupons, we provide valuable services to
-              enhance your savings experience:
-              <ul>
-                <li>Daily deal alerts for limited-time offers</li>
-                <li>Price comparison tools to ensure you get the best deal</li>
-                <li>Exclusive member-only discounts</li>
-                <li>Seasonal savings guides for major shopping events</li>
-                <li>Verified coupon testing to save you time</li>
-              </ul>
-              We're committed to helping you save money without compromising on
-              quality or convenience.
-            </div>
+            Beyond just listing coupons, we provide valuable services to enhance
+            your savings experience:
+            <ul>
+              <li>Daily deal alerts for limited-time offers</li>
+              <li>Price comparison tools to ensure you get the best deal</li>
+              <li>Exclusive member-only discounts</li>
+              <li>Seasonal savings guides for major shopping events</li>
+              <li>Verified coupon testing to save you time</li>
+            </ul>
+            We're committed to helping you save money without compromising on
+            quality or convenience.
           </div>
         </div>
       </div>
@@ -875,7 +873,10 @@
         <!-- grid-container: small/large = 2/4 -->
         <ul class="small-2 larger-4 gap-2 medium-gap-1 stats-content">
           <!-- individual stat component  -->
-          <li>
+          <li
+            style="border-radius: 0.75rem"
+            class="flex flex-col align-center justify-center text-center bg-lighten p-2"
+          >
             <i class="fa-solid fa-tag"></i>
             <div>
               <h3>560+</h3>
@@ -883,7 +884,10 @@
             </div>
           </li>
           <!-- individual stat component  -->
-          <li>
+          <li
+            style="border-radius: 0.75rem"
+            class="flex flex-col align-center justify-center text-center bg-lighten p-2"
+          >
             <i class="fa-solid fa-users"></i>
             <div>
               <h3>197K+</h3>
@@ -891,7 +895,10 @@
             </div>
           </li>
           <!-- individual stat component  -->
-          <li>
+          <li
+            style="border-radius: 0.75rem"
+            class="flex flex-col align-center justify-center text-center bg-lighten p-2"
+          >
             <i class="fa-solid fa-store"></i>
             <div>
               <h3>268+</h3>
@@ -899,7 +906,10 @@
             </div>
           </li>
           <!-- individual stat component  -->
-          <li>
+          <li
+            style="border-radius: 0.75rem"
+            class="flex flex-col align-center justify-center text-center bg-lighten p-2"
+          >
             <i class="fa-solid fa-percent"></i>
             <div>
               <h3>340+</h3>
