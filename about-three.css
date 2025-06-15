@@ -14,8 +14,8 @@
 }
 @media (min-width: 992px) {
   .about-us-three .image-container img {
-    border-top-left-radius: 250px;
-    border-bottom-left-radius: 250px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
