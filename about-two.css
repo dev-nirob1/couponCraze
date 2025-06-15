@@ -1,46 +1,42 @@
-.serv-prod {
+.about-us-two {
   display: flex;
   min-height: 90vh;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: relative;
-  overflow: hidden;
 }
 
-.serv-prod .about-image {
+.about-us-two .about-image {
   flex: 1;
-  /* border: 5px solid; */
   height: 80vh;
   width: 90%;
   z-index: 5;
 }
 
-.serv-prod .about-image img {
+.about-us-two .about-image img {
   width: 100%;
   height: 100%;
   margin-bottom: -30px;
   z-index: 5;
-  /* border: 5px solid red; */
 }
 
-.serv-prod .description {
+.about-us-two .about-two-content {
   background: var(--primary-lighten-color);
   height: 100%;
   flex: 1;
-  padding: 1.5rem;
+  padding: 3.75rem .75rem;
 }
 
 @media (min-width: 768px) {
-  .serv-prod .description {
+  .about-us-two .about-two-content {
     padding: 3.75rem;
   }
 }
 @media (min-width: 992px) {
-  .serv-prod {
+  .about-us-two {
     flex-direction: row;
   }
-  .serv-prod .about-image {
+  .about-us-two .about-image {
     margin-right: -2rem;
     margin-bottom: 0;
     width: 100%;

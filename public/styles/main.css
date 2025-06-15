@@ -1034,7 +1034,7 @@ h6 {
 .countdown-timer {
   display: flex;
   justify-content: center;
-  gap: .75rem;
+  gap: 0.75rem;
   margin: 1.5rem 0;
 }
 
@@ -1043,7 +1043,7 @@ h6 {
   height: 5rem;
   width: 5rem;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   transition: all 0.3s ease;
   animation: pulse 2s infinite;
 }
@@ -1144,6 +1144,63 @@ h6 {
 .about-us .btn:hover {
   color: var(--secondary-color);
   background-color: var(--white-color);
+}
+
+/* --------about us section (2) ----------- */
+.about-us-two {
+  display: flex;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-us-two .about-image {
+  flex: 1;
+  height: 80vh;
+  width: 90%;
+  z-index: 5;
+}
+
+.about-us-two .about-image img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -30px;
+  z-index: 5;
+}
+
+.about-us-two .about-two-content {
+  background: var(--primary-lighten-color);
+  height: 100%;
+  flex: 1;
+  padding: 3.75rem .75rem;
+}
+
+/* --------about us section (3) ----------- */
+.about-us-three {
+  padding: 3.75rem 0;
+}
+.image-container {
+  height: 80vh;
+}
+.about-us-three .image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+}
+.about-us-three p {
+  margin: 0.5rem 0 0 0;
+}
+.about-us-three .icon {
+  padding: 1rem 2rem;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  display: grid;
+  place-content: center;
+}
+.about-three-content > div:not(:last-child) {
+  margin-bottom: 1.1rem;
 }
 
 /* -------- 5. Featured Coupons -------- */
@@ -1500,7 +1557,7 @@ h6 {
 .home-two-banner .banner-content {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0,0,0,.1), rgba(0,0,0,.1));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   margin: 5rem 0;
   z-index: 5;
 }
@@ -1585,7 +1642,7 @@ h6 {
 .hero-three .swiper-controls .button-prev {
   display: flex;
   align-items: center;
-  gap: .25rem;
+  gap: 0.25rem;
   color: var(--secondary-color);
   font-size: 1rem;
   font-weight: 600;
@@ -1833,7 +1890,7 @@ h6 {
   }
 
   /* ----------HERO SECTION -- 3 (HOME PAGE-3)--------------  */
-    .hero-three .swiper-controls {
+  .hero-three .swiper-controls {
     flex-direction: column;
     gap: 2rem;
     order: 1;
@@ -1902,6 +1959,10 @@ h6 {
   }
   .about-us .image img {
     height: 100%;
+  }
+  /* -------ABOUT US TWO---------- */
+   .about-us-two .about-two-content {
+    padding: 3.75rem;
   }
 
   /* ----- COMPANIES ----- */
@@ -2043,7 +2104,7 @@ h6 {
   }
 
   /* ----------HERO SECTION -- 3 (HOME PAGE-3)--------------  */
-   .hero-three .discount-card {
+  .hero-three .discount-card {
     padding: 1rem 2rem;
   }
   .hero-three .discount-card h1 {
@@ -2066,6 +2127,23 @@ h6 {
     width: 500px;
     height: 500px;
   }
+    /* ----------ABOUT-US SECTION -- 2 ----------- */
+.about-us-two {
+    flex-direction: row;
+  }
+  .about-us-two .about-image {
+    margin-right: -2rem;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  /* ----------ABOUT-US SECTION -- 3 ----------- */
+  .about-us-three .image-container img {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
   /* -------ending soon ------- */
   .ending-image {
@@ -2077,7 +2155,7 @@ h6 {
     display: block;
     position: absolute;
     width: 100%;
-    top: 3.5rem;
+    top: 3.75rem;
   }
   .number {
     margin-bottom: 3rem;
@@ -2103,7 +2181,7 @@ h6 {
   }
   /* Timeline positioning */
   .timeline {
-    top: -1.5rem;
+    top: 1.5rem;
   }
 }
 
@@ -2113,5 +2191,8 @@ h6 {
     --heading-2: 2.75rem;
     --heading-3: 2.5rem;
     --heading-4: 2.25rem;
+  }
+   .timeline {
+    top: -1.5rem;
   }
 }
