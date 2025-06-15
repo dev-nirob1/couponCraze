@@ -28,14 +28,12 @@
   background: var(--primary-lighten-color);
   height: 100%;
   flex: 1;
-  display: flex;
-  align-items: center;
   padding: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .serv-prod .description {
-    padding: 4rem;
+    padding: 3.75rem;
   }
 }
 @media (min-width: 992px) {

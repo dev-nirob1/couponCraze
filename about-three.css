@@ -1,0 +1,22 @@
+.about-us-three {
+    padding: 5rem 0;
+}
+.image-container {
+    height: 80vh;
+}
+.about-us-three .image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+.about-us-three p {
+    margin: .5rem 0 0 0;
+}
+@media (min-width: 992px) {
+  .about-us-three .image-container img {
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
