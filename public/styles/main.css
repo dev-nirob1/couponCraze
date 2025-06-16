@@ -330,8 +330,8 @@ h6 {
   font-weight: bold;
 }
 .logo p {
-  margin: 0;
-  font-size: 0.75rem;
+  margin-top: -.5rem;
+  font-size: 0.8rem;
 }
 .logo img {
   height: 65px;
@@ -714,9 +714,9 @@ h6 {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  font-weight: 700;
+  /* font-weight: 700; */
   text-decoration: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .footer .logo img {
@@ -1405,10 +1405,10 @@ h6 {
 /* overview of company stats  */
 .statistics {
   padding: 3.75rem 0;
-  margin: 0 auto;
 }
 .statistics .stats-content {
   list-style: none;
+  padding: 0;
   height: 100%;
   align-items: center;
 }
@@ -1433,15 +1433,16 @@ h6 {
 /* -------- 9. Statistics ( 2 ) home-page-two -------- */
 .statistics-two {
   padding: 3.75rem 0;
-  margin: 0 auto;
   text-align: center;
 }
 .statistics-two .stats-content {
   list-style: none;
+  padding: 0;
   align-items: center;
 }
 .statistics-two .stats-content li {
-  background-color: var(--primary-lighten-color);
+  /* background-color: var(--primary-lighten-color); */
+  box-shadow: var(--box-shadow);
   padding: 2rem;
   border-radius: .75rem;
   display: flex;
@@ -1537,6 +1538,9 @@ h6 {
 }
 
 .news-letter .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   border-top-left-radius: 10rem;
   border-bottom-left-radius: 10rem;
   height: 30vh;
@@ -1550,7 +1554,6 @@ h6 {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
-
 .news-letter .btn {
   outline: none;
   padding: 0 1rem;
@@ -2033,6 +2036,7 @@ h6 {
   }
 
   .news-letter .content {
+    flex-direction: row;
     padding-right: 5rem;
   }
 
