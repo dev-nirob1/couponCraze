@@ -156,6 +156,22 @@
         </div>
         <!-- Category Cards Grid: for mobile- 1column, tablets- 2column and from large - 3column -->
         <div class="medium-2 large-5 gap-1 medium-gap-2">
+          <!-- Link to All Categories -->
+          <a href="./categories.html" class="link-card">
+            <div class="flex flex-col justify-center align-center">
+              <div>
+                <img
+                  class="height-full width-full"
+                  src="./public/assets/categories.png"
+                  alt="banner image"
+                />
+              </div>
+              <div>
+                <h5 class="sub-title">Explore All</h5>
+                <p>See all products in every category</p>
+              </div>
+            </div></a
+          >
           <!-- Category Cards with image, title, deals count and a cta button -->
           <div class="category-card">
             <div class="p-2">
@@ -224,23 +240,6 @@
               <a href="./category-details.html" class="btn">Go to Category </a>
             </div>
           </div>
-
-          <!-- Link to All Categories -->
-          <a href="./categories.html" class="link-card"
-            ><div class="flex flex-col justify-center align-center">
-              <div>
-                <img
-                  class="height-full width-full"
-                  src="./public/assets/categories.png"
-                  alt="banner image"
-                />
-              </div>
-              <div>
-                <h5 class="sub-title">Explore All</h5>
-                <p>See all products in every category</p>
-              </div>
-            </div></a
-          >
         </div>
       </div>
     </section>
@@ -256,6 +255,37 @@
         </div>
         <!-- Grid: Countdown + Coupon Cards -->
         <div class="large-3 gap-1 medium-gap-2 align-center">
+          <!-- Countdown Timer -->
+          <div class="text-center large-span-1">
+            <div>
+              <h3 class="title">Ending Soon</h3>
+              <h5 class="sub-title mb-2">
+                Grab these deals before they expire!
+              </h5>
+
+              <!-- Analog clock animation  -->
+              <div class="clock">
+                <div class="hour-hand"></div>
+                <div class="minute-hand"></div>
+              </div>
+
+              <!-- Digital Countdown -->
+              <div class="countdown-timer">
+                <div>
+                  <h4 class="title">11</h4>
+                  <small>Hours</small>
+                </div>
+                <div>
+                  <h4 class="title">59</h4>
+                  <small>Minutes</small>
+                </div>
+                <div>
+                  <h4 class="title">59</h4>
+                  <small>Seconds</small>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Coupon Cards container with 2 column from medium device -->
           <div class="large-span-2">
             <div class="masonry-grid">
@@ -365,37 +395,6 @@
               </div>
             </div>
           </div>
-          <!-- Countdown Timer -->
-          <div class="text-center large-span-1">
-            <div>
-              <h3 class="title">Ending Soon</h3>
-              <h5 class="sub-title mb-2">
-                Grab these deals before they expire!
-              </h5>
-
-              <!-- Analog clock animation  -->
-              <div class="clock">
-                <div class="hour-hand"></div>
-                <div class="minute-hand"></div>
-              </div>
-
-              <!-- Digital Countdown -->
-              <div class="countdown-timer">
-                <div>
-                  <h4 class="title">11</h4>
-                  <small>Hours</small>
-                </div>
-                <div>
-                  <h4 class="title">59</h4>
-                  <small>Minutes</small>
-                </div>
-                <div>
-                  <h4 class="title">59</h4>
-                  <small>Seconds</small>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -452,7 +451,7 @@
     <!-- ========================================
      ABOUT SECTION START
 ========================================= -->
-    
+
     <section class="about-us-three bg-lighten">
       <div class="large-2 gap-2 container">
         <div class="about-three-content order-2 large-order-1">
@@ -473,8 +472,8 @@
               exclusive, working discounts.
             </p>
           </div>
-          <div class="flex align-center gap-1 mt-2">
-            <div style="width: 50px; height: 60px" class="icon">
+          <div class="flex gap-1">
+            <div class="icon">
               <i class="fa-solid fa-hand-holding-heart fa-2xl"></i>
             </div>
             <div>
@@ -486,11 +485,18 @@
             </div>
           </div>
         </div>
-        <div class="image-container order-1 large-order-2">
+        <div class="image-container order-1 large-order-2 relative">
           <img
             src="https://images.unsplash.com/photo-1740419014058-aa7e39329ced?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="image"
           />
+          <div class="about-card">
+            <h1>20</h1>
+            <div>
+              <p>%</p>
+              <p>off</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -506,6 +512,25 @@
         </div>
         <!-- Coupons Grid Layout small-medium-large = 1/2/3 -->
         <div class="medium-2 large-3 gap-1 large-gap-2">
+          <!-- Link Card to All Exclusive Coupons -->
+          <a href="./latest.html" class="link-card">
+            <div class="flex flex-col justify-center align-center">
+              <div>
+                <img
+                  class="height-full width-full"
+                  src="./public/assets/store.png"
+                  alt="banner image"
+                />
+              </div>
+              <div>
+                <h5 class="sub-title">All Exclusive Coupons</h5>
+                <p>
+                  Limited-time offers! Click to view exclusive deals and special
+                  discounts.
+                </p>
+              </div>
+            </div>
+          </a>
           <!-- Individual Coupon Card -->
           <div class="coupon-card">
             <!-- Coupon Title and Description -->
@@ -628,25 +653,6 @@
               </div>
             </div>
           </div>
-          <!-- Link Card to All Exclusive Coupons -->
-          <a href="./latest.html" class="link-card">
-            <div class="flex flex-col justify-center align-center">
-              <div>
-                <img
-                  class="height-full width-full"
-                  src="./public/assets/store.png"
-                  alt="banner image"
-                />
-              </div>
-              <div>
-                <h5 class="sub-title">All Exclusive Coupons</h5>
-                <p>
-                  Limited-time offers! Click to view exclusive deals and special
-                  discounts.
-                </p>
-              </div>
-            </div>
-          </a>
         </div>
       </div>
     </section>
@@ -729,6 +735,25 @@
         </div>
         <!-- grid container : mobile-tablets-desktop = 1/2/4  -->
         <div class="medium-2 large-4 gap-1 medium-gap-2">
+          <!-- Link to All companies -->
+          <div class="medium-span-2">
+            <!-- link card to all companies-->
+            <a href="./company.html" class="link-card"
+              ><div class="medium-4 gap-1 align-center">
+                <div>
+                  <img src="./public/assets/store.png" />
+                </div>
+                <div class="span-3">
+                  <h5 class="sub-title">Explore All Partner Companies</h5>
+                  <p>
+                    Discover our full network of trusted partners and browse
+                    their exclusive offers. Click to view all available
+                    companies.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
           <!-- clickable card with logo and name  -->
           <a href="./company-details.html" class="company-card">
             <img
@@ -783,25 +808,6 @@
             />
             <h3 class="title">Amazon</h3>
           </a>
-          <!-- Link to All companies -->
-          <div class="medium-span-2">
-            <!-- link card to all companies-->
-            <a href="./company.html" class="link-card"
-              ><div class="medium-4 gap-1 align-center">
-                <div>
-                  <img src="./public/assets/store.png" />
-                </div>
-                <div class="span-3">
-                  <h5 class="sub-title">Explore All Partner Companies</h5>
-                  <p>
-                    Discover our full network of trusted partners and browse
-                    their exclusive offers. Click to view all available
-                    companies.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
         </div>
       </div>
     </section>

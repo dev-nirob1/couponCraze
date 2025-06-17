@@ -1189,9 +1189,9 @@ h6 {
   height: 100%;
   /* border-radius: 3rem; */
   border-top-left-radius: 0;
-  border-bottom-left-radius:50%;
+  border-bottom-left-radius: 50%;
   border-top-right-radius: 0;
-  border-bottom-right-radius:50%;
+  border-bottom-right-radius: 50%;
 }
 .about-us-three p {
   margin: 0.5rem 0 0 0;
@@ -1208,6 +1208,18 @@ h6 {
   margin-bottom: 1.1rem;
 }
 
+.about-us-three .about-card {
+  position: absolute;
+  left: 38%;
+  bottom: -2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
 /* -------- 5. Featured Coupons -------- */
 /*featured coupon cards section with traditional link card */
 .featured-coupon {
@@ -1509,7 +1521,7 @@ h6 {
 .testimonial-card {
   flex: 0 0 auto;
   padding: 2rem 1.5rem;
-  width: 350px;
+  width: 300px;
   min-height: 280px;
   background: var(--white-color);
   border-radius: 0.5rem;
@@ -2179,7 +2191,10 @@ h6 {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-
+.about-us-three .about-card {
+  position: absolute;
+  left: -2rem;
+  bottom: 35%;}
   /* -------ending soon ------- */
   .ending-image {
     bottom: -6rem;
