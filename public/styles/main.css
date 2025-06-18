@@ -1199,15 +1199,25 @@ h6 {
   margin: 0.5rem 0 0 0;
 }
 .about-us-three .icon {
-  padding: 1rem 2rem;
+  height: 80px;
+  width: 80px;
   color: var(--white-color);
   background-color: var(--secondary-color);
   border-radius: 0.5rem;
   display: grid;
   place-content: center;
 }
-.about-three-content > div:not(:last-child) {
-  margin-bottom: 1.1rem;
+.about-three-content ul{
+  list-style: none;
+  padding: 0;
+}
+.about-three-content ul li{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about-three-content ul li:not(:last-child){
+  margin-bottom: 1rem;
 }
 
 .about-us-three .about-card {
@@ -1563,7 +1573,7 @@ h6 {
   flex-direction: column;
   border-top-left-radius: 10rem;
   border-bottom-left-radius: 10rem;
-  height: 35vh;
+  height: 30vh;
   background-color: var(--white-color);
 }
 .subscribe-input {
@@ -2199,10 +2209,15 @@ h6 {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
+  .about-three-content ul li{
+    flex-direction: row;
+  }
 .about-us-three .about-card {
   position: absolute;
   left: -2rem;
-  bottom: 35%;}
+  bottom: 35%;
+}
+
   /* -------ending soon ------- */
   .ending-image {
     bottom: -6rem;
