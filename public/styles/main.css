@@ -490,7 +490,8 @@ h6 {
 .coupon-card {
   position: relative;
   background: linear-gradient(
-    30deg,rgb(from var(--primary-lighten-color) r g b/ 30%),
+    30deg,
+    rgb(from var(--primary-lighten-color) r g b/ 30%),
     rgb(from var(--primary-light-color) r g b / 50%)
   );
   color: var(--secondary-color);
@@ -526,7 +527,7 @@ h6 {
   height: 6rem;
   width: 100%;
   padding: 1.35rem;
-  border-top: 5px dashed var(--primary-color);
+  border-top: 5px dashed #faf9f6;
   text-align: center;
   background-color: rgb(from var(--primary-color) r g b/ 30%);
 }
@@ -555,6 +556,18 @@ h6 {
 .bg-secondary .card-footer::after {
   background-color: var(--secondary-color);
 }
+.bg-secondary .coupon-card {
+  background: linear-gradient(
+    to bottom,
+    rgb(from var(--primary-light-color) r g b / 80%),
+    rgb(from var(--primary-light-color) r g b / 80%)
+  );
+}
+.bg-secondary .card-footer {
+  background-color: var(--primary-color);
+  border-color: var(--secondary-color);
+}
+
 /* ---------- 5 CATEGORY CARD ---------- */
 .category-card {
   background-color: var(--white-color);
@@ -633,10 +646,7 @@ h6 {
 .breadcrumb {
   /* margin-top: 5.5rem; */
   padding: 8rem 0 3rem 0;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("https://images.unsplash.com/photo-1733503747506-773e56e4078f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
       no-repeat center / 100%;
 }
@@ -932,7 +942,7 @@ h6 {
   text-decoration: none;
   background: linear-gradient(
     to bottom,
-    rgb(from var(--secondary-color) r g b /80%),
+    rgb(from var(--secondary-color) r g b / 80%),
     var(--secondary-color)
   );
   box-shadow: var(--box-shadow);
@@ -964,9 +974,7 @@ h6 {
   color: var(--white-color);
   overflow: hidden;
 }
-.ending-soon .coupon-card {
-  background-color: var(--primary-color);
-}
+
 .ending-image {
   position: absolute;
   opacity: 0.3;
@@ -1149,8 +1157,9 @@ h6 {
 }
 
 /* --------about us section (2) ----------- */
+
 .about-us-two {
-  display: flex;
+  /* display: flex; */
   min-height: 90vh;
   align-items: center;
   justify-content: center;
@@ -1158,6 +1167,7 @@ h6 {
 }
 
 .about-us-two .about-image {
+  position: relative;
   flex: 1;
   height: 80vh;
   width: 90%;
@@ -1165,6 +1175,9 @@ h6 {
 }
 
 .about-us-two .about-image img {
+  position: absolute;
+  top: 0;
+  right: -30px;
   width: 100%;
   min-height: 100%;
   object-fit: cover;
@@ -1172,11 +1185,20 @@ h6 {
   z-index: 5;
 }
 
+.about-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary-lighten-color); 
+  z-index: -1;
+}
 .about-us-two .about-two-content {
-  background: var(--primary-lighten-color);
   height: 100%;
   flex: 1;
   padding: 3.75rem 0.75rem;
+  z-index: 1;
 }
 
 /* --------about us section (3) ----------- */
@@ -1207,16 +1229,16 @@ h6 {
   display: grid;
   place-content: center;
 }
-.about-three-content ul{
+.about-three-content ul {
   list-style: none;
   padding: 0;
 }
-.about-three-content ul li{
+.about-three-content ul li {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.about-three-content ul li:not(:last-child){
+.about-three-content ul li:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -1323,7 +1345,7 @@ h6 {
   color: var(--white-color);
   background: linear-gradient(
     to bottom,
-    rgb(from var(--secondary-color)r g b /75%),
+    rgb(from var(--secondary-color) r g b / 75%),
     var(--secondary-color)
   );
   box-shadow: var(--box-shadow);
@@ -1705,7 +1727,6 @@ h6 {
   gap: 0.25rem;
   color: var(--secondary-color);
   font-size: 1rem;
-  font-weight: 600;
   position: relative;
 }
 .hero-three .swiper-controls .button-next::after,
@@ -2074,9 +2095,9 @@ h6 {
     flex-direction: row;
     padding-right: 5rem;
   }
-.subscribe-input {
-  flex: 1;
-}
+  .subscribe-input {
+    flex: 1;
+  }
   .news-letter .btn {
     padding: 0 2rem;
   }
@@ -2150,10 +2171,6 @@ h6 {
     display: none;
   }
 
-  .testimonial-card {
-    width: 400px;
-  }
-
   /* ========================
      PAGE SECTIONS
   ======================== */
@@ -2209,15 +2226,29 @@ h6 {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .about-three-content ul li{
+  .about-three-content ul li {
     flex-direction: row;
   }
-.about-us-three .about-card {
-  position: absolute;
-  left: -2rem;
-  bottom: 35%;
+  .about-us-three .about-card {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    position: absolute;
+    left: -3rem;
+    bottom: 35%;
+    rotate: 40deg;
+  }
+.about-us-three .about-card h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
 }
-
+.about-us-three .about-card P {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.about-us-three .about-card h1,
+.about-us-three .about-card p {
+  margin: 0;
+}
   /* -------ending soon ------- */
   .ending-image {
     bottom: -6rem;
