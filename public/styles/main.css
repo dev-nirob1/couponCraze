@@ -23,6 +23,42 @@
       - Typography
       - Section Titles
       - Navigation Menu
+      - Popup Modal
+      - Coupon Cards
+      - Category Cards
+      - Company Cards
+      - Breadcrumbs
+      - Pagination
+  6. HOME PAGE STYLES
+      - Hero Section
+          - Hero section - 1
+          - Hero section - 2
+          - Hero section - 3
+      - Category Section
+      - Ending Soon Section
+      - About Us Section
+          - about-us - 1
+          - about-two - 2
+          - about-three - 3
+      - Featured Coupons
+      - How It Works
+      - Companies Section
+      - Pricing Plans
+      - Statistics Section
+          - Statistics Section - 1
+          - Statistics Section - 2
+      - Testimonials
+      - Newsletter
+
+    7. COMPANY DETAILS PAGE STYLES
+      -Company-Banner Section
+
+    8. RESPONSIVE BREAKPOINTS
+      - Small Devices (≥576px)
+      - Medium Devices (≥768px)
+      - Large Devices (≥992px)
+      - Larger Devices (≥1200px)
+      - Largest Devices (≥1400px)
 */
 
 /* ===============================
@@ -65,23 +101,18 @@ h6 {
 h1 {
   font-size: var(--heading-1);
 }
-
 h2 {
   font-size: var(--heading-2);
 }
-
 h3 {
   font-size: var(--heading-3);
 }
-
 h4 {
   font-size: var(--heading-4);
 }
-
 h5 {
   font-size: var(--heading-5);
 }
-
 h6 {
   font-size: var(--heading-6);
 }
@@ -106,7 +137,7 @@ h6 {
   --danger-color: #dc3545;
   --warning-color: #ffc107;
   --success-color: #198754;
-  /* ---------------typography------------ */
+  /* =========typography ========= */
   /* headings  */
   --heading-1: 2rem;
   --heading-2: 1.75rem;
@@ -174,15 +205,12 @@ h6 {
 .bg-alternative {
   background-color: var(--alternative-color);
 }
-
 .bg-white {
   background-color: var(--white-color);
 }
-
 .text-center {
   text-align: center;
 }
-
 .text-right {
   text-align: right;
 }
@@ -196,26 +224,21 @@ h6 {
 .flex-wrap {
   flex-wrap: wrap;
 }
-
 .flex-col {
   flex-direction: column;
 }
-
 .align-center {
   align-items: center;
 }
 .align-end {
   align-items: end;
 }
-
 .justify-between {
   justify-content: space-between;
 }
-
 .justify-center {
   justify-content: center;
 }
-
 .justify-end {
   justify-content: end;
 }
@@ -236,7 +259,7 @@ h6 {
    COMMON COMPONENTS STYLES
 =================================== */
 
-/* ---------- 1. TYPOGRAPHY ---------- */
+/* ========= 1. TYPOGRAPHY ========= */
 .hero-title {
   font-size: var(--heading-1);
 }
@@ -247,7 +270,7 @@ h6 {
   font-size: var(--heading-5);
 }
 
-/* ---------- 2. SECTION HEADER ---------- */
+/* ========= 2. SECTION HEADER ========= */
 .section-header {
   display: flex;
   align-items: center;
@@ -308,7 +331,7 @@ h6 {
   background-color: var(--primary-lighten-color);
 }
 
-/* ---------- 3 NAVIGATION MENU ---------- */
+/* ========= 3 NAVIGATION MENU (NAVBAR) ========= */
 /* Sticky navbar with scroll effects */
 .scroll-down .navbar {
   transform: translate3d(0, -100%, 0);
@@ -402,7 +425,7 @@ h6 {
   cursor: pointer;
 }
 
-/* ---------- 4. Popup/modal component ---------- */
+/* ========= 4. POPUP/MODAL COMPONENTS ========= */
 .modal {
   position: fixed;
   inset: 0;
@@ -486,7 +509,7 @@ h6 {
     transform: translateY(0);
   }
 }
-/* ---------- 5. COUPON CARDS ---------- */
+/* ========= 5. COUPON CARDS ========= */
 .coupon-card {
   position: relative;
   background: linear-gradient(
@@ -562,7 +585,7 @@ h6 {
   border-color: var(--secondary-color);
 }
 
-/* ---------- 5 CATEGORY CARD ---------- */
+/* ========= 5 CATEGORY CARD ========= */
 .category-card {
   background-color: var(--white-color);
   text-align: center;
@@ -607,8 +630,7 @@ h6 {
   transform: translateY(-5px);
 }
 
-/* ---------- 6. COMPANY CARD ---------- */
-/* company card  */
+/* ========= 6. COMPANY CARD ========= */
 .company-card {
   background-color: var(--white-color);
   display: inline-block;
@@ -630,13 +652,13 @@ h6 {
   transform: translateY(-10px);
 }
 
-/* ---------- 8. BREADCRUMBS ---------- */
+/*========= 8. BREADCRUMBS SECTION ========= */
 .breadcrumb {
   padding: 8rem 0 3rem 0;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("https://images.unsplash.com/photo-1733503747506-773e56e4078f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-      no-repeat center / 100%; */
-  background: var(--secondary-color);
+      no-repeat center / 100%;
+  /* background: var(--secondary-color); */
 }
 .breadcrumb ul {
   list-style: none;
@@ -655,7 +677,7 @@ h6 {
   padding-left: 1rem;
 }
 
-/* ---------- 6. Select Dropdown ---------- */
+/* ========= 6. SELECT DROPDOWN ========= */
 .select select {
   border-radius: 0.5rem;
   background-color: var(--white-color);
@@ -663,7 +685,7 @@ h6 {
   box-shadow: var(--box-shadow);
 }
 
-/* ---------- 7. PAGINATION ---------- */
+/* ========= 7. PAGINATION BUTTONS =========*/
 .pagination {
   font-size: 14px;
   margin-top: 3rem;
@@ -691,135 +713,11 @@ h6 {
   color: var(--white-color);
 }
 
-/* ---------- 8. FOOTER ---------- */
-.footer {
-  background-color: var(--secondary-color);
-  color: var(--white-color);
-}
-
-.footer h5 {
-  margin-bottom: 1.5rem;
-  position: relative;
-  padding-bottom: 0.75rem;
-}
-
-.footer .logo {
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  /* font-weight: 700; */
-  text-decoration: none;
-  margin-bottom: 1rem;
-}
-
-.footer .logo img {
-  height: 50px;
-  width: 50px;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-}
-/* Social links with hover effects */
-.social-links a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1.25rem;
-  height: 36px;
-  width: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
-}
-
-.social-links a:hover i {
-  transform: scale(1.2);
-  transition: all 0.3s ease;
-}
-
-.footer h5::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 70px;
-  height: 3px;
-  background-color: var(--primary-color);
-}
-
-.footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer ul a {
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.footer ul a::before {
-  content: "→";
-  color: var(--primary-color);
-  opacity: 0;
-  display: none;
-  transition: all 0.3s ease;
-}
-
-.footer ul a:hover {
-  color: var(--primary-color);
-  padding-left: 5px;
-}
-
-.footer ul a:hover::before {
-  opacity: 1;
-  display: block;
-}
-/* Newsletter form */
-.subscribe-form {
-  display: flex;
-}
-
-.subscribe-form input {
-  flex: 1;
-  padding: 0.8rem 1.2rem;
-  border: none;
-  border-radius: 0.5rem 0 0 0.5rem;
-  outline: none;
-  font-size: 0.95rem;
-  background-color: var(--white-color);
-}
-
-.subscribe-form .btn {
-  padding: 1rem 2rem;
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  border: none;
-  border-radius: 0 0.5rem 0.5rem 0;
-}
-/* Footer copyright bar*/
-.footer-bottom {
-  padding: 1.5rem;
-  text-align: center;
-  background-color: rgb(from var(--primary-color) r g b/ 10%);
-}
-
 /* ===================================
   1. HOME PAGE STYLES
 =================================== */
 
-/* -------- HERO SECTION (1)-------- */
-
-/* Home-Page-1 hero container with gradient and animated stars */
+/* ========= HERO SECTION (1) ========= */
 .hero {
   padding: 2rem 0;
   min-height: 100vh;
@@ -905,7 +803,7 @@ h6 {
   }
 }
 
-/* -------- HERO SECTION (2)-------- */
+/* ========= HERO SECTION (2) ========= */
 /* Home-Page-2 hero Section with background video */
 .hero-two {
   position: relative;
@@ -921,7 +819,6 @@ h6 {
 .hero-two .banner-content {
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); */
   margin: 5rem 0;
   z-index: 5;
 }
@@ -942,7 +839,7 @@ h6 {
   height: 100%;
 }
 
-/* -------- HERO SECTION -3 -------- */
+/* ========= HERO SECTION (3) ========= */
 /* Home-Page-3 hero Section with slider */
 .hero-three {
   min-height: 100vh;
@@ -1022,7 +919,7 @@ h6 {
   min-height: 100%;
   object-fit: cover;
 }
-/*----------- swiper button styles ---------- */
+/* ========= swiper button styles ========= */
 .hero-three .swiper-controls .button-next,
 .hero-three .swiper-controls .button-prev {
   display: flex;
@@ -1057,7 +954,7 @@ h6 {
   order: 1;
 }
 
-/* -------- 2. Category Section -------- */
+/* ========= 2. CATEGORY SECTION ========= */
 /* category section with traditional link cards with hover effect */
 .categories {
   padding: 3.75rem 0;
@@ -1089,7 +986,7 @@ h6 {
   transform: scale(1.02);
 }
 
-/* -------- 3. Ending Soon Section -------- */
+/* ========= 3. ENDING-SOON SECTOIN ========= */
 /* Ending soon section with clock animation */
 .ending-soon {
   padding: 3.5rem 0;
@@ -1194,7 +1091,7 @@ h6 {
     opacity: 0.75;
   }
 }
-/* -------- 4. ABOUT-US SECTION (1) -------- */
+/* ========= 4. ABOUT-US SECTION (1) ========= */
 /*  Website info with feature list */
 .about-us {
   padding: 3.75rem 0;
@@ -1254,7 +1151,7 @@ h6 {
   background-color: var(--white-color);
 }
 
-/* --------about us section (2) ----------- */
+/* ========= ABOUT-US SECTION (2) ========= */
 .about-two {
   padding: 3.75rem 0;
 }
@@ -1315,20 +1212,16 @@ h6 {
     margin: 0;
   }
 
-/*----------ABOUT-US SECTION (3) -------- */
+/* ========= ABOUT-US SECTION (3) ========= */
 .about-three {
   min-height: 90vh;
 }
 .about-three .about-image {
-  position: relative;
   height: 80vh;
   width: 100%;
   z-index: 5;
 }
 .about-three .about-image img {
-  position: absolute;
-  top: 0;
-  right: 0px;
   width: 100%;
   min-height: 100%;
   object-fit: cover;
@@ -1351,7 +1244,7 @@ h6 {
   z-index: 1;
 }
 
-/* -------- 5. Featured Coupons -------- */
+/* ========= 5. FEATURED COUPON SECTION ========= */
 /*featured coupon cards section with traditional link card */
 .featured-coupon {
   padding: 3.75rem 0;
@@ -1385,7 +1278,7 @@ h6 {
   transform: scale(1.02);
 }
 
-/* -------- 6. How It Works -------- */
+/* ============ 6. HOW IT WORKS SECTION ========== */
 /* Process timeline section */
 .timeline-section {
   padding: 3.75rem 0;
@@ -1434,7 +1327,7 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
-/* -------- 7. Companies Section -------- */
+/* ========= 7. COMPANIES SECTOIN =========*/
 .company-section {
   padding: 3.75rem 0;
 }
@@ -1465,7 +1358,7 @@ h6 {
   width: 100px;
 }
 
-/* -------- 8. Pricing Plans -------- */
+/* ========== 8. PRICING PLANS ========== */
 .pricing {
   padding: 3.75rem 0;
 }
@@ -1538,9 +1431,9 @@ h6 {
   background: var(--white-color);
 }
 
-/* -------- 9. Statistics Section -------- */
+/*============ 9. STATISTICS SECTION ========= */
 
-/*-------- statistics section (1)---------  */
+/*-------- STATISTICS SECTION (1)---------  */
 
 /* overview of company stats  */
 .statistics {
@@ -1569,7 +1462,7 @@ h6 {
   margin: 0;
 }
 
-/* -------- Statistics section ( 2 )-------- */
+/* -------- STATISTICS SECTION( 2 )-------- */
 .statistics-two {
   padding: 3.75rem 0;
   text-align: center;
@@ -1592,7 +1485,7 @@ h6 {
   margin: 0;
 }
 
-/* -------- 10. Testimonials -------- */
+/* =========== 10. TESTIMONIALS SECION ========== */
 /* Customer feedback section */
 .testimonials .text-content {
   position: relative;
@@ -1655,7 +1548,7 @@ h6 {
   border-radius: 50%;
 }
 
-/* -------- 11. Newsletter -------- */
+/* ========== 11. NEWSLETTER SECTION ========== */
 /* Email signup */
 .news-letter {
   border-top: 5rem solid var(--primary-color);
@@ -1698,10 +1591,119 @@ h6 {
   border-bottom-right-radius: 0.5rem;
 }
 
+/* ======== 12. FOOTER SECTION ========= */
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+.footer h5 {
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+.footer .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.footer .logo img {
+  height: 50px;
+  width: 50px;
+}
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+/* Social links with hover effects */
+.social-links a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.25rem;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+.social-links a:hover i {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+.footer h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer ul a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer ul a::before {
+  content: "→";
+  color: var(--primary-color);
+  opacity: 0;
+  display: none;
+  transition: all 0.3s ease;
+}
+.footer ul a:hover {
+  color: var(--primary-color);
+  padding-left: 5px;
+}
+.footer ul a:hover::before {
+  opacity: 1;
+  display: block;
+}
+/* Newsletter form */
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  outline: none;
+  font-size: 0.95rem;
+  background-color: var(--white-color);
+}
+.subscribe-form .btn {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+/* Footer copyright bar*/
+.footer-bottom {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: rgb(from var(--primary-color) r g b/ 10%);
+}
+
 /* ===================================
    COMPANY DETAILS PAGE STYLES
 =================================== */
-/* -------- 1. Company Banner---------- */
+/* ========= 1. COMPANY BANNER SECTION========= */
 .company-banner {
   background: linear-gradient(
     to right,
@@ -1751,7 +1753,7 @@ h6 {
     --heading-3: 1.5rem;
     --heading-4: 1.375rem;
   }
-  /* HOME - 3 SWIPER   */
+  /*======= HERO SECTION - 3 SLIDER ======  */
   .hero-three-img {
     height: 400px;
     width: 400px;
@@ -1803,7 +1805,7 @@ h6 {
   /* ========================
      HOME PAGE SECTIONS
   ======================== */
-  /* ----------HERO SECTION (1) --------------  */
+  /* ======= HERO SECTION (1) =======  */
   .hero .content {
     margin-top: 3rem;
   }
@@ -1841,16 +1843,15 @@ h6 {
     z-index: -1;
   }
 
-  /* ----------HERO SECTION (2)--------------  */
+  /* ========HERO SECTION (2)============  */
   .hero-two {
     min-height: 100vh;
   }
   .hero-two .banner-content {
-    /* margin: 10rem 1rem; */
     width: 80%;
   }
 
-  /* ----------HERO SECTION(3)--------------  */
+  /* ==========HERO SECTION (3) ==========  */
   .hero-three .swiper-controls {
     flex-direction: column;
     gap: 2rem;
@@ -1888,7 +1889,7 @@ h6 {
     margin: 0 auto;
   }
 
-  /* ----- ENDING SOON ----- */
+  /* ========= ENDING SOON SECTION ======== */
   .masonry-grid {
     columns: 2;
     row-gap: 2rem;
@@ -1898,7 +1899,6 @@ h6 {
     margin-top: 5rem;
   }
 
-  /* -----ENDING SOON (2) ------ */
   /* countdown timer  */
   .countdown-timer {
     gap: 1.5rem;
@@ -1908,7 +1908,7 @@ h6 {
     width: 6.5rem;
   }
 
-  /* ----- ABOUT US ----- */
+  /* =========== ABOUT US SECTION (1) ========= */
   .about-us .quote {
     width: 90%;
   }
@@ -1921,7 +1921,7 @@ h6 {
     height: 100%;
   }
 
-  /*-------ABOUT US (3)-----*/
+  /*========== ABOUT US SECTION (3) ==========*/
  .about-three .about-three-content {
     padding: 9rem 0.75rem 3.75rem 0.75rem;
   }
@@ -1932,7 +1932,7 @@ h6 {
     height: calc(100% - 40%);
   }
 
-  /* ----- COMPANIES ----- */
+  /* =========COMPANIES SECTION ========= */
   .company-section .link-card {
     text-align: left;
   }
@@ -1941,12 +1941,12 @@ h6 {
     width: 150px;
   }
 
-  /* ----- STATISTICS ----- */
+  /*========== STATISTICS SECTION ========= */
   .statistics {
     padding: 8rem 0;
   }
 
-  /* ----- TESTIMONIALS ----- */
+  /* ========== TESTIMONIALS SECTION ========= */
   .testimonials {
     background: linear-gradient(
       to right,
@@ -1969,7 +1969,7 @@ h6 {
     z-index: 1;
   }
 
-  /* ----- NEWSLETTER ----- */
+  /* ========= NEWSLETTER SECTION ========= */
   .news-letter {
     padding-left: 6rem;
     border-top: 0;
@@ -2000,12 +2000,11 @@ h6 {
   /* ========================
      COMMON COMPONENT 
   ======================== */
-  /* ---Navbar ----  */
+  /* ======== NAVBAR SECTION ======== */
   .brand {
     display: block;
     margin: 0;
   }
-
   .navbar ul {
     position: inherit;
     color: var(--white-color);
@@ -2027,7 +2026,6 @@ h6 {
     background: var(--alternative-color);
     transition: width 0.3s ease;
   }
-
   .navbar ul li a:hover::after {
     width: 100%;
   }
@@ -2055,9 +2053,9 @@ h6 {
   }
 
   /* ========================
-     PAGE SECTIONS
+      SECTIONS STYLE
   ======================== */
-  /* ----------HERO SECTION (2)--------------  */
+  /* ========= HERO SECTION (2) ========== */
   .hero-two .banner-content {
     max-width: 70%;
   }
@@ -2068,7 +2066,7 @@ h6 {
     border-radius: 0.5rem;
   }
 
-  /* ----------HERO SECTION (3)--------------  */
+  /* ========= HERO SECTION (3) ========== */
   .hero-three .discount-card {
     padding: 1rem 2rem;
   }
@@ -2093,12 +2091,12 @@ h6 {
     height: 500px;
   }
 
-  /* -------ENDING SOON ------- */
+  /* ======== ENDING SOON SECTION ========= */
   .ending-image {
     bottom: -6rem;
   }
 
-  /* ----------ABOUT-US SECTION -- 2 ----------- */
+  /* ========== ABOUT-US SECTION (2) ========= */
 .about-two .image-container img {
     border-radius: 50% 0 0 50%;
   }
@@ -2111,7 +2109,7 @@ h6 {
     rotate: 40deg;
   }
 
-  /* ----------ABOUT-US SECTION -- 3 ----------- */
+  /* ======== ABOUT-US SECTION (3) ========== */
 
  .about-three .about-three-content {
     padding: 3.75rem;
@@ -2124,11 +2122,8 @@ h6 {
     background-color: var(--primary-lighten-color);
     z-index: -1;
   }
-  .about-three .about-image {
-    width: 100%;
-  }
-
-  /* ----- HOW IT WORKS ----- */
+  
+  /* ========== HOW IT WORKS SECTION ======== */
   .timeline {
     display: block;
     position: absolute;
@@ -2139,7 +2134,7 @@ h6 {
     margin-bottom: 3rem;
   }
 
-  /*------ pricing section--------  */
+  /*=========== PRICING PLANS SECTION =========== */
   .pricing-card {
     padding: 3rem 2rem;
   }
@@ -2147,7 +2142,7 @@ h6 {
     margin-right: -2rem;
   }
 
-  /* ----- TESTIMONIALS ----- */
+  /* ========= TESTIMONIALS SECTION ========== */
   .testimonials {
     padding-left: 6rem;
   }
@@ -2163,7 +2158,7 @@ h6 {
     --heading-3: 2.25rem;
     --heading-4: 2rem;
   }
-  /* Timeline positioning */
+  /* =========TIMELINE SECTION ========= */
   .timeline {
     top: 1.5rem;
   }
@@ -2176,7 +2171,7 @@ h6 {
     --heading-3: 2.5rem;
     --heading-4: 2.25rem;
   }
-  /* Timeline positioning */
+/* =========TIMELINE SECTION ========= */
   .timeline {
     top: -1.5rem;
   }
