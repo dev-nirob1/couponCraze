@@ -14,7 +14,6 @@
   width: 100%;
   min-height: 100%;
   object-fit: cover;
-  margin-bottom: -30px;
   z-index: 5;
 }
 
@@ -47,21 +46,18 @@
 }
 
 @media (min-width: 992px) {
-   .about-three .about-three-content {
+  .about-three .about-three-content {
     padding: 3.75rem;
   }
   .about-three-content::after {
-  top: 0;
-  right: 0;
-  width: 50vw;
-  height: 100%;
-  background-color: var(--primary-lighten-color);
-  z-index: -1;
-}
+    top: 0;
+    right: 0;
+    width: 55vw;
+    height: 100%;
+    background-color: var(--primary-lighten-color);
+    z-index: -1;
+  }
   .about-three .about-image {
-    margin-right: -10rem;
-    margin-bottom: 0;
     width: 100%;
-
   }
 }

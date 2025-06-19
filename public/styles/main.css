@@ -1255,11 +1255,101 @@ h6 {
 }
 
 /* --------about us section (2) ----------- */
-/* todo about us two comming  */
+.about-two {
+  padding: 3.75rem 0;
+}
+.about-two .image-container {
+  height: 80vh;
+}
+.about-two .image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 50% 0 0;
+}
+.about-two p {
+  margin: 0.5rem 0 0 0;
+}
+.about-two .icon {
+  height: 80px;
+  width: 80px;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  display: grid;
+  place-content: center;
+}
+.about-two .about-two-content ul {
+  list-style: none;
+  padding: 0;
+}
+.about-two .about-two-content ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about-two .about-two-content ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.about-two .about-card {
+  position: absolute;
+  left: 38%;
+  top: -2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white-color);
+}
+ .about-two .about-card h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  .about-two .about-card P {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .about-two .about-card h3,
+  .about-two .about-card p {
+    margin: 0;
+  }
 
 /*----------ABOUT-US SECTION (3) -------- */
-/* todo about us three is comming  */
+.about-three {
+  min-height: 90vh;
+}
+.about-three .about-image {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  z-index: 5;
+}
+.about-three .about-image img {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 5;
+}
 
+.about-three-content::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 100vw;
+  height: calc(100% - 25%);
+  background-color: var(--primary-lighten-color);
+  z-index: -1;
+}
+.about-three .about-three-content {
+  height: 100%;
+  padding: 3.75rem 0.75rem;
+  z-index: 1;
+}
 
 /* -------- 5. Featured Coupons -------- */
 /*featured coupon cards section with traditional link card */
@@ -1287,7 +1377,7 @@ h6 {
   margin-top: 0.5rem;
 }
 
-.link-card img {
+.featured-coupon .link-card img {
   height: 100px;
   width: 100px;
 }
@@ -1301,9 +1391,12 @@ h6 {
   padding: 3.75rem 0;
 }
 .timeline-section .btn {
-  font-size: 1.25rem;
+  font-size: 1rem;
   border-radius: 0.5rem;
-  padding: 1rem 1.25rem;
+  padding: 1rem 2rem;
+}
+.timeline-section .btn:hover {
+  background-color: rgb(from var(--secondary-color) r g b / 90%);
 }
 .how-it-works {
   position: relative;
@@ -1345,7 +1438,6 @@ h6 {
 .company-section {
   padding: 3.75rem 0;
 }
-
 .company-section .link-card {
   text-align: center;
   text-decoration: none;
@@ -1361,16 +1453,13 @@ h6 {
   transition: all 0.3s ease-in-out;
   z-index: 1;
 }
-
 .company-section .link-card:hover {
   transform: scale(1.02);
 }
-
 .company-section .link-card p {
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
-
 .company-section .link-card img {
   height: 100px;
   width: 100px;
@@ -1380,7 +1469,6 @@ h6 {
 .pricing {
   padding: 3.75rem 0;
 }
-
 /* pricing card */
 .pricing-card {
   position: relative;
@@ -1392,26 +1480,21 @@ h6 {
   box-shadow: var(--box-shadow);
   cursor: pointer;
 }
-
 .pricing-card .price-icon {
   font-size: 5rem;
   color: var(--primary-color);
 }
-
 .pricing-card:hover {
   transform: translateY(-0.5rem);
 }
-
 .pricing-card .sub-title {
   margin: 0.5rem 0;
 }
-
 .pricing-card .hero-title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .pricing-card .hero-title span {
   font-size: 1.75rem;
   font-weight: bold;
@@ -1423,13 +1506,11 @@ h6 {
   border-radius: 1.5rem;
   width: 100%;
 }
-
 .pricing-card .btn:hover {
   background-color: var(--white-color);
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
-
 .pricing-card .exclusive-badge {
   width: 280px;
   position: relative;
@@ -1437,7 +1518,6 @@ h6 {
   margin-top: -1.5rem;
   overflow: hidden;
 }
-
 .badge {
   background-color: var(--alternative-color);
   color: var(--white-color);
@@ -1447,7 +1527,6 @@ h6 {
   text-transform: uppercase;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
-
 .pricing-card .badge::before {
   content: "";
   position: absolute;
@@ -1459,7 +1538,10 @@ h6 {
   background: var(--white-color);
 }
 
-/* -------- 9. Statistics -------- */
+/* -------- 9. Statistics Section -------- */
+
+/*-------- statistics section (1)---------  */
+
 /* overview of company stats  */
 .statistics {
   padding: 3.75rem 0;
@@ -1476,7 +1558,6 @@ h6 {
   gap: 1rem;
 }
 .statistics .stats-content i {
-  /* font-size: 3rem; */
   height: 100px;
   width: 100px;
   line-height: 100px;
@@ -1488,7 +1569,7 @@ h6 {
   margin: 0;
 }
 
-/* -------- 9. Statistics ( 2 ) home-page-two -------- */
+/* -------- Statistics section ( 2 )-------- */
 .statistics-two {
   padding: 3.75rem 0;
   text-align: center;
@@ -1499,7 +1580,6 @@ h6 {
   align-items: center;
 }
 .statistics-two .stats-content li {
-  /* background-color: var(--primary-lighten-color); */
   box-shadow: var(--box-shadow);
   padding: 2rem;
   border-radius: 0.75rem;
@@ -1521,7 +1601,6 @@ h6 {
   color: var(--white-color);
   background-color: var(--primary-color);
 }
-
 .testimonials .text-content::after {
   content: "";
   position: absolute;
@@ -1533,7 +1612,6 @@ h6 {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
-
 .cards-container {
   padding: 1rem 0.75rem;
   width: 100%;
@@ -1543,14 +1621,12 @@ h6 {
   transition: all 0.5s ease-in-out;
   z-index: 3;
 }
-
 .btn-container {
   padding: 0 0.75rem;
   z-index: 3;
   display: flex;
   gap: 1rem;
 }
-
 .btn-container .btn {
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
@@ -1570,11 +1646,9 @@ h6 {
   scroll-snap-align: start;
   transition: all 0.5 ease-in-out;
 }
-
 .testimonial-card p {
   margin: 10px 0 0 0;
 }
-
 .testimonial-card img {
   height: 4rem;
   width: 4rem;
@@ -1594,7 +1668,6 @@ h6 {
     var(--white-color)
   );
 }
-
 .news-letter .content {
   display: flex;
   align-items: center;
@@ -1626,45 +1699,6 @@ h6 {
 }
 
 /* ===================================
-   HOME PAGE --2 STYLES
-=================================== */
-
-
-/* ===================================
-   HOME PAGE --3 STYLES
-=================================== */
-
-/* ===================================
-   LATEST COUPON PAGE STYLES
-   (Note: Uses reusable components styled in COMMON COMPONENTS)
-=================================== */
-
-/* ===================================
-   EXCLUSIVE COUPON PAGE STYLES
-   (Note: Uses reusable components styled in COMMON COMPONENTS)
-=================================== */
-
-/* ===================================
-   ENDING SOON PAGE STYLES
-   (Note: Uses reusable components styled in COMMON COMPONENTS)
-=================================== */
-
-/* ===================================
-   CATEGORIES PAGE STYLES
-   (Note: Uses reusable components styled in COMMON COMPONENTS)
-=================================== */
-
-/* ===================================
-   CATEGORY DETAILS PAGE STYLES
-   (Note: Uses reusable components styled in COMMON COMPONENTS)
-=================================== */
-
-/* ===================================
-   COMPANIES PAGE STYLES
-   (Note: Uses reusable components styled in COMMON COMPONENTS)
-=================================== */
-
-/* ===================================
    COMPANY DETAILS PAGE STYLES
 =================================== */
 /* -------- 1. Company Banner---------- */
@@ -1679,9 +1713,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 5.5rem; */
 }
-
 .company-banner .banner-content {
   display: flex;
   justify-content: center;
@@ -1691,12 +1723,10 @@ h6 {
   max-width: 1000px;
   width: 100%;
 }
-
 .company-banner .banner-text {
   flex: 1;
   min-width: 280px;
 }
-
 .company-banner .company-logo {
   width: 120px;
   height: 120px;
@@ -1706,7 +1736,6 @@ h6 {
   background-color: var(--white-color);
   border: 4px solid var(--white-color);
 }
-
 /* =============================================
    # RESPONSIVE BREAKPOINTS
    Organized by device width and page sections
@@ -1772,9 +1801,9 @@ h6 {
   }
 
   /* ========================
-     PAGE SECTIONS
+     HOME PAGE SECTIONS
   ======================== */
-  /* ----------HERO SECTION (HOME-PAGE - 1) --------------  */
+  /* ----------HERO SECTION (1) --------------  */
   .hero .content {
     margin-top: 3rem;
   }
@@ -1812,7 +1841,7 @@ h6 {
     z-index: -1;
   }
 
-  /* ----------HERO SECTION -- 2 (HOME PAGE-2)--------------  */
+  /* ----------HERO SECTION (2)--------------  */
   .hero-two {
     min-height: 100vh;
   }
@@ -1821,13 +1850,13 @@ h6 {
     width: 80%;
   }
 
-  /* ----------HERO SECTION -- 3 (HOME PAGE-3)--------------  */
+  /* ----------HERO SECTION(3)--------------  */
   .hero-three .swiper-controls {
     flex-direction: column;
     gap: 2rem;
     order: 1;
   }
-  /* --------swiper-controls ------- */
+  /*swiper-controls  */
   .hero-three .swiper-controls .button-next,
   .hero-three .swiper-controls .button-prev {
     rotate: -90deg;
@@ -1865,18 +1894,15 @@ h6 {
     row-gap: 2rem;
     column-gap: 2rem;
   }
-
   .masonry-item:nth-child(1) {
     margin-top: 5rem;
   }
 
-  /* -----ending soon two ------ */
-
+  /* -----ENDING SOON (2) ------ */
   /* countdown timer  */
   .countdown-timer {
     gap: 1.5rem;
   }
-
   .countdown-timer > div {
     height: 6.5rem;
     width: 6.5rem;
@@ -1893,6 +1919,17 @@ h6 {
   }
   .about-us .image img {
     height: 100%;
+  }
+
+  /*-------ABOUT US (3)-----*/
+ .about-three .about-three-content {
+    padding: 9rem 0.75rem 3.75rem 0.75rem;
+  }
+  .about-three-content::after {
+    top: 40%;
+    right: 0;
+    width: 100vw;
+    height: calc(100% - 40%);
   }
 
   /* ----- COMPANIES ----- */
@@ -1937,7 +1974,6 @@ h6 {
     padding-left: 6rem;
     border-top: 0;
   }
-
   .news-letter .content {
     flex-direction: row;
     padding-right: 5rem;
@@ -2021,7 +2057,7 @@ h6 {
   /* ========================
      PAGE SECTIONS
   ======================== */
-  /* ----------HERO SECTION -- 2 (HOME PAGE-2)--------------  */
+  /* ----------HERO SECTION (2)--------------  */
   .hero-two .banner-content {
     max-width: 70%;
   }
@@ -2032,7 +2068,7 @@ h6 {
     border-radius: 0.5rem;
   }
 
-  /* ----------HERO SECTION -- 3 (HOME PAGE-3)--------------  */
+  /* ----------HERO SECTION (3)--------------  */
   .hero-three .discount-card {
     padding: 1rem 2rem;
   }
@@ -2056,15 +2092,40 @@ h6 {
     width: 500px;
     height: 500px;
   }
-  /* ----------ABOUT-US SECTION -- 3 ----------- */
- /* todo about us three is comming  */
 
-  /* ----------ABOUT-US SECTION -- 2 ----------- */
-  /* todo about us two is comming */
- 
-  /* -------ending soon ------- */
+  /* -------ENDING SOON ------- */
   .ending-image {
     bottom: -6rem;
+  }
+
+  /* ----------ABOUT-US SECTION -- 2 ----------- */
+.about-two .image-container img {
+    border-radius: 50% 0 0 50%;
+  }
+  .about-two .about-two-content ul li {
+    flex-direction: row;
+  }
+  .about-two .about-card {
+    left: -2.5rem;
+    top: 45%;
+    rotate: 40deg;
+  }
+
+  /* ----------ABOUT-US SECTION -- 3 ----------- */
+
+ .about-three .about-three-content {
+    padding: 3.75rem;
+  }
+  .about-three-content::after {
+    top: 0;
+    right: 0;
+    width: 55vw;
+    height: 100%;
+    background-color: var(--primary-lighten-color);
+    z-index: -1;
+  }
+  .about-three .about-image {
+    width: 100%;
   }
 
   /* ----- HOW IT WORKS ----- */
@@ -2090,8 +2151,6 @@ h6 {
   .testimonials {
     padding-left: 6rem;
   }
-
-  /* ------------testimonials section ends ---------------- */
 }
 
 /* ----------------------------
@@ -2117,6 +2176,7 @@ h6 {
     --heading-3: 2.5rem;
     --heading-4: 2.25rem;
   }
+  /* Timeline positioning */
   .timeline {
     top: -1.5rem;
   }
