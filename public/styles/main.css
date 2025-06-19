@@ -1,11 +1,29 @@
 /* ===================================
-   Theme Name: CouponCraze
+   Theme Name: CouponHub
    Author: [Your Name or Company]
    Description: Responsive and modern coupon & deals HTML template.
    Version: 1.0
    Created: May 2025
    License: [Insert License Type if applicable]
   =================================== */
+
+/* ===================================
+   TABLE OF CONTENTS
+=================================== */
+/*
+   1. GOOGLE FONTS
+   2. RESET STYLES
+   3. ROOT VARIABLES
+   4. UTILITY CLASSES
+      - Text Colors
+      - Background Colors
+      - Flex Utilities
+      - Button Styles
+  5. COMMON COMPONENTS
+      - Typography
+      - Section Titles
+      - Navigation Menu
+*/
 
 /* ===============================
     GOOGLE FONTS
@@ -43,7 +61,6 @@ h6 {
   margin: 0;
   line-height: 1.3;
   font-family: var(--roboto-font);
-  /* color: var(--dark-color); */
 }
 h1 {
   font-size: var(--heading-1);
@@ -161,6 +178,7 @@ h6 {
 .bg-white {
   background-color: var(--white-color);
 }
+
 .text-center {
   text-align: center;
 }
@@ -225,13 +243,12 @@ h6 {
 .title {
   font-weight: bold;
 }
-
 .sub-title {
   font-size: var(--heading-5);
 }
 
-/* ---------- 2. SECTION TITLES ---------- */
-.section-container {
+/* ---------- 2. SECTION HEADER ---------- */
+.section-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,7 +270,6 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-
 /* Section name with decorative elements */
 .section-name {
   padding: 0.75rem;
@@ -265,7 +281,6 @@ h6 {
   align-items: center;
   position: relative;
 }
-
 .section-name::before,
 .section-name::after {
   content: "";
@@ -278,20 +293,16 @@ h6 {
   border-radius: 50%;
   z-index: 1;
 }
-
 .section-name::before {
   top: -24px;
 }
-
 .section-name::after {
   bottom: -24px;
 }
-
 .bg-lighten .bar-code {
   border-right: 2px dashed var(--primary-lighten-color);
   border-left: 2px dashed var(--primary-lighten-color);
 }
-
 .bg-lighten .section-name::before,
 .bg-lighten .section-name::after {
   background-color: var(--primary-lighten-color);
@@ -337,16 +348,13 @@ h6 {
   height: 65px;
   width: 100%;
 }
-
 .brand {
   display: none;
 }
-
 .nav-links {
   display: flex;
   align-items: center;
 }
-
 .navbar ul {
   list-style: none;
   position: fixed;
@@ -362,19 +370,16 @@ h6 {
   gap: 1.5rem;
   transition: 0.3s;
 }
-
 .navbar ul.active {
   top: 0;
   left: 0;
 }
-
 .navbar ul li a {
   font-weight: 500;
   transition: color 0.2s ease-in-out;
   position: relative;
   padding: 0.5rem 0;
 }
-
 .navbar ul li a:hover {
   color: var(--alternative-color);
 }
@@ -397,7 +402,7 @@ h6 {
   cursor: pointer;
 }
 
-/* ---------- 4. Popup component ---------- */
+/* ---------- 4. Popup/modal component ---------- */
 .modal {
   position: fixed;
   inset: 0;
@@ -407,7 +412,6 @@ h6 {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .modal-content {
   position: relative;
   width: 90%;
@@ -441,7 +445,6 @@ h6 {
   background-color: var(--alternative-color);
   color: var(--white-color);
 }
-
 .discount .sub-title {
   line-height: 7rem;
   margin: 0 auto;
@@ -462,7 +465,6 @@ h6 {
   gap: 0.25rem;
   margin: 0.75rem 0;
 }
-
 .modal-content .close-btn {
   position: absolute;
   right: 0px;
@@ -473,7 +475,6 @@ h6 {
   z-index: 1002;
   margin: 0;
 }
-
 @keyframes modalFadeIn {
   from {
     opacity: 0;
@@ -485,7 +486,6 @@ h6 {
     transform: translateY(0);
   }
 }
-
 /* ---------- 5. COUPON CARDS ---------- */
 .coupon-card {
   position: relative;
@@ -499,27 +499,22 @@ h6 {
   border-radius: 0.75rem;
   overflow: hidden;
 }
-
 .card-body {
   padding-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
 }
-
 .coupon-card p {
   margin-top: 0.5rem;
 }
-
 .coupon-card .price {
   display: flex;
   align-items: center;
 }
-
 .coupon-card .price span {
   font-size: 1.5rem;
 }
-
 .card-footer {
   position: absolute;
   bottom: 0;
@@ -551,7 +546,6 @@ h6 {
 .card-footer::after {
   right: -20px;
 }
-
 .bg-secondary .card-footer::before,
 .bg-secondary .card-footer::after {
   background-color: var(--secondary-color);
@@ -579,17 +573,14 @@ h6 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: var(--box-shadow);
 }
-
 .category-card .category-image {
   margin: 0 auto;
   width: 80px;
   height: 80px;
 }
-
 .category-card h5 {
   margin: 1rem 0;
 }
-
 .category-overlay {
   position: absolute;
   top: 0;
@@ -602,7 +593,7 @@ h6 {
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 999;
+  z-index: 10;
 }
 .category-card:hover .category-overlay {
   opacity: 1;
@@ -612,7 +603,6 @@ h6 {
   color: var(--white-color);
   background-color: var(--alternative-color);
 }
-
 .category-card:hover {
   transform: translateY(-5px);
 }
@@ -626,11 +616,9 @@ h6 {
   border-radius: 1rem;
   padding: 1.5rem;
   text-align: center;
-  transition: all 0.3s ease-in-out;
   box-shadow: var(--box-shadow);
-  z-index: 1;
+  transition: all 0.3s ease-in-out;
 }
-
 .company-card h3 {
   margin: 0.5rem;
 }
@@ -644,38 +632,37 @@ h6 {
 
 /* ---------- 8. BREADCRUMBS ---------- */
 .breadcrumb {
-  /* margin-top: 5.5rem; */
   padding: 8rem 0 3rem 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("https://images.unsplash.com/photo-1733503747506-773e56e4078f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-      no-repeat center / 100%;
+      no-repeat center / 100%; */
+  background: var(--secondary-color);
 }
-
 .breadcrumb ul {
   list-style: none;
   font-size: 1rem;
   padding: 0;
 }
-
 .breadcrumb ul li a {
   color: var(--primary-color);
   text-decoration: none;
 }
-
 .breadcrumb ul li:hover a {
   text-decoration: underline;
 }
-
 .breadcrumb ul li:not(:last-child)::after {
   content: "/";
   padding-left: 1rem;
 }
+
 /* ---------- 6. Select Dropdown ---------- */
 .select select {
+  border-radius: 0.5rem;
   background-color: var(--white-color);
   border: var(--border-color);
   box-shadow: var(--box-shadow);
 }
+
 /* ---------- 7. PAGINATION ---------- */
 .pagination {
   font-size: 14px;
@@ -687,24 +674,21 @@ h6 {
   justify-content: center;
   gap: 0.5rem;
 }
-
 .pagination li {
   border-radius: 0.5rem;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--primary-color);
   background-color: var(--white-color);
 }
-
 .pagination li a {
   display: inline-block;
   padding: 0.5rem 1rem;
   text-decoration: none;
+  border-radius: 0.5rem;
 }
-
 .pagination li a.active {
   background-color: var(--primary-color);
   color: var(--white-color);
-  border-radius: 0.5rem;
 }
 
 /* ---------- 8. FOOTER ---------- */
@@ -830,11 +814,12 @@ h6 {
 }
 
 /* ===================================
-   HOME PAGE STYLES
+  1. HOME PAGE STYLES
 =================================== */
 
-/* -------- 1. HERO SECTION-------- */
-/* Main hero container with gradient and animated stars */
+/* -------- HERO SECTION (1)-------- */
+
+/* Home-Page-1 hero container with gradient and animated stars */
 .hero {
   padding: 2rem 0;
   min-height: 100vh;
@@ -865,12 +850,10 @@ h6 {
   color: var(--white-color);
   background-color: var(--alternative-color);
 }
-
 .hero .btn:hover {
   color: var(--secondary-color);
   background-color: var(--white-color);
 }
-
 .hero .content .img {
   margin-top: 1rem;
   width: 100%;
@@ -878,12 +861,10 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-
 .hero .content .img img {
   width: 80%;
   height: 100%;
 }
-
 .star-1,
 .star-2,
 .star-3 {
@@ -892,43 +873,188 @@ h6 {
   width: 60px;
   animation: float 3s ease-in-out infinite;
 }
-
 .star-1 {
   left: 0;
   top: 65%;
   z-index: -1;
 }
-
 .star-2 {
   right: 0;
   top: 60%;
   z-index: -1;
 }
-
 .star-3 {
   right: 10%;
   top: 5%;
   z-index: -1;
 }
-
 .star-1 img,
 .star-2 img,
 .star-3 img {
   width: 100%;
   height: 100%;
 }
-
 @keyframes float {
   0%,
   100% {
     transform: translateY(0);
     opacity: 1;
-  }
-
-  50% {
+  }50% {
     transform: translateY(-1rem);
     opacity: 0.5;
   }
+}
+
+/* -------- HERO SECTION (2)-------- */
+/* Home-Page-2 hero Section with background video */
+.hero-two {
+  position: relative;
+  text-align: center;
+  color: var(--white-color);
+  width: 100vw;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-two .banner-content {
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); */
+  margin: 5rem 0;
+  z-index: 5;
+}
+.hero-two .banner-content p {
+  font-size: 1.25rem;
+  margin-top: 1.4rem;
+}
+.hero-two .video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+}
+.hero-two .video-bg video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* -------- HERO SECTION -3 -------- */
+/* Home-Page-3 hero Section with slider */
+.hero-three {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  padding: 3.75rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-three .swiper-controls {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+/* discount percentage tag  */
+.hero-three .discount-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+.hero-three .discount-card h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.hero-three .discount-card P {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.hero-three .discount-card h1,
+.hero-three .discount-card p {
+  margin: 0;
+}
+/* discount coupon tag  */
+.hero-three .coupon-1,
+.hero-three .coupon-2 {
+  position: absolute;
+  background: var(--white-color);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+/* overlay cards  */
+.hero-three .discount-card {
+  rotate: -45deg;
+  top: 65%;
+  left: 0;
+}
+.hero-three .coupon-1 {
+  border-top: 3px solid var(--danger-color);
+  right: 0.25rem;
+  top: 1rem;
+}
+.hero-three .coupon-2 {
+  border-top: 3px solid var(--secondary-color);
+  rotate: -10deg;
+  right: 0.25rem;
+  bottom: 1rem;
+}
+.hero-three .hero-three-img {
+  position: relative;
+  height: 280px;
+  width: 280px;
+  margin: 0 auto;
+}
+.hero-three .hero-three-img img {
+  border-radius: 50%;
+  display: block;
+}
+.img-full {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+/*----------- swiper button styles ---------- */
+.hero-three .swiper-controls .button-next,
+.hero-three .swiper-controls .button-prev {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  position: relative;
+}
+.hero-three .swiper-controls .button-next::after,
+.hero-three .swiper-controls .button-prev::before {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--secondary-color);
+}
+.hero-three .swiper-controls .button-prev::before {
+  left: 0;
+  height: 2.5rem;
+  width: 3.75rem;
+  border-right: 0;
+}
+.hero-three .swiper-controls .button-next::after {
+  right: 0;
+  height: 2.5rem;
+  width: 2.75rem;
+  border-left: 0;
+}
+.hero-three .swiper-controls {
+  order: 2;
+}
+.hero-three .span-11 {
+  order: 1;
 }
 
 /* -------- 2. Category Section -------- */
@@ -936,7 +1062,6 @@ h6 {
 .categories {
   padding: 3.75rem 0;
 }
-
 .categories .link-card {
   text-align: center;
   text-decoration: none;
@@ -948,21 +1073,18 @@ h6 {
   box-shadow: var(--box-shadow);
   color: var(--white-color);
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: .75rem;
   transition: all 0.3s ease-in-out;
   z-index: 1;
 }
-
 .categories .link-card p {
   margin-top: 0.5rem;
 }
-
 .categories .link-card img {
   height: 80px;
   width: 80px;
   margin-bottom: 0.5rem;
 }
-
 .categories .link-card:hover {
   transform: scale(1.02);
 }
@@ -1185,13 +1307,14 @@ h6 {
   z-index: 5;
 }
 
-.about-bg {
+.about-two-content::after {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 50vw;
   height: 100%;
-  background-color: var(--primary-lighten-color); 
+  background-color: var(--primary-lighten-color);
   z-index: -1;
 }
 .about-us-two .about-two-content {
@@ -1622,167 +1745,11 @@ h6 {
    HOME PAGE --2 STYLES
 =================================== */
 
-/* -------- HERO SECTION -------- */
-.home-two-banner {
-  position: relative;
-  text-align: center;
-  color: var(--white-color);
-  width: 100vw;
-  min-height: 100vh;
-  padding: 3rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.home-two-banner .banner-content {
-  width: 100%;
-  height: 100%;
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); */
-  margin: 5rem 0;
-  z-index: 5;
-}
-.home-two-banner .banner-content p {
-  font-size: 1.25rem;
-  margin-top: 1.4rem;
-}
-.home-two-banner .video-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-}
-.home-two-banner .video-bg video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
 /* ===================================
    HOME PAGE --3 STYLES
 =================================== */
-/* -------- HERO SECTION -3 -------- */
-.hero-three {
-  min-height: 100vh;
-  background-color: var(--primary-color);
-  padding: 3.75rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.hero-three .swiper-controls {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.hero-three .swiper-controls {
-  order: 2;
-}
-
-.hero-three .span-11 {
-  order: 1;
-}
-
-/* discount percentage tag  */
-.hero-three .discount-card {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  color: var(--white-color);
-  background-color: var(--secondary-color);
-}
-.hero-three .discount-card h1 {
-  font-size: 1.5rem;
-  font-weight: 900;
-}
-.hero-three .discount-card P {
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-.hero-three .discount-card h1,
-.hero-three .discount-card p {
-  margin: 0;
-}
-/* discount coupon tag  */
-.hero-three .coupon-1,
-.hero-three .coupon-2 {
-  position: absolute;
-  background: var(--white-color);
-  border-radius: 0.75rem;
-  padding: 0.75rem 1rem;
-  /* width: 180px; */
-}
-/*----------- swiper button styles ---------- */
-.hero-three .swiper-controls .button-next,
-.hero-three .swiper-controls .button-prev {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  color: var(--secondary-color);
-  font-size: 1rem;
-  position: relative;
-}
-.hero-three .swiper-controls .button-next::after,
-.hero-three .swiper-controls .button-prev::before {
-  content: "";
-  position: absolute;
-  border: 1px solid var(--secondary-color);
-}
-.hero-three .swiper-controls .button-prev::before {
-  left: 0;
-  height: 2.5rem;
-  width: 3.75rem;
-  border-right: 0;
-}
-.hero-three .swiper-controls .button-next::after {
-  right: 0;
-  height: 2.5rem;
-  width: 2.75rem;
-  border-left: 0;
-}
-/* overlay cards  */
-.hero-three .discount-card {
-  rotate: -45deg;
-  top: 65%;
-  left: 0;
-}
-.hero-three .coupon-1 {
-  border-top: 3px solid var(--danger-color);
-  right: 0.25rem;
-  top: 1rem;
-}
-.hero-three .coupon-2 {
-  border-top: 3px solid var(--secondary-color);
-  rotate: -10deg;
-  right: 0.25rem;
-  bottom: 1rem;
-}
-.hero-three .swiper-content {
-  order: 2;
-}
-.hero-three .hero-three-img {
-  position: relative;
-  order: 1;
-  height: 280px;
-  width: 280px;
-  margin: 0 auto;
-}
-.hero-three .hero-three-img img {
-  border-radius: 50%;
-  display: block;
-}
-.img-full {
-  width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-}
 /* ===================================
    LATEST COUPON PAGE STYLES
    (Note: Uses reusable components styled in COMMON COMPONENTS)
@@ -1962,10 +1929,10 @@ h6 {
   }
 
   /* ----------HERO SECTION -- 2 (HOME PAGE-2)--------------  */
-  .home-two-banner {
+  .hero-two {
     min-height: 100vh;
   }
-  .home-two-banner .banner-content {
+  .hero-two .banner-content {
     /* margin: 10rem 1rem; */
     width: 80%;
   }
@@ -2175,10 +2142,10 @@ h6 {
      PAGE SECTIONS
   ======================== */
   /* ----------HERO SECTION -- 2 (HOME PAGE-2)--------------  */
-  .home-two-banner .banner-content {
+  .hero-two .banner-content {
     max-width: 70%;
   }
-  .home-two-banner .banner-content .btn {
+  .hero-two .banner-content .btn {
     font-size: 1rem;
     font-weight: 600;
     padding: 1.1rem 2.5rem;
@@ -2237,18 +2204,18 @@ h6 {
     bottom: 35%;
     rotate: 40deg;
   }
-.about-us-three .about-card h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-}
-.about-us-three .about-card P {
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-.about-us-three .about-card h1,
-.about-us-three .about-card p {
-  margin: 0;
-}
+  .about-us-three .about-card h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  .about-us-three .about-card P {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .about-us-three .about-card h1,
+  .about-us-three .about-card p {
+    margin: 0;
+  }
   /* -------ending soon ------- */
   .ending-image {
     bottom: -6rem;
