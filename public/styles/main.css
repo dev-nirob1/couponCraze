@@ -1096,22 +1096,20 @@ h6 {
   color: var(--white-color);
   overflow: hidden;
 }
-
-.ending-image {
+.ending-soon .ending-image {
   position: absolute;
   opacity: 0.3;
   width: 500px;
   height: 500px;
   left: -10rem;
 }
-
 .ending-soon .sub-title {
   margin-top: 0.5rem;
 }
-
 .masonry-item {
   margin-bottom: 2rem;
 }
+
 /* Analog clock styling */
 .clock {
   width: 150px;
@@ -1122,7 +1120,6 @@ h6 {
   position: relative;
   margin: 2rem auto;
 }
-
 .clock::after {
   content: "";
   width: 12px;
@@ -1139,14 +1136,12 @@ h6 {
   top: 50%;
   transform-origin: bottom;
 }
-
 .hour-hand {
   width: 4px;
   height: 40px;
   background: var(--primary-color);
   transform: translate(-50%, -100%) rotate(30deg);
 }
-
 .minute-hand {
   width: 3px;
   height: 60px;
@@ -1154,13 +1149,11 @@ h6 {
   transform: translate(-50%, -100%) rotate(0deg);
   animation: spin 10s linear infinite;
 }
-
 @keyframes spin {
   to {
     transform: translate(-50%, -100%) rotate(360deg);
   }
 }
-
 /* Digital countdown timer */
 .countdown-timer {
   display: flex;
@@ -1168,7 +1161,6 @@ h6 {
   gap: 0.75rem;
   margin: 1.5rem 0;
 }
-
 .countdown-timer > div {
   background: rgb(from var(--primary-color) r g b/15%);
   height: 5rem;
@@ -1178,43 +1170,32 @@ h6 {
   transition: all 0.3s ease;
   animation: pulse 2s infinite;
 }
-
 .countdown-timer > div h4 {
   transition: all 0.3s ease;
 }
-
 .countdown-timer > div:nth-child(1) {
   animation-delay: 0s;
 }
-
 .countdown-timer > div:nth-child(2) {
   animation-delay: 0.5s;
 }
-
 .countdown-timer > div:nth-child(3) {
   animation-delay: 0.8s;
 }
-
 @keyframes pulse {
   0% {
     transform: scale(1);
     opacity: 0.75;
-  }
-
-  50% {
+  }50% {
     transform: scale(1.05);
     opacity: 1;
-  }
-
-  100% {
+  }100% {
     transform: scale(1);
     opacity: 0.75;
   }
 }
-/* -------- 3. Ending Soon two Section -------- */
-
-/* -------- 4. About Us Section -------- */
-/* Website info with feature list */
+/* -------- 4. ABOUT-US SECTION (1) -------- */
+/*  Website info with feature list */
 .about-us {
   padding: 3.75rem 0;
 }
@@ -1231,7 +1212,6 @@ h6 {
   align-items: center;
   gap: 0.5rem;
 }
-
 .about-us i {
   font-size: 1.25rem;
   padding: 0.75rem;
@@ -1239,14 +1219,12 @@ h6 {
   color: var(--primary-lighten-color);
   background-color: var(--primary-color);
 }
-
 .about-us .quote {
   position: relative;
   background-color: rgb(from var(--primary-color) r g b/ 15%);
   width: 100%;
   padding: 1rem 1.5rem;
 }
-
 .about-us .quote::before {
   position: absolute;
   content: "";
@@ -1256,7 +1234,6 @@ h6 {
   width: 5px;
   background: var(--alternative-color);
 }
-
 .about-us .image {
   width: 100%;
 }
@@ -1265,7 +1242,6 @@ h6 {
   height: auto;
   display: block;
 }
-
 .about-us .btn {
   border: 1px solid transparent;
   background-color: var(--alternative-color);
@@ -1278,8 +1254,7 @@ h6 {
   background-color: var(--white-color);
 }
 
-/* --------about us section (2) ----------- */
-
+/*----------ABOUT-US SECTION (2) -------- */
 .about-us-two {
   /* display: flex; */
   min-height: 90vh;
@@ -1287,7 +1262,6 @@ h6 {
   justify-content: center;
   flex-direction: column;
 }
-
 .about-us-two .about-image {
   position: relative;
   flex: 1;
@@ -1295,7 +1269,6 @@ h6 {
   width: 90%;
   z-index: 5;
 }
-
 .about-us-two .about-image img {
   position: absolute;
   top: 0;
@@ -1306,7 +1279,6 @@ h6 {
   margin-bottom: -30px;
   z-index: 5;
 }
-
 .about-two-content::after {
   content: "";
   position: absolute;
@@ -1334,11 +1306,7 @@ h6 {
 .about-us-three .image-container img {
   width: 100%;
   height: 100%;
-  /* border-radius: 3rem; */
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 50%;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 50%;
+  border-radius: 50% 50% 0 0;
 }
 .about-us-three p {
   margin: 0.5rem 0 0 0;
@@ -1364,19 +1332,30 @@ h6 {
 .about-three-content ul li:not(:last-child) {
   margin-bottom: 1rem;
 }
-
 .about-us-three .about-card {
   position: absolute;
-  left: 38%;
-  bottom: -2rem;
+  left: 40%;
+  top: -2rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  color: var(--white-color);
-  background-color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  background-color: var(--white-color);
 }
+ .about-us-three .about-card h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  .about-us-three .about-card P {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .about-us-three .about-card h3,
+  .about-us-three .about-card p {
+    margin: 0;
+  }
 /* -------- 5. Featured Coupons -------- */
 /*featured coupon cards section with traditional link card */
 .featured-coupon {
@@ -2176,7 +2155,7 @@ h6 {
     width: 500px;
     height: 500px;
   }
-  /* ----------ABOUT-US SECTION -- 2 ----------- */
+  /* ----------ABOUT-US SECTION -- 3 ----------- */
   .about-us-two {
     flex-direction: row;
   }
@@ -2186,36 +2165,19 @@ h6 {
     width: 100%;
   }
 
-  /* ----------ABOUT-US SECTION -- 3 ----------- */
+  /* ----------ABOUT-US SECTION -- 2 ----------- */
   .about-us-three .image-container img {
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 50% 0 0 50%;
   }
   .about-three-content ul li {
     flex-direction: row;
   }
   .about-us-three .about-card {
-    background-color: var(--white-color);
-    color: var(--secondary-color);
-    position: absolute;
     left: -3rem;
-    bottom: 35%;
+    top: 45%;
     rotate: 40deg;
   }
-  .about-us-three .about-card h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
-  }
-  .about-us-three .about-card P {
-    font-size: 0.75rem;
-    font-weight: 600;
-  }
-  .about-us-three .about-card h1,
-  .about-us-three .about-card p {
-    margin: 0;
-  }
+ 
   /* -------ending soon ------- */
   .ending-image {
     bottom: -6rem;
