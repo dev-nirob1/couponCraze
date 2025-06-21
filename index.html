@@ -12,6 +12,11 @@
     <!-- link to external css file  -->
     <link rel="stylesheet" href="./public/styles/grid.css" />
     <link rel="stylesheet" href="./public/styles/main.css" />
+     <!-- swiper js cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -1005,6 +1010,61 @@
       </div>
     </section>
 
+ <!-- ========================================
+    POPUP/ MODAL
+========================================= -->
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-details">
+          <!-- Coupon Header -->
+          <div class="bg-primary relative">
+            <h3 class="title">Ramadan Special Offer</h3>
+            <div class="discount">
+              <h5 class="sub-title">20% OFF</h5>
+            </div>
+          </div>
+
+          <!-- modal Body -->
+          <div class="modal-body">
+            <ul>
+              <li>
+                <i class="fa-solid fa-stopwatch text-secondary"></i>
+                <span class="text-bold">Expires:</span>
+                <span>2025-04-28 (11:59 PM)</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-tag text-secondary"></i>
+                <span class="text-bold">Category:</span>
+                <span>Ramadan Essentials</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-store text-secondary"></i>
+                <span class="text-bold">Valid at:</span>
+                <span>All participating stores</span>
+              </li>
+            </ul>
+            <p>
+              Enjoy 20% discount on all grocery items during this holy month of
+              Ramadan. Minimum purchase of $50 required. Offer valid until
+              supplies last. Cannot be combined with other promotions.
+            </p>
+
+            <button class="btn bg-secondary width-full text-white">
+              <i class="fa-solid fa-ticket"></i> Reveal Code
+            </button>
+          </div>
+          <small class="text-center text-light d-block">
+            *Terms and condition applies
+          </small>
+        </div>
+
+        <!-- Close Button -->
+        <button class="btn close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
     <!-- ===============================
      FOOTER SECTION START
 ================================ -->
@@ -1091,7 +1151,15 @@
         © 2025 CouponSavings. All rights reserved.
       </div>
     </footer>
+    
+  <!-- ===============================
+     JAVASCRIPT
+================================ -->
+    <!-- swiper js cdn   -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="./vendor/index.js"></script>
+    <!-- utils js  -->
+    <script src="./vendor/swiper.js"></script>
+    <script src="./public/js/index.js"></script>
   </body>
 </html>

@@ -15,60 +15,6 @@
   </head>
   <body>
     <!-- ========================================
-    POPUP/ MODAL
-========================================= -->
-    <div class="modal">
-      <div class="modal-content">
-        <div class="modal-details">
-          <!-- Coupon Header -->
-          <div class="bg-primary relative">
-            <h3 class="title">Ramadan Special Offer</h3>
-            <div class="discount">
-              <h5 class="sub-title">20% OFF</h5>
-            </div>
-          </div>
-
-          <!-- modal Body -->
-          <div class="modal-body">
-            <ul>
-              <li>
-                <i class="fa-solid fa-stopwatch text-secondary"></i>
-                <span class="text-bold">Expires:</span>
-                <span>2025-04-28 (11:59 PM)</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-tag text-secondary"></i>
-                <span class="text-bold">Category:</span>
-                <span>Ramadan Essentials</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-store text-secondary"></i>
-                <span class="text-bold">Valid at:</span>
-                <span>All participating stores</span>
-              </li>
-            </ul>
-            <p>
-              Enjoy 20% discount on all grocery items during this holy month of
-              Ramadan. Minimum purchase of $50 required. Offer valid until
-              supplies last. Cannot be combined with other promotions.
-            </p>
-
-            <button class="btn bg-secondary width-full text-white">
-              <i class="fa-solid fa-ticket"></i> Reveal Code
-            </button>
-          </div>
-          <small class="text-center text-light d-block">
-            *Terms and condition applies
-          </small>
-        </div>
-
-        <!-- Close Button -->
-        <button class="btn close-btn">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-    </div>
-    <!-- ========================================
     1. NAVBAR SECTION
 ========================================= -->
     <header class="navbar">
@@ -99,12 +45,18 @@
               <a href="./home-three.html">Home 3</a>
             </div>
           </li>
-          <li><a href="./latest.html" class="">Latest Coupons</a></li>
+          <li>
+            <a href="./latest.html" class="">Latest Coupons</a>
+          </li>
           <li>
             <a href="./exclusive.html" class="">Exclusive Coupons</a>
           </li>
-          <li><a href="./ending.html" class="">Ending Soon</a></li>
-          <li><a href="./categories.html" class="">Categories</a></li>
+          <li>
+            <a href="./ending.html" class="">Ending Soon</a>
+          </li>
+          <li>
+            <a href="./categories.html" class="">Categories</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -141,7 +93,7 @@
       <!-- ===============================
     4. COUPONS SECTION 
 ================================ -->
-      <div class="medium-2 large-3 gap-2">
+      <section class="medium-2 large-3 gap-2">
         <!-- Individual Coupon Card -->
         <div class="coupon-card">
           <!-- Coupon Title and Description -->
@@ -285,21 +237,84 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- ========================================
     5. PAGINATION
 ========================================= -->
       <!-- pagination components with button and next-prev  -->
       <ul class="pagination">
-        <li><a href="/coupon_list">« Prev </a></li>
+        <li>
+          <a href="/coupon_list">« Prev </a>
+        </li>
         <li>
           <a href="#" class="active">1</a>
         </li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#"> Next »</a></li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#"> Next »</a>
+        </li>
       </ul>
     </div>
+
+        <!-- ========================================
+    POPUP/ MODAL
+========================================= -->
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-details">
+          <!-- Coupon Header -->
+          <div class="bg-primary relative">
+            <h3 class="title">Ramadan Special Offer</h3>
+            <div class="discount">
+              <h5 class="sub-title">20% OFF</h5>
+            </div>
+          </div>
+          <!-- modal Body -->
+          <div class="modal-body">
+            <ul>
+              <li>
+                <i class="fa-solid fa-stopwatch text-secondary"></i>
+                <span class="text-bold">Expires:</span>
+                <span>2025-04-28 (11:59 PM)</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-tag text-secondary"></i>
+                <span class="text-bold">Category:</span>
+                <span>Ramadan Essentials</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-store text-secondary"></i>
+                <span class="text-bold">Valid at:</span>
+                <span>All participating stores</span>
+              </li>
+            </ul>
+            <p>
+              Enjoy 20% discount on all grocery items during this holy month of
+              Ramadan. Minimum purchase of $50 required. Offer valid until
+              supplies last. Cannot be combined with other promotions.
+            </p>
+
+            <button class="btn bg-secondary width-full text-white">
+              <i class="fa-solid fa-ticket"></i> Reveal Code
+            </button>
+          </div>
+          <small class="text-center text-light d-block">
+            *Terms and condition applies
+          </small>
+        </div>
+
+        <!-- Close Button -->
+        <button class="btn close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
     <!-- ========================================
     6. FOOTER SECTION
 ========================================= -->
@@ -386,6 +401,10 @@
         © 2025 CouponSavings. All rights reserved.
       </div>
     </footer>
-    <script src="./vendor/index.js"></script>
+
+    <!-- ===============================
+     JAVASCRIPT
+================================ -->
+    <script src="./public/js/index.js"></script>
   </body>
 </html>
