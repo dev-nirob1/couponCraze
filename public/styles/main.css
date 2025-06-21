@@ -101,9 +101,6 @@ h6 {
 h1 {
   font-size: var(--heading-1);
 }
-h2 {
-  font-size: var(--heading-2);
-}
 h3 {
   font-size: var(--heading-3);
 }
@@ -113,9 +110,7 @@ h4 {
 h5 {
   font-size: var(--heading-5);
 }
-h6 {
-  font-size: var(--heading-6);
-}
+
 /* ===================================
    ROOT STYLES (Variables)
 =================================== */
@@ -126,47 +121,26 @@ h6 {
   --primary-color: #63c8d4;
   --primary-light-color: #a3feff;
   --primary-lighten-color: #d0f1f8;
-  --primary-light-black-color: #e6e6e6;
   --secondary-color: #002e5b;
   --alternative-color: #f69052;
-  --dark-color: #212529;
   --light-color: #585b5e;
   --white-color: #fff;
   --border-color: #dee2e6;
-
   --danger-color: #dc3545;
-  --warning-color: #ffc107;
-  --success-color: #198754;
   /* =========typography ========= */
   /* headings  */
   --heading-1: 2rem;
-  --heading-2: 1.75rem;
   --heading-3: 1.5rem;
   --heading-4: 1.375rem;
   --heading-5: 1.25rem;
-
   /* box shadows  */
-  --testimonials-card-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.293);
   --box-shadow: 0 0 10px rgba(0, 0, 0, 0.109);
 }
 /* ===================================
    UTILITY CLASSES
 =================================== */
-.text-primary {
-  color: var(--primary-color);
-}
-
 .text-secondary {
   color: var(--secondary-color);
-}
-.text-success {
-  color: var(--success-color);
-}
-.text-warning {
-  color: var(--warning-color);
-}
-.text-danger {
-  color: var(--danger-color);
 }
 .text-white {
   color: var(--white-color);
@@ -174,33 +148,17 @@ h6 {
 .text-light {
   color: var(--light-color);
 }
-.text-dark {
-  color: var(--dark-color);
-}
-
 .bg-light {
-  /* background-color: rgb(from var(--primary-color) r g b/ 5%); */
   background-color: #d4ebff;
 }
 .bg-lighten {
-  /* background-color: rgb(from var(--primary-color) r g b/ 5%); */
   background-color: var(--primary-lighten-color);
 }
-
 .bg-primary {
   background-color: var(--primary-color);
 }
 .bg-secondary {
   background-color: var(--secondary-color);
-}
-.bg-danger {
-  background-color: var(--danger-color);
-}
-.bg-success {
-  background-color: var(--success-color);
-}
-.bg-warning {
-  background-color: var(--warning-color);
 }
 .bg-alternative {
   background-color: var(--alternative-color);
@@ -211,9 +169,7 @@ h6 {
 .text-center {
   text-align: center;
 }
-.text-right {
-  text-align: right;
-}
+
 /* flex-box  */
 .flex {
   display: flex;
@@ -221,17 +177,11 @@ h6 {
 .flex-1 {
   flex: 1;
 }
-.flex-wrap {
-  flex-wrap: wrap;
-}
 .flex-col {
   flex-direction: column;
 }
 .align-center {
   align-items: center;
-}
-.align-end {
-  align-items: end;
 }
 .justify-between {
   justify-content: space-between;
@@ -743,15 +693,12 @@ h6 {
   font-size: 3.5rem;
 }
 .hero .btn {
-  font-size: 1.25rem;
-  padding: 1rem 1.75rem;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
   color: var(--white-color);
   background-color: var(--alternative-color);
 }
-.hero .btn:hover {
-  color: var(--secondary-color);
-  background-color: var(--white-color);
-}
+
 .hero .content .img {
   margin-top: 1rem;
   width: 100%;
@@ -822,6 +769,7 @@ h6 {
   margin: 5rem 0;
   z-index: 5;
 }
+
 .hero-two .banner-content p {
   font-size: 1.25rem;
   margin-top: 1.4rem;
@@ -1141,14 +1089,10 @@ h6 {
 }
 .about-us .btn {
   border: 1px solid transparent;
-  background-color: var(--alternative-color);
   color: var(--white-color);
-  padding: 1.25rem 2rem;
-  font-size: 1.25rem;
-}
-.about-us .btn:hover {
-  color: var(--secondary-color);
-  background-color: var(--white-color);
+  background-color: var(--alternative-color);
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
 }
 
 /* ========= ABOUT-US SECTION (2) ========= */
@@ -1749,7 +1693,6 @@ h6 {
 @media (min-width: 576px) {
   :root {
     --heading-1: 2rem;
-    --heading-2: 1.75rem;
     --heading-3: 1.5rem;
     --heading-4: 1.375rem;
   }
@@ -1766,7 +1709,6 @@ h6 {
 @media (min-width: 768px) {
   :root {
     --heading-1: 2.25rem;
-    --heading-2: 2rem;
     --heading-3: 1.75rem;
     --heading-4: 1.5rem;
   }
@@ -1809,7 +1751,10 @@ h6 {
   .hero .content {
     margin-top: 3rem;
   }
-
+  .hero .btn {
+  font-size: 1.25rem;
+  padding: 1.25rem 2rem;
+  }
   .hero p {
     font-size: 1.15rem;
     margin-top: 0;
@@ -1852,6 +1797,7 @@ h6 {
   }
 
   /* ==========HERO SECTION (3) ==========  */
+
   .hero-three .swiper-controls {
     flex-direction: column;
     gap: 2rem;
@@ -1865,7 +1811,7 @@ h6 {
   .hero-three .hero-three .span-11 {
     order: 2;
   }
-  .hero-three .discount-card h1 {
+  .hero-three .discount-card .title {
     font-size: 2rem;
   }
   .hero-three .discount-card {
@@ -1909,6 +1855,11 @@ h6 {
   }
 
   /* =========== ABOUT US SECTION (1) ========= */
+  .about-us .btn{
+    font-size: 1.25rem;
+    padding: 1.25rem 2rem;
+  }
+
   .about-us .quote {
     width: 90%;
   }
@@ -1993,7 +1944,6 @@ h6 {
   /* Global Typography */
   :root {
     --heading-1: 2.5rem;
-    --heading-2: 2.25rem;
     --heading-3: 2rem;
     --heading-4: 1.75rem;
   }
@@ -2062,7 +2012,7 @@ h6 {
   .hero-two .banner-content .btn {
     font-size: 1rem;
     font-weight: 600;
-    padding: 1.1rem 2.5rem;
+    padding: 1.25rem 2rem;
     border-radius: 0.5rem;
   }
 
@@ -2070,8 +2020,8 @@ h6 {
   .hero-three .discount-card {
     padding: 1rem 2rem;
   }
-  .hero-three .discount-card h1 {
-    font-size: 3.5rem;
+  .hero-three .discount-card .title {
+    font-size: 2.5rem;
   }
   .hero-three .coupon-1,
   .hero-three .coupon-2 {
@@ -2154,7 +2104,6 @@ h6 {
 @media (min-width: 1200px) {
   :root {
     --heading-1: 2.75rem;
-    --heading-2: 2.5rem;
     --heading-3: 2.25rem;
     --heading-4: 2rem;
   }
