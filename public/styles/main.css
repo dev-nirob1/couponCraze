@@ -744,7 +744,8 @@ h5 {
   100% {
     transform: translateY(0);
     opacity: 1;
-  }50% {
+  }
+  50% {
     transform: translateY(-1rem);
     opacity: 0.5;
   }
@@ -918,7 +919,7 @@ h5 {
   box-shadow: var(--box-shadow);
   color: var(--white-color);
   padding: 1rem;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   transition: all 0.3s ease-in-out;
   z-index: 1;
 }
@@ -1031,10 +1032,12 @@ h5 {
   0% {
     transform: scale(1);
     opacity: 0.75;
-  }50% {
+  }
+  50% {
     transform: scale(1.05);
     opacity: 1;
-  }100% {
+  }
+  100% {
     transform: scale(1);
     opacity: 0.75;
   }
@@ -1091,7 +1094,7 @@ h5 {
   border: 1px solid transparent;
   color: var(--white-color);
   background-color: var(--alternative-color);
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
 }
 
@@ -1143,18 +1146,18 @@ h5 {
   box-shadow: var(--box-shadow);
   background-color: var(--white-color);
 }
- .about-two .about-card h3 {
-    font-size: 2.5rem;
-    font-weight: 900;
-  }
-  .about-two .about-card P {
-    font-size: 0.75rem;
-    font-weight: 600;
-  }
-  .about-two .about-card h3,
-  .about-two .about-card p {
-    margin: 0;
-  }
+.about-two .about-card h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.about-two .about-card P {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.about-two .about-card h3,
+.about-two .about-card p {
+  margin: 0;
+}
 
 /* ========= ABOUT-US SECTION (3) ========= */
 .about-three {
@@ -1449,7 +1452,7 @@ h5 {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
-.cards-container {
+.swiper-testimonials {
   padding: 1rem 0.75rem;
   width: 100%;
   overflow: hidden;
@@ -1458,19 +1461,11 @@ h5 {
   transition: all 0.5s ease-in-out;
   z-index: 3;
 }
-.btn-container {
-  padding: 0 0.75rem;
-  z-index: 3;
-  display: flex;
-  gap: 1rem;
+.swiper-testimonials .swiper-slide {
+  width: auto !important;
+  height: auto !important;
+  flex-shrink: 0;
 }
-.btn-container .btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  color: var(--white-color);
-  background-color: var(--secondary-color);
-}
-
 /* testimonials/feedback card */
 .testimonial-card {
   flex: 0 0 auto;
@@ -1490,6 +1485,19 @@ h5 {
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
+}
+.btn-container {
+  padding: 0 0.75rem;
+  z-index: 3;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.btn-container .btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
 }
 
 /* ========== 11. NEWSLETTER SECTION ========== */
@@ -1752,8 +1760,8 @@ h5 {
     margin-top: 3rem;
   }
   .hero .btn {
-  font-size: 1.25rem;
-  padding: 1.25rem 2rem;
+    font-size: 1.25rem;
+    padding: 1.25rem 2rem;
   }
   .hero p {
     font-size: 1.15rem;
@@ -1855,7 +1863,7 @@ h5 {
   }
 
   /* =========== ABOUT US SECTION (1) ========= */
-  .about-us .btn{
+  .about-us .btn {
     font-size: 1.25rem;
     padding: 1.25rem 2rem;
   }
@@ -1873,7 +1881,7 @@ h5 {
   }
 
   /*========== ABOUT US SECTION (3) ==========*/
- .about-three .about-three-content {
+  .about-three .about-three-content {
     padding: 9rem 0.75rem 3.75rem 0.75rem;
   }
   .about-three-content::after {
@@ -2047,7 +2055,7 @@ h5 {
   }
 
   /* ========== ABOUT-US SECTION (2) ========= */
-.about-two .image-container img {
+  .about-two .image-container img {
     border-radius: 50% 0 0 50%;
   }
   .about-two .about-two-content ul li {
@@ -2061,7 +2069,7 @@ h5 {
 
   /* ======== ABOUT-US SECTION (3) ========== */
 
- .about-three .about-three-content {
+  .about-three .about-three-content {
     padding: 3.75rem;
   }
   .about-three-content::after {
@@ -2072,7 +2080,7 @@ h5 {
     background-color: var(--primary-lighten-color);
     z-index: -1;
   }
-  
+
   /* ========== HOW IT WORKS SECTION ======== */
   .timeline {
     display: block;
@@ -2116,11 +2124,10 @@ h5 {
 @media (min-width: 1400px) {
   :root {
     --heading-1: 3rem;
-    --heading-2: 2.75rem;
     --heading-3: 2.5rem;
     --heading-4: 2.25rem;
   }
-/* =========TIMELINE SECTION ========= */
+  /* =========TIMELINE SECTION ========= */
   .timeline {
     top: -1.5rem;
   }

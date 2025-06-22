@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- link to external css file  -->
+    <link rel="stylesheet" href="./vendor/grid.css" />
+    <link rel="stylesheet" href="./public/styles/main.css" />
+    <!-- swiper js cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <section class="testimonials">
+      <div class="container">
+        <div class="medium-8 align-center gap-2">
+          <!-- Text content -->
+          <div class="text-content medium-span-3 flex flex-col justify-center">
+            <h3 class="title">
+              Feedback &amp; <br />
+              Testimonials
+            </h3>
+            <p>
+              Real savings from real people. See how our community saves big
+              every day.
+            </p>
+          </div>
+          <div class="medium-span-5 medium-py-5">
+            <!-- Cards container: testimonial cards -->
+            <div class="swiper swiper-testimonials">
+              <!-- Individual testimonial card -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="flex align-center gap-1">
+                      <img
+                        class="height-full width-full"
+                        src="./public/images/author.jpg"
+                        alt="banner image"
+                      />
+                      <div>
+                        <h5 class="sub-title">Adam Josheph</h5>
+                        <p>Frequent Shopper</p>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <p>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                        I've saved over $500 this month using coupons from this
+                        site! The deals are always verified and the interface
+                        makes it easy to find discounts for my favorite stores.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="flex align-center gap-1">
+                      <img
+                        class="height-full width-full"
+                        src="./public/images/author.jpg"
+                        alt="banner image"
+                      />
+                      <div>
+                        <h5 class="sub-title">Adam Josheph</h5>
+                        <p>Frequent Shopper</p>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <p>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                        I've saved over $500 this month using coupons from this
+                        site! The deals are always verified and the interface
+                        makes it easy to find discounts for my favorite stores.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="flex align-center gap-1">
+                      <img
+                        class="height-full width-full"
+                        src="./public/images/author.jpg"
+                        alt="banner image"
+                      />
+                      <div>
+                        <h5 class="sub-title">Adam Josheph</h5>
+                        <p>Frequent Shopper</p>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <p>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                        I've saved over $500 this month using coupons from this
+                        site! The deals are always verified and the interface
+                        makes it easy to find discounts for my favorite stores.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="flex align-center gap-1">
+                      <img
+                        class="height-full width-full"
+                        src="./public/images/author.jpg"
+                        alt="banner image"
+                      />
+                      <div>
+                        <h5 class="sub-title">Adam Josheph</h5>
+                        <p>Frequent Shopper</p>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <p>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                        I've saved over $500 this month using coupons from this
+                        site! The deals are always verified and the interface
+                        makes it easy to find discounts for my favorite stores.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="flex align-center gap-1">
+                      <img
+                        class="height-full width-full"
+                        src="./public/images/author.jpg"
+                        alt="banner image"
+                      />
+                      <div>
+                        <h5 class="sub-title">Adam Josheph</h5>
+                        <p>Frequent Shopper</p>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <p>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                        I've saved over $500 this month using coupons from this
+                        site! The deals are always verified and the interface
+                        makes it easy to find discounts for my favorite stores.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button class="btn prev" id="prev">Prev</button>
+              <button class="btn next" id="next">Next</button>
+            </div>
+            <!-- carousel buttons -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- swiper js cdn   -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-testimonials", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: "#next",
+          prevEl: "#prev",
+        },
+      });
+    </script>
+  </body>
+</html>

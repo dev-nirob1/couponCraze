@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
   loop: true,
   autoplay: {
     delay: 3500,
@@ -10,3 +10,14 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".button-prev",
   },
 });
+
+// testimonials slider 
+let swiperTestimonials = new Swiper('.swiper-testimonials', {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: "#next",
+    prevEl: "#prev"
+  }
+})

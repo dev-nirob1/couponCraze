@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <!-- link to external css file  -->
-    <link rel="stylesheet" href="./public/styles/grid.css" />
+    <link rel="stylesheet" href="./vendor/grid.css" />
     <link rel="stylesheet" href="./public/styles/main.css" />
 
     <!-- swiper js cdn  -->
@@ -898,144 +898,159 @@
             </p>
           </div>
           <div class="medium-span-5 medium-py-5">
-            <!-- Cards container: testimonial cards -->
-            <div class="cards-container">
-              <!-- Individual testimonial card -->
-              <div class="testimonial-card">
-                <div class="flex align-center gap-1">
-                  <img
-                    class="height-full width-full"
-                    src="./public/images/author.jpg"
-                    alt="banner image"
-                  />
-                  <div>
-                    <h5 class="sub-title">Adam Josheph</h5>
-                    <p>Frequent Shopper</p>
+            <!-- Cards container: testimonial cards(slider) -->
+            <div class="swiper swiper-testimonials">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- Individual testimonial card -->
+                  <div class="testimonial-card">
+                    <div class="flex align-center gap-1">
+                      <img
+                        class="height-full width-full"
+                        src="./public/images/author.jpg"
+                        alt="banner image"
+                      />
+                      <div>
+                        <h5 class="sub-title">Adam Josheph</h5>
+                        <p>Frequent Shopper</p>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <p>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                        I've saved over $500 this month using coupons from this
+                        site! The deals are always verified and the interface
+                        makes it easy to find discounts for my favorite stores.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex">
-                  <p>
-                    <i class="fa-solid fa-quote-left fa-2x"></i>
-                    I've saved over $500 this month using coupons from this
-                    site! The deals are always verified and the interface makes
-                    it easy to find discounts for my favorite stores.
-                  </p>
-                </div>
-              </div>
-              <!-- Individual testimonial card -->
-              <div class="testimonial-card">
-                <div class="flex align-center gap-1">
-                  <img
-                    class="height-full width-full"
-                    src="./public/images/author.jpg"
-                    alt="banner image"
-                  />
-                  <div>
-                    <h5 class="sub-title">Sarah Williams</h5>
-                    <p>Budget Mom</p>
+                <div class="swiper-slide">
+                  <!-- Individual testimonial card -->
+                  <div class="testimonial-card">
+                    <div class="flex align-center gap-1">
+                      <img
+                        class="height-full width-full"
+                        src="./public/images/author.jpg"
+                        alt="banner image"
+                      />
+                      <div>
+                        <h5 class="sub-title">Sarah Williams</h5>
+                        <p>Budget Mom</p>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <p>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                        This website helps me stretch our family budget further.
+                        The grocery coupons alone save us $100+ every week. I
+                        recommend it to all my mom friends!
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex">
-                  <p>
-                    <i class="fa-solid fa-quote-left fa-2x"></i>
-                    This website helps me stretch our family budget further. The
-                    grocery coupons alone save us $100+ every week. I recommend
-                    it to all my mom friends!
-                  </p>
-                </div>
-              </div>
-              <!-- Individual testimonial card -->
-              <div class="testimonial-card">
-                <div class="flex align-center gap-1">
-                  <img
-                    class="height-full width-full"
-                    src="./public/images/author.jpg"
-                    alt="banner image"
-                  />
-                  <div>
-                    <h5 class="sub-title">Michael Chen</h5>
-                    <p>College Student</p>
+                <div class="swiper-slide">
+                  <!-- Individual testimonial card -->
+                  <div class="testimonial-card">
+                    <div class="flex align-center gap-1">
+                      <img
+                        class="height-full width-full"
+                        src="./public/images/author.jpg"
+                        alt="banner image"
+                      />
+                      <div>
+                        <h5 class="sub-title">Michael Chen</h5>
+                        <p>College Student</p>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <p>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                        As a student on tight budget, these coupon codes are
+                        lifesavers. I get discounts on everything from textbooks
+                        to pizza delivery. 10/10 would recommend!
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex">
-                  <p>
-                    <i class="fa-solid fa-quote-left fa-2x"></i>
-                    As a student on tight budget, these coupon codes are
-                    lifesavers. I get discounts on everything from textbooks to
-                    pizza delivery. 10/10 would recommend!
-                  </p>
-                </div>
-              </div>
-              <!-- Individual testimonial card -->
-              <div class="testimonial-card">
-                <div class="flex align-center gap-1">
-                  <img
-                    class="height-full width-full"
-                    src="./public/images/author.jpg"
-                    alt="banner image"
-                  />
-                  <div>
-                    <h5 class="sub-title">Emily Rodriguez</h5>
-                    <p>Small Business Owner</p>
+                <div class="swiper-slide">
+                  <!-- Individual testimonial card -->
+                  <div class="testimonial-card">
+                    <div class="flex align-center gap-1">
+                      <img
+                        class="height-full width-full"
+                        src="./public/images/author.jpg"
+                        alt="banner image"
+                      />
+                      <div>
+                        <h5 class="sub-title">Emily Rodriguez</h5>
+                        <p>Small Business Owner</p>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <p>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                        We use this site to find deals on office supplies and
+                        software subscriptions. The business category coupons
+                        have saved our startup thousands this year.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex">
-                  <p>
-                    <i class="fa-solid fa-quote-left fa-2x"></i>
-                    We use this site to find deals on office supplies and
-                    software subscriptions. The business category coupons have
-                    saved our startup thousands this year.
-                  </p>
-                </div>
-              </div>
-              <div class="testimonial-card">
-                <div class="flex align-center gap-1">
-                  <img
-                    class="height-full width-full"
-                    src="./public/images/author.jpg"
-                    alt="banner image"
-                  />
-                  <div>
-                    <h5 class="sub-title">David Kim</h5>
-                    <p>Travel Enthusiast</p>
+                <div class="swiper-slide">
+                  <!-- Individual testimonial card -->
+                  <div class="testimonial-card">
+                    <div class="flex align-center gap-1">
+                      <img
+                        class="height-full width-full"
+                        src="./public/images/author.jpg"
+                        alt="banner image"
+                      />
+                      <div>
+                        <h5 class="sub-title">David Kim</h5>
+                        <p>Travel Enthusiast</p>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <p>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                        Booked 3 vacations this year using travel deals from
+                        here. Got 40% off hotels and discounted airfare. The
+                        travel section is my favorite!
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex">
-                  <p>
-                    <i class="fa-solid fa-quote-left fa-2x"></i>
-                    Booked 3 vacations this year using travel deals from here.
-                    Got 40% off hotels and discounted airfare. The travel
-                    section is my favorite!
-                  </p>
-                </div>
-              </div>
-              <!-- Individual testimonial card -->
-              <div class="testimonial-card">
-                <div class="flex align-center gap-1">
-                  <img
-                    class="height-full width-full"
-                    src="./public/images/author.jpg"
-                    alt="banner image"
-                  />
-                  <div>
-                    <h5 class="sub-title">Jessica Patel</h5>
-                    <p>Fashion Blogger</p>
+                <div class="swiper-slide">
+                  <!-- Individual testimonial card -->
+                  <div class="testimonial-card">
+                    <div class="flex align-center gap-1">
+                      <img
+                        class="height-full width-full"
+                        src="./public/images/author.jpg"
+                        alt="banner image"
+                      />
+                      <div>
+                        <h5 class="sub-title">Jessica Patel</h5>
+                        <p>Fashion Blogger</p>
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <p>
+                        <i class="fa-solid fa-quote-left fa-2x"></i>
+                        I share coupon codes with my followers daily. This site
+                        has the most up-to-date fashion deals and exclusive
+                        discounts you won't find elsewhere.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="flex">
-                  <p>
-                    <i class="fa-solid fa-quote-left fa-2x"></i>
-                    I share coupon codes with my followers daily. This site has
-                    the most up-to-date fashion deals and exclusive discounts
-                    you won't find elsewhere.
-                  </p>
                 </div>
               </div>
             </div>
             <!-- carousel buttons -->
             <div class="btn-container">
-              <button class="btn" id="prev">Prev</button
-              ><button class="btn" id="next">Next</button>
+              <button class="btn" id="prev">Prev</button>
+              <button class="btn" id="next">Next</button>
             </div>
           </div>
         </div>
